@@ -1,0 +1,79 @@
+# depslib dependency file v1.0
+1729118911 source:c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\fecha.cpp
+	"Fecha.h"
+
+1724978165 c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\fecha.h
+	<string>
+
+1729615590 source:c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\persona.cpp
+	"Persona.h"
+	<stdio.h>
+	<string.h>
+
+1729615559 c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\persona.h
+
+1729550951 source:c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\empleadosarchivos.cpp
+	"EmpleadosArchivos.h"
+	<stdio.h>
+	<string.h>
+
+1729205316 c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\empleadosarchivos.h
+	"Empleados.h"
+
+1729795861 c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\empleados.h
+	"Persona.h"
+
+1729616068 source:c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\empleados.cpp
+	"Empleados.h"
+	"EmpleadosArchivos.h"
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<iostream>
+
+1729706921 source:c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\main.cpp
+	<iostream>
+	"Empleados.h"
+	"Clientes.h"
+	"Productos.h"
+
+1729715205 source:c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\clientesarchivo.cpp
+	"ClientesArchivo.h"
+	"Clientes.h"
+	<fstream>
+	<stdio.h>
+	<string.h>
+	<string>
+	<sstream>
+
+1729703964 c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\clientesarchivo.h
+	"Clientes.h"
+
+1729704065 source:c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\clientes.cpp
+	"Clientes.h"
+	"ClientesArchivo.h"
+	<iostream>
+	<stdio.h>
+	<string.h>
+
+1729703787 c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\clientes.h
+	"Persona.h"
+
+1729715555 source:c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\productos.cpp
+	"Productos.h"
+	"ProductosArchivo.h"
+	<iostream>
+
+1729714746 c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\productos.h
+	<string>
+
+1729712915 c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\productosarchivo.h
+	"Productos.h"
+
+1729715506 source:c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\productosarchivo.cpp
+	"ProductosArchivo.h"
+	"Productos.h"
+	<fstream>
+	<string>
+	<sstream>
+
