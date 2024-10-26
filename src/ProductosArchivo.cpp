@@ -86,6 +86,7 @@ void ProductosArchivo::leerUnProducto(Productos &producto, int productoABuscar)
 ///Esta funci¢n recibe un array din mico de productos y la cantidad de productos para leerlos
 void ProductosArchivo::leerProductos(Productos *listaDeProductos, int totalProductos)
 {
+    ProductosArchivo ProArchivo;
     ifstream ArchivoCSV("ListaProductos.csv");
 
     if (!ArchivoCSV.is_open())
@@ -122,6 +123,7 @@ void ProductosArchivo::leerProductos(Productos *listaDeProductos, int totalProdu
         listaDeProductos[i].setPrecio(stof(producto.c_str()));
 
         getline(informacionProducto, producto, ',');
+        ProArchivo.obtenerCategoriaProducto(producto);  ///Revisar porque no devuelve el nombre de la categoria en vez del nombre
         listaDeProductos[i].setCategoria(producto);
 
         getline(informacionProducto, producto, ',');
@@ -154,4 +156,36 @@ bool ProductosArchivo::modificarProducto(Productos *listaDeProductos, int totalP
     }
 
     return true;
+}
+///Revisar porque s¢lo funciona con la categor¡a 2
+void ProductosArchivo::obtenerCategoriaProducto(string &categoriaBuscada)
+{
+    ifstream ArchivoCSV("CategoriaDeProductos.csv");
+
+    if (!ArchivoCSV.is_open())
+    {
+        return;
+    }
+
+    string linea, idCategoria, nombreCategoria;
+
+    getline(ArchivoCSV, linea); ///Se descarta el encabezado
+
+    while(getline(ArchivoCSV, linea))
+    {
+        getline(ArchivoCSV, linea);
+
+        stringstream buscarCategoria(linea);
+
+        ///Obtenemos el id de la categoria y su nombre
+        getline(buscarCategoria, idCategoria, ',');
+        getline(buscarCategoria, nombreCategoria, ',');
+
+        if (idCategoria == categoriaBuscada)  ///Verifica si el n£mero de la categoria es igual a la categoria buscada
+        {
+            categoriaBuscada = nombreCategoria;
+            break;
+        }
+    }
+    ArchivoCSV.close();
 }

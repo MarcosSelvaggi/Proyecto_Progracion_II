@@ -80,3 +80,160 @@
 	<string>
 	<sstream>
 
+1729871099 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\clientes.cpp
+	"Clientes.h"
+	"ClientesArchivo.h"
+	<iostream>
+	<stdio.h>
+	<string.h>
+
+1729807691 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\clientes.h
+	"Persona.h"
+
+1729615559 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\persona.h
+
+1729703964 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\clientesarchivo.h
+	"Clientes.h"
+
+1729811805 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\clientesarchivo.cpp
+	"ClientesArchivo.h"
+	"Clientes.h"
+	<fstream>
+	<stdio.h>
+	<string.h>
+	<string>
+	<sstream>
+
+1729795983 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\empleados.cpp
+	"Empleados.h"
+	"EmpleadosArchivos.h"
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<iostream>
+
+1729795861 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\empleados.h
+	"Persona.h"
+
+1729205316 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\empleadosarchivos.h
+	"Empleados.h"
+
+1729550951 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\empleadosarchivos.cpp
+	"EmpleadosArchivos.h"
+	<stdio.h>
+	<string.h>
+
+1729118911 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\fecha.cpp
+	"Fecha.h"
+
+1724978165 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\fecha.h
+	<string>
+
+1729615590 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\persona.cpp
+	"Persona.h"
+	<stdio.h>
+	<string.h>
+
+1729878187 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\productos.cpp
+	"Productos.h"
+	"ProductosArchivo.h"
+	<iostream>
+	<stdlib.h>
+	<time.h>
+
+1729878080 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\productos.h
+	<string>
+
+1729875965 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\productosarchivo.h
+	"Productos.h"
+
+1729876731 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\productosarchivo.cpp
+	"ProductosArchivo.h"
+	"Productos.h"
+	<fstream>
+	<string>
+	<sstream>
+
+1729968990 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\clientes.cpp
+	"Clientes.h"
+	"ClientesArchivo.h"
+	<iostream>
+	<stdio.h>
+	<string.h>
+
+1729807691 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\clientes.h
+	"Persona.h"
+
+1729615559 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\persona.h
+
+1729703964 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\clientesarchivo.h
+	"Clientes.h"
+
+1729811805 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\clientesarchivo.cpp
+	"ClientesArchivo.h"
+	"Clientes.h"
+	<fstream>
+	<stdio.h>
+	<string.h>
+	<string>
+	<sstream>
+
+1729795983 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\empleados.cpp
+	"Empleados.h"
+	"EmpleadosArchivos.h"
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<iostream>
+
+1729795861 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\empleados.h
+	"Persona.h"
+
+1729205316 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\empleadosarchivos.h
+	"Empleados.h"
+
+1729550951 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\empleadosarchivos.cpp
+	"EmpleadosArchivos.h"
+	<stdio.h>
+	<string.h>
+
+1729615590 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\persona.cpp
+	"Persona.h"
+	<stdio.h>
+	<string.h>
+
+1729878187 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\productos.cpp
+	"Productos.h"
+	"ProductosArchivo.h"
+	<iostream>
+	<stdlib.h>
+	<time.h>
+
+1729878080 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\productos.h
+	<string>
+
+1729964564 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\productosarchivo.h
+	"Productos.h"
+	<string>
+
+1729966614 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\productosarchivo.cpp
+	"ProductosArchivo.h"
+	"Productos.h"
+	<fstream>
+	<string>
+	<sstream>
+
+1729959956 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\main.cpp
+	<iostream>
+	"Empleados.h"
+	"Clientes.h"
+	"Productos.h"
+	<windows.h>
+
+1729968980 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\pedidos.cpp
+	"Pedidos.h"
+	<iostream>
+
+1729968944 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\pedidos.h
+	<string>
+

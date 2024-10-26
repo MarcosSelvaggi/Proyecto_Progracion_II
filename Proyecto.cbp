@@ -14,6 +14,7 @@
 				<Compiler>
 					<Add option="-g" />
 					<Add directory="./" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -24,6 +25,7 @@
 				<Compiler>
 					<Add option="-O2" />
 					<Add directory="./" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -33,24 +35,27 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
+			<Add directory="include" />
 		</Compiler>
-		<Unit filename="Clientes.cpp" />
-		<Unit filename="Clientes.h" />
-		<Unit filename="ClientesArchivo.cpp" />
-		<Unit filename="ClientesArchivo.h" />
-		<Unit filename="Empleados.cpp" />
-		<Unit filename="Empleados.h" />
-		<Unit filename="EmpleadosArchivos.cpp" />
-		<Unit filename="EmpleadosArchivos.h" />
-		<Unit filename="Fecha.cpp" />
-		<Unit filename="Fecha.h" />
-		<Unit filename="Persona.cpp" />
-		<Unit filename="Persona.h" />
-		<Unit filename="Productos.cpp" />
-		<Unit filename="Productos.h" />
-		<Unit filename="ProductosArchivo.cpp" />
-		<Unit filename="ProductosArchivo.h" />
+		<Unit filename="include/Clientes.h" />
+		<Unit filename="include/ClientesArchivo.h" />
+		<Unit filename="include/Empleados.h" />
+		<Unit filename="include/EmpleadosArchivos.h" />
+		<Unit filename="include/Pedidos.h" />
+		<Unit filename="include/PedidosArchivo.h" />
+		<Unit filename="include/Persona.h" />
+		<Unit filename="include/Productos.h" />
+		<Unit filename="include/ProductosArchivo.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Clientes.cpp" />
+		<Unit filename="src/ClientesArchivo.cpp" />
+		<Unit filename="src/Empleados.cpp" />
+		<Unit filename="src/EmpleadosArchivos.cpp" />
+		<Unit filename="src/Pedidos.cpp" />
+		<Unit filename="src/PedidosArchivo.cpp" />
+		<Unit filename="src/Persona.cpp" />
+		<Unit filename="src/Productos.cpp" />
+		<Unit filename="src/ProductosArchivo.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
