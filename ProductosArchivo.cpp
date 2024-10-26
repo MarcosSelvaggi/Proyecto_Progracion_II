@@ -20,10 +20,9 @@ int ProductosArchivo::obtenerCantidadDeProductos()
     {
         return -1;
     }
-    ///Este getline se encarga de liberar la primera l¡nea que tiene los datos
-
     string linea;
 
+    ///Este getline se encarga de liberar la primera l¡nea que tiene los datos
     getline(ArchivoCSV, linea);
 
     while(getline(ArchivoCSV, linea))
@@ -38,13 +37,13 @@ int ProductosArchivo::obtenerCantidadDeProductos()
 
 bool ProductosArchivo::agregarProductoAlArchivo(Productos &producto)
 {
+
     ofstream ArchivoCSV("ListaProductos.csv", ios::app);
 
     if (!ArchivoCSV.is_open())
     {
         return false;
     }
-
 
     ArchivoCSV << producto.getSku() << ","
                << producto.getCodigoDeBarras() << ","
@@ -54,14 +53,38 @@ bool ProductosArchivo::agregarProductoAlArchivo(Productos &producto)
                << producto.getPrecioProducto() << ","
                << producto.getCategoria() << ","
                << "false" << "\n";
-
-
     ArchivoCSV.close();
     return true;
 }
+///VER SI PUEDO USARLO O NO, EN CASO CONTRARIO, DESCARTAR
+/*
+void ProductosArchivo::leerUnProducto(Productos &producto, int productoABuscar)
+{
+    ifstream ArchivoCSV("ListaProductos.csv");
+
+    if (!ArchivoCSV.is_open())
+    {
+        return;
+    }
+    ProductosArchivo ProArchivo;
+    string linea;
+    getline(ArchivoCSV, linea);
+
+    int totalProductos = ProArchivo.obtenerCantidadDeProductos();
+
+    for(int i = 0; i < totalProductos; i++)
+    {
+        getline(ArchivoCSV, linea);
+        stringstream informacionProducto(linea);
+        string producto;
 
 
-void ProductosArchivo::cargarProductos(Productos *listaDeProductos, int totalProductos)
+
+}
+*/
+
+///Esta funci¢n recibe un array din mico de productos y la cantidad de productos para leerlos
+void ProductosArchivo::leerProductos(Productos *listaDeProductos, int totalProductos)
 {
     ifstream ArchivoCSV("ListaProductos.csv");
 
@@ -73,7 +96,7 @@ void ProductosArchivo::cargarProductos(Productos *listaDeProductos, int totalPro
     string linea;
     getline(ArchivoCSV, linea);
 
-    for(int i = 0; i < totalProductos ; i++)
+    for(int i = 0; i < totalProductos; i++)
     {
         getline(ArchivoCSV, linea);
         stringstream informacionProducto(linea);
@@ -102,15 +125,33 @@ void ProductosArchivo::cargarProductos(Productos *listaDeProductos, int totalPro
         listaDeProductos[i].setCategoria(producto);
 
         getline(informacionProducto, producto, ',');
-        if (producto == "true")
-        {
-            listaDeProductos[i].setProductoEliminado(true);
-        }
-        else
-        {
-            listaDeProductos[i].setProductoEliminado(false);
-        }
+        (producto == "true" ? listaDeProductos[i].setProductoEliminado(true) : listaDeProductos[i].setProductoEliminado(false));
+
     }
 
     ArchivoCSV.close();
+}
+///Va a modificar el producto que le pasemos, hay que pasar la cantidad de productos y el ID del producto
+bool ProductosArchivo::modificarProducto(Productos *listaDeProductos, int totalProductos, int idProducto)
+{
+    ofstream ArchivoCSV("ListaProductos.csv");
+
+    if (!ArchivoCSV.is_open())
+    {
+        return false;
+    }
+
+    ProductosArchivo ProArchivo;
+
+    string idDelProducto = to_string(idProducto);
+
+    ArchivoCSV << "sku,codigoDeBarras,nombreProducto,stockMinimo,StockActual,precioProducto,categoriaProducto,productoEliminado\n";
+    ArchivoCSV.close();
+
+    for (int i = 0; i < totalProductos ; i++)
+    {
+        ProArchivo.agregarProductoAlArchivo(listaDeProductos[i]);
+    }
+
+    return true;
 }

@@ -20,7 +20,7 @@ class Clientes: public Persona
         bool agregarCliente();
         bool modificarCliente(Clientes cliente, int posicion);
         void mostrarCliente(Clientes cliente);
-        bool cambiarEstadoEliminado(Clientes cliente, bool estado);
+        void cambiarEstadoEliminado(Clientes &cliente, bool estado);
         void listarClientes(bool eliminado);
 
 

@@ -116,15 +116,7 @@ void ClientesArchivo::leerCliente(Clientes *listaCliente)
 
         ///Asigna si est  o no eliminado el cliente
         getline(informacionCliente, clienteString, ',');
-        if (clienteString == "true")
-        {
-            listaCliente[i].setEliminado(true);
-        }
-        else
-        {
-
-            listaCliente[i].setEliminado(false);
-        }
+        clienteString == "true" ? listaCliente[i].setEliminado(true) : listaCliente[i].setEliminado(false);
     }
     ArchivoCSV.close();
 }
@@ -176,15 +168,8 @@ Clientes ClientesArchivo::buscarCliente(Clientes &cliente,int posicion)
             cliente.setDireccionDelCliente(data100);
 
             getline(informacionCliente, clienteString, ',');
-            if (clienteString == "true")
-            {
-                cliente.setEliminado(true);
-            }
-            else
-            {
+            clienteString == "true" ? cliente.setEliminado(true) : cliente.setEliminado(false);
 
-                cliente.setEliminado(false);
-            }
             break;
         }
     }
@@ -228,32 +213,20 @@ bool ClientesArchivo::modificarClienteArchivo(Clientes &cliente, int posicion)
         return false;
     }
 
-    ///PREGUNTAR POR EL TRUE/FALSE
 
     ArchivoCSV << "id,nombre,apellido,email,numeroDeTelefono,direccion,eliminado\n";
     for (int i = 0; i < cantidadDeClientes; i++)
     {
-        if (listaClientes[i].getEliminado())
-        {
             ArchivoCSV << listaClientes[i].getNumCliente() << ","
                        << listaClientes[i].getNombre() << ","
                        << listaClientes[i].getApellido() << ","
                        << listaClientes[i].getMail() << ","
                        << listaClientes[i].getNumTelefono() << ","
                        << listaClientes[i].getDireccionDelCliente() << ","
-                       << "true" << "\n";
-        }
-        else
-        {
-            ArchivoCSV << listaClientes[i].getNumCliente() << ","
-                       << listaClientes[i].getNombre() << ","
-                       << listaClientes[i].getApellido() << ","
-                       << listaClientes[i].getMail() << ","
-                       << listaClientes[i].getNumTelefono() << ","
-                       << listaClientes[i].getDireccionDelCliente() << ","
-                       << "false" << "\n";
-        }
+                       << (listaClientes[i].getEliminado() ? "true" : "false") << "\n";
     }
+
+    /// Buscar por if ternario
 
     ArchivoCSV.close();
     delete[] listaClientes;

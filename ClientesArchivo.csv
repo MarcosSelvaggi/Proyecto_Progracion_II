@@ -999,5 +999,5 @@ id,nombre,apellido,email,numeroDeTelefono,direccion,eliminado
 998,Kimbra,Idill,kidillrp@deviantart.com,7488391524,951 Park Meadow Place,false
 999,Ali,Ferreira,aferreirarq@desdev.cn,6745219747,8 Anderson Park,true
 1000,Franchot,Petrovykh,fpetrovykhrr@fema.gov,5263707277,164 Alpine Center,true
-1001,Marco,Das,das.sel@mail.com,41231231,direccion 123,false
+1001,Marco,Das,das.sel@mail.com,41231231,direccion 123,true
 1002,Daniel,Ortega,danimail@mail.com,4123124213,1234 calle falsa,false

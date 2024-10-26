@@ -23,7 +23,7 @@
 1729795861 c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\empleados.h
 	"Persona.h"
 
-1729616068 source:c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\empleados.cpp
+1729795983 source:c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\empleados.cpp
 	"Empleados.h"
 	"EmpleadosArchivos.h"
 	<stdio.h>
@@ -31,13 +31,14 @@
 	<ctype.h>
 	<iostream>
 
-1729706921 source:c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\main.cpp
+1729877798 source:c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\main.cpp
 	<iostream>
 	"Empleados.h"
 	"Clientes.h"
 	"Productos.h"
+	<windows.h>
 
-1729715205 source:c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\clientesarchivo.cpp
+1729811805 source:c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\clientesarchivo.cpp
 	"ClientesArchivo.h"
 	"Clientes.h"
 	<fstream>
@@ -49,28 +50,30 @@
 1729703964 c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\clientesarchivo.h
 	"Clientes.h"
 
-1729704065 source:c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\clientes.cpp
+1729871099 source:c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\clientes.cpp
 	"Clientes.h"
 	"ClientesArchivo.h"
 	<iostream>
 	<stdio.h>
 	<string.h>
 
-1729703787 c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\clientes.h
+1729807691 c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\clientes.h
 	"Persona.h"
 
-1729715555 source:c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\productos.cpp
+1729878187 source:c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\productos.cpp
 	"Productos.h"
 	"ProductosArchivo.h"
 	<iostream>
+	<stdlib.h>
+	<time.h>
 
-1729714746 c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\productos.h
+1729878080 c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\productos.h
 	<string>
 
-1729712915 c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\productosarchivo.h
+1729875965 c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\productosarchivo.h
 	"Productos.h"
 
-1729715506 source:c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\productosarchivo.cpp
+1729876731 source:c:\users\marco\onedrive\documents\facultad\segundo cuatrimestre\programacion ii\proyectos finales\proyecto v4\proyecto\productosarchivo.cpp
 	"ProductosArchivo.h"
 	"Productos.h"
 	<fstream>

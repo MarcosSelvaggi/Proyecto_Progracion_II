@@ -2,11 +2,33 @@
 #include "Empleados.h"
 #include "Clientes.h"
 #include "Productos.h"
+#include <windows.h>
 
 using namespace std;
 
 int main()
 {
+    /*
+    ///Cambia el tama¤o de la consola
+    system("mode 650");
+
+    ///Pone la consola en pantalla completa
+    HWND consoleWindow = GetConsoleWindow();
+    ShowWindow(consoleWindow, SW_MAXIMIZE);
+
+    ///Cambia el tama¤o de la fuente, toca ver un poco m s
+    static CONSOLE_FONT_INFOEX  fontex;
+    fontex.cbSize = sizeof(CONSOLE_FONT_INFOEX);
+    HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
+    GetCurrentConsoleFontEx(hOut, 0, &fontex);
+    fontex.FontWeight = 700;
+    fontex.dwFontSize.X = 36;
+    fontex.dwFontSize.Y = 36;///Cambia el tama¤o de la fuente
+
+    /// Con esto cambia la fuente de la consola, quise poner Calibri pero se ve fea :(
+    //wcscpy(fontex.FaceName, L"Calibri");
+    SetCurrentConsoleFontEx(hOut, 0, &fontex);
+    */
     int opcion;
     do
     {

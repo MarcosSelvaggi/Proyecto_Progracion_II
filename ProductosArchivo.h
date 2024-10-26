@@ -7,7 +7,10 @@ class ProductosArchivo
         ProductosArchivo();
         int obtenerCantidadDeProductos();
         bool agregarProductoAlArchivo(Productos &producto);
-        void cargarProductos(Productos *listaDeProductos, int totalProductos);
+        ///Por el momento est  descartada la siguiente funci¢n
+        //void leerUnProducto(Productos producto, int productoABuscar);
+        void leerProductos(Productos *listaDeProductos, int totalProductos);
+        bool modificarProducto(Productos *listaDeProductos, int totalProductos, int idProducto);
 
 };
 

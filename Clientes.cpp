@@ -42,7 +42,6 @@ char* Clientes::getDireccionDelCliente()
 }
 
 ///Funciones
-
 void Clientes::menuClientes()
 {
     int opcion;
@@ -111,7 +110,7 @@ void Clientes::menuClientes()
             }
             break;
         case 4:
-            cout << "¨Qu‚ cliente desea eliminar?";
+            cout << "¨Qu‚ cliente desea eliminar?" << endl;
             cin >> posicion;
             if (posicion <= ClArchivos.obtenerCantidadDeClientes())
             {
@@ -132,7 +131,7 @@ void Clientes::menuClientes()
             }
             break;
         case 5:
-            cout << "¨Qu‚ cliente desea eliminar?";
+            cout << "¨Qu‚ cliente desea eliminar?" << endl;
             cin >> posicion;
             if (posicion <= ClArchivos.obtenerCantidadDeClientes())
             {
@@ -267,7 +266,7 @@ bool Clientes::modificarCliente(Clientes cliente, int posicion)
 
 void Clientes::mostrarCliente(Clientes cliente)
 {
-    cout << "------------------------" << endl;
+    cout << "--------------------------------------" << endl;
     cout << "ID del cliente: " << cliente.getNumCliente() << endl;
     cout << "Nombre: " << cliente.getNombre() << endl;
     cout << "Apellido: " << cliente.getApellido() << endl;
@@ -275,11 +274,9 @@ void Clientes::mostrarCliente(Clientes cliente)
     cout << "Numero de tel‚fono: " << cliente.getNumTelefono() << endl;
     cout << "Direcci¢n: " << cliente.getDireccionDelCliente() << endl;
 }
-bool Clientes::cambiarEstadoEliminado(Clientes cliente, bool estado)
+void Clientes::cambiarEstadoEliminado(Clientes &cliente, bool estado)
 {
-    ClientesArchivo ClArchivo;
     cliente.setEliminado(estado);
-    return ClArchivo.guardarCliente(cliente);
 }
 void Clientes::listarClientes(bool eliminado)
 {
@@ -300,6 +297,9 @@ void Clientes::listarClientes(bool eliminado)
             noHayClientes = false;
             cliente.mostrarCliente(listaClientes[i]);
             vueltas++;
+        }
+        else
+        {
         }
         if (vueltas == 10)
         {
