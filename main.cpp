@@ -14,7 +14,7 @@
             *Metodo para crear los recibos de los cliente
         *Crear los informes
 
-        *"Baja prioriad", realizar si hay tiempo y todo lo de arriba se termino
+        *"Baja prioridad", realizar si hay tiempo y todo lo de arriba se termino
             *Cambiar la forma en como se manejan los clientes y empleados
                 *Todo a string y con csv, en vez de char y archivo dat
 */
@@ -56,6 +56,7 @@ int main()
         cout << "5 - Gesti¢n de pedidos" << endl;
         cout << "6 - Informes" << endl;
         cout << "0 - Salir " << endl;
+        cout << "-----------------------------" << endl;
         cin >> opcion;
         system("cls");
         switch (opcion)

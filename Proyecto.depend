@@ -169,7 +169,7 @@
 1729703964 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\clientesarchivo.h
 	"Clientes.h"
 
-1729811805 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\clientesarchivo.cpp
+1729982055 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\clientesarchivo.cpp
 	"ClientesArchivo.h"
 	"Clientes.h"
 	<fstream>
@@ -202,14 +202,14 @@
 	<stdio.h>
 	<string.h>
 
-1729878187 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\productos.cpp
+1729980428 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\productos.cpp
 	"Productos.h"
 	"ProductosArchivo.h"
 	<iostream>
 	<stdlib.h>
 	<time.h>
 
-1729878080 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\productos.h
+1729980405 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\productos.h
 	<string>
 
 1729964564 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\productosarchivo.h
@@ -223,17 +223,29 @@
 	<string>
 	<sstream>
 
-1729959956 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\main.cpp
+1729984751 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\main.cpp
 	<iostream>
 	"Empleados.h"
 	"Clientes.h"
 	"Productos.h"
+	"Pedidos.h"
 	<windows.h>
 
-1729968980 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\pedidos.cpp
-	"Pedidos.h"
+1729988788 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\pedidos.cpp
 	<iostream>
+	"Pedidos.h"
+	"PedidosArchivo.h"
+	"Productos.h"
+	"ProductosArchivo.h"
 
-1729968944 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\pedidos.h
+1729980723 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\pedidos.h
 	<string>
+
+1729983446 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\pedidosarchivo.cpp
+	"PedidosArchivo.h"
+	<string>
+	<fstream>
+
+1729983123 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\pedidosarchivo.h
+	"Pedidos.h"
 

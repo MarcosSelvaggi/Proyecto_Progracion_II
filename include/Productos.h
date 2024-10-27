@@ -31,11 +31,15 @@ class Productos
         ///Funciones
         void menuProductos();
         bool agregarProducto();
-        void buscarUnProducto(std::string busqueda, int visualizarInfo);
+        void buscarUnProducto(std::string busqueda, bool visualizarInfo);
         void imprimirElProducto(Productos producto, bool infoResumida);
         void modificarProducto();
         void mostrarProductos(bool estaActivo, int &cantidad);
         void modificarStockActual(Productos &producto, int cantidadDeProductos);
+        ///Funci¢n para buscar productos y cargarlos en la lista de compras para los pedidos
+        void buscarUnProducto(Productos *listaCompras, std::string busqueda, int &cantidadDeProductosEncontrados);
+
+
 
     protected:
         std::string _SKU;

@@ -78,6 +78,8 @@ void Clientes::menuClientes()
         case 2:
             cout << "Ingrese el ID del cliente a buscar: ";
             cin >> posicion;
+            ///Compara el n£mero ingresado con la cantidad de clientes que hay, si el n£mero ingresado es mayor a la cantidad de clientes
+            ///devuelve error
             if (posicion <= ClArchivos.obtenerCantidadDeClientes())
             {
                 ClArchivos.buscarCliente(cliente, posicion);
@@ -152,6 +154,7 @@ void Clientes::menuClientes()
             }
             break;
         case 6:
+            ///La funci¢n listar puede recibir un booleano, dependiendo si recibe false o true muestra o no las cuentas inactivas
             cliente.listarClientes(false);
             break;
         case 7:
@@ -195,6 +198,7 @@ bool Clientes::agregarCliente()
 
     return ClArchivo.guardarCliente(cliente);
 }
+///Recibe un Cliente y su ID de cliente, luego lo manda para guardar
 bool Clientes::modificarCliente(Clientes cliente, int posicion)
 {
     ClientesArchivo ClArchivo;
@@ -274,10 +278,12 @@ void Clientes::mostrarCliente(Clientes cliente)
     cout << "Numero de tel‚fono: " << cliente.getNumTelefono() << endl;
     cout << "Direcci¢n: " << cliente.getDireccionDelCliente() << endl;
 }
+
 void Clientes::cambiarEstadoEliminado(Clientes &cliente, bool estado)
 {
     cliente.setEliminado(estado);
 }
+///Esta funci¢n lista a los clientes, si recibe false, muestra a los activos, si recibe true muestra a los inactivos
 void Clientes::listarClientes(bool eliminado)
 {
     ClientesArchivo ClArchivo;

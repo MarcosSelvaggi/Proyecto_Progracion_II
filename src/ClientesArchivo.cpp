@@ -36,7 +36,7 @@ int ClientesArchivo::obtenerCantidadDeClientes()
 
     return total;
 }
-
+///Esta funci¢n recibe un cliente y lo guarda sin eliminar el csv
 bool ClientesArchivo::guardarCliente(Clientes &cliente)
 {
     ofstream ArchivoCSV("ClientesArchivo.csv", fstream::app);
@@ -83,6 +83,11 @@ void ClientesArchivo::leerCliente(Clientes *listaCliente)
         ///
         stringstream informacionCliente(linea);
         string clienteString;
+
+        /*
+        Si hay tiempo hay que modificar esto para que sea todo string as¡ no hay que hacer modificaciones, ya que al
+        recibir string del getline hay que modificar todo con c_str para que pueda entrar en los char de Persona/Cliente
+        */
 
         ///Asigna el ID del cliente
         getline(informacionCliente, clienteString, ',');
@@ -178,7 +183,8 @@ Clientes ClientesArchivo::buscarCliente(Clientes &cliente,int posicion)
 
     return cliente;
 }
-
+///Esta funci¢n carga los clientes a un array din mico, despu‚s recorre ese array hasta llegar a la posici¢n del cliente que modificamos,
+///luego carga los datos del cliente modificado en el array y procede a guardar todo en el csv
 bool ClientesArchivo::modificarClienteArchivo(Clientes &cliente, int posicion)
 {
     ClientesArchivo ClArchivo;
@@ -194,8 +200,6 @@ bool ClientesArchivo::modificarClienteArchivo(Clientes &cliente, int posicion)
     {
         if(cliente.getNumCliente() == listaClientes[i].getNumCliente())
         {
-
-            //id,nombre,apellido,email,numeroDeTelefono ,direccion,eliminado
             listaClientes[i].setNombre(cliente.getNombre());
             listaClientes[i].setApellido(cliente.getApellido());
             listaClientes[i].setMail(cliente.getMail());
@@ -206,6 +210,7 @@ bool ClientesArchivo::modificarClienteArchivo(Clientes &cliente, int posicion)
         }
     }
 
+    ///Al no poner "fstream::app" o "ios::app", se sobreescribe la informaci¢n en el csv, dejando el archivo en limpio
     ofstream ArchivoCSV("ClientesArchivo.csv");
 
     if (!ArchivoCSV.is_open())
@@ -213,7 +218,7 @@ bool ClientesArchivo::modificarClienteArchivo(Clientes &cliente, int posicion)
         return false;
     }
 
-
+    ///Al haber eliminao todo en el csv, se agrega esta l¡nea como ¡ndice para el csv
     ArchivoCSV << "id,nombre,apellido,email,numeroDeTelefono,direccion,eliminado\n";
     for (int i = 0; i < cantidadDeClientes; i++)
     {
@@ -223,10 +228,10 @@ bool ClientesArchivo::modificarClienteArchivo(Clientes &cliente, int posicion)
                        << listaClientes[i].getMail() << ","
                        << listaClientes[i].getNumTelefono() << ","
                        << listaClientes[i].getDireccionDelCliente() << ","
+                        /// Buscar por if ternario
                        << (listaClientes[i].getEliminado() ? "true" : "false") << "\n";
     }
 
-    /// Buscar por if ternario
 
     ArchivoCSV.close();
     delete[] listaClientes;

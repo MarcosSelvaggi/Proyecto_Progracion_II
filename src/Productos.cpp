@@ -90,9 +90,7 @@ bool Productos::getProductoEliminado()
     return _productoEliminado;
 }
 
-
 ///FUNCIONES
-
 void Productos::menuProductos()
 {
     system("cls");
@@ -166,6 +164,7 @@ void Productos::menuProductos()
     while (opcion != 0);
 }
 
+///Permite agregar un producto a la lista de productos
 bool Productos::agregarProducto()
 {
     ProductosArchivo PtoArchivo;
@@ -174,9 +173,9 @@ bool Productos::agregarProducto()
     float precioProducto;
 
     srand(time(NULL));
-    int numeroParaSKU = rand() % 10000000;
+    int numeroParaSKU = rand() % 10000000; ///Asigna de forma al azar el SKU
 
-    SKU = to_string(numeroParaSKU);
+    SKU = to_string(numeroParaSKU); ///Lo pasa a string para poder guardarlo
 
     cout << "Ingrese el c¢digo de barras: ";
     cin >> codigoDeBarras;
@@ -199,10 +198,12 @@ bool Productos::agregarProducto()
 
     Productos producto(SKU, codigoDeBarras, nombreProducto, stockMinimo, stockActual, precioProducto, categoriaProducto);
 
-    return PtoArchivo.agregarProductoAlArchivo(producto);
+    return PtoArchivo.agregarProductoAlArchivo(producto); ///Retorna true si pudo guardar o no el producto
 }
 
-void Productos::buscarUnProducto(string busqueda, int visualizarInfo)
+///Realiza la busqueda de los productos, recibe un string con lo que est  buscando, tanto nombre como SKU
+///Tambi‚n recibe un booleano para ver si imprime o no toda la informaci¢n del producto o s¢lo nombre y precio
+void Productos::buscarUnProducto(string busqueda, bool visualizarInfo)
 {
     ProductosArchivo ProArchivo;
     Productos *listaProductos;
@@ -241,16 +242,65 @@ void Productos::buscarUnProducto(string busqueda, int visualizarInfo)
 
     delete[] listaProductos;
 }
+///Funci¢n usada por la clase producto, revise una lista de compras, luego compara la busqueda que recibe
+///con el otro array dinamico que contiene todos los productos, y si el nombre del producto coincide con la busqueda
+///la informaci¢n del producto es guardada dentro del array din mico que recibi¢, tambi‚n tiene la cantidad de productos
+///que fueron encontrados, esta variable se usa luego para hacer el bucle for y recorrer la lista de compras
+void Productos::buscarUnProducto(Productos *listaCompras, string busqueda, int &cantidadDeProductosEncontrados)
+{
+    ProductosArchivo ProArchivo;
+    Productos *listaProductos;
+    int  totalProductos = ProArchivo.obtenerCantidadDeProductos();
+    listaProductos = new Productos[totalProductos];
 
+    ProArchivo.leerProductos(listaProductos, totalProductos);
+
+    ///Forma legible que pone todas las letras en minusculas para que no sea case sensitive la busqueda
+    for (auto& x : busqueda)
+    {
+        x = tolower(x);
+    }
+
+    for (int i = 0; i < totalProductos; i++)
+    {
+        string nombreProducto = listaProductos[i].getNombreProducto();
+        ///Igual que antes, esto pone el nombre del producto en minusculas para que la busqueda sea case sensitive
+        for (auto& x : nombreProducto)
+        {
+            x = tolower(x);
+        }
+        ///Va a buscar en el nombre del producto, si encuentra el producto, va a cargarlo de un array a otro
+        ///Una vez cargado el array va a sumar 1 a la variable que se encarga de manejar la lista de compras
+        if (nombreProducto.find(busqueda) != string::npos)
+        {
+            listaCompras[cantidadDeProductosEncontrados].setSku(listaProductos[i].getSku());
+            listaCompras[cantidadDeProductosEncontrados].setNombreProducto(listaProductos[i].getNombreProducto());
+            listaCompras[cantidadDeProductosEncontrados].setPrecio(listaProductos[i].getPrecioProducto());
+            listaCompras[cantidadDeProductosEncontrados].setCategoria(listaProductos[i].getCategoria());
+            listaCompras[cantidadDeProductosEncontrados].setStockActual(listaProductos[i].getStockActual());
+            listaCompras[cantidadDeProductosEncontrados].setStockMinimo(listaProductos[i].getStockMinimo());
+            listaCompras[cantidadDeProductosEncontrados].setCodigoDeBarras(listaProductos[i].getCodigoDeBarras());
+            listaCompras[cantidadDeProductosEncontrados].setProductoEliminado(listaProductos[i].getProductoEliminado());
+
+            ///Esta variable se encarga de que cuando se encuentre un producto y se agregue a la listaCompras, este sume 1 para
+            ///Poder llevar el array listaCompras
+            cantidadDeProductosEncontrados++;
+        }
+    }
+
+    delete[] listaProductos;
+}
+
+///Imprime el producto por pantalla, recibe un producto y con el booleano se ve si la info es completa o no
 void Productos::imprimirElProducto(Productos producto, bool infoResumida)
 {
-    cout << "SKU: " << producto.getSku() << endl;
     cout << "Producto: " << producto.getNombreProducto() << endl;
     cout << "Precio: $" << producto.getPrecioProducto() << endl;
-    cout << "Categoria: " << producto.getCategoria() << endl;
 
     if (!infoResumida)
     {
+        cout << "SKU: " << producto.getSku() << endl;
+        cout << "Categoria: " << producto.getCategoria() << endl;
         cout << "Codigo de barras: " << producto.getCodigoDeBarras() << endl;
         cout << "Stock actual: " << producto.getStockActual() << endl;
         cout << "Stock minimo: " << producto.getStockMinimo() << endl;
@@ -259,6 +309,7 @@ void Productos::imprimirElProducto(Productos producto, bool infoResumida)
 
 }
 
+///Permite la modificaci¢n de un producto para luego guardarlo en el archivo
 void Productos::modificarProducto()
 {
     string busqueda, numBusqueda;
@@ -278,13 +329,16 @@ void Productos::modificarProducto()
     cout << endl << "Introduzca el SKU" << endl;
     cin >> numBusqueda;
 
-    bool noEncontrado = true; /// Este bool es para revisar si encontr¢ o no al producto
+    /// Este bool es para revisar si encontr¢ o no al producto, caso contrario la funci¢n imprime que no lo encontr¢
+    bool noEncontrado = true;
 
     ProductosArchivo ProArchivo;
+    int  totalProductos = ProArchivo.obtenerCantidadDeProductos();
+
     Productos productoNuevo;
     Productos *listaProductos;
-    int  totalProductos = ProArchivo.obtenerCantidadDeProductos();
     listaProductos = new Productos[totalProductos];
+
     ProArchivo.leerProductos(listaProductos, totalProductos);
 
     for (int i = 0; i < totalProductos; i++)
@@ -378,7 +432,9 @@ void Productos::modificarProducto()
 
     delete[] listaProductos;
 }
-
+///Esta funci¢n se encarga de llamar a la que muestra la informaci¢n por pantalla
+///Recibe un booleano que es para verificar que muestre los activo/inactivos seg£n sea necesario
+///Tambi‚n recibe por referencia un entero que sirve para contar los productos con dicho estado (Activo/inactivo)
 void Productos::mostrarProductos(bool estaActivo, int &cantidad)
 {
     ProductosArchivo ProArchivo;

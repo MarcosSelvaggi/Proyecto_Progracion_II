@@ -1,6 +1,6 @@
 sku,codigoDeBarras,nombreProducto,stockMinimo,StockActual,precioProducto,categoriaProducto,productoEliminado
 76767,609003982922,Jabon,0,86,2514.63,15,false
-23187,699839192824,Leche Entera La Serenisima,0,109,588.36,15,true
+23187,699839192824,Leche Entera La Serenisima,0,0,588.36,15,true
 72849,153733957058,Papel para banio,0,89,2259.65,12,false
 46021,564905096419,Galletas de chocolate,0,37,1891.16,14,true
 84268,395639057756,Manzana roja,0,96,1394.42,10,false
