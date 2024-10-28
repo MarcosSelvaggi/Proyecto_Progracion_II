@@ -14,7 +14,9 @@ class PedidosArchivo
         */
 
         void limpiarArchivoTemporal();
+        int obtenerCantidadDeProductosEnCarrito();
         bool guardarPedidoEnArchivoTemporal(Pedidos &pedido);
+        void leerPedidoEnArchivoTemporal(Pedidos *pedido);
 
         void generarFactura(Pedidos &pedido);
 

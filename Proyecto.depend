@@ -154,7 +154,7 @@
 	<string>
 	<sstream>
 
-1729968990 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\clientes.cpp
+1729992766 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\clientes.cpp
 	"Clientes.h"
 	"ClientesArchivo.h"
 	<iostream>
@@ -169,7 +169,7 @@
 1729703964 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\clientesarchivo.h
 	"Clientes.h"
 
-1729982055 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\clientesarchivo.cpp
+1729993131 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\clientesarchivo.cpp
 	"ClientesArchivo.h"
 	"Clientes.h"
 	<fstream>
@@ -202,7 +202,7 @@
 	<stdio.h>
 	<string.h>
 
-1729980428 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\productos.cpp
+1729992532 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\productos.cpp
 	"Productos.h"
 	"ProductosArchivo.h"
 	<iostream>
@@ -216,7 +216,7 @@
 	"Productos.h"
 	<string>
 
-1729966614 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\productosarchivo.cpp
+1730128966 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\productosarchivo.cpp
 	"ProductosArchivo.h"
 	"Productos.h"
 	<fstream>
@@ -231,21 +231,23 @@
 	"Pedidos.h"
 	<windows.h>
 
-1729988788 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\pedidos.cpp
+1730137943 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\pedidos.cpp
 	<iostream>
 	"Pedidos.h"
 	"PedidosArchivo.h"
 	"Productos.h"
 	"ProductosArchivo.h"
+	<time.h>
 
 1729980723 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\pedidos.h
 	<string>
 
-1729983446 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\pedidosarchivo.cpp
+1730137862 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\pedidosarchivo.cpp
 	"PedidosArchivo.h"
 	<string>
 	<fstream>
+	<sstream>
 
-1729983123 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\pedidosarchivo.h
+1730137253 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\pedidosarchivo.h
 	"Pedidos.h"
 

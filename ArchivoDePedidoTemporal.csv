@@ -1,1 +1,2 @@
-IdPedido, NumCliente, LegajoEmpleado, IdProducto, NombreProducto, CantidadSolicitada, PrecioUnitario, Anio, Mes, Dia 
+IdProducto, NombreProducto, CantidadSolicitada, PrecioUnitario 
+84268,Manzana roja,10,1394.42

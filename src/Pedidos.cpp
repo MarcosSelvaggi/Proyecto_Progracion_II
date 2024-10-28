@@ -3,7 +3,12 @@
 #include "PedidosArchivo.h"
 #include "Productos.h"
 #include "ProductosArchivo.h"
+#include <time.h>
+/*
+Como usar el time.h para obtener el d¡a, mes y anio y poder usarlos en los pedidos
+https://www.youtube.com/watch?v=0DtPa0HYQek
 
+*/
 using namespace std;
 
 Pedidos::Pedidos()
@@ -113,10 +118,19 @@ void Pedidos::setAnio(string anio)
 ///Metodos
 void Pedidos::realizarPedido()
 {
+    /*
+    time_t diaActual = time(0);
+    tm *ltm = localtime(&diaActual);
+    cout << "A¤o: " << 1900 + ltm->tm_year << endl;
+    cout << "Mes: " << 1 + ltm->tm_mon << endl;
+    cout << "Dia: " << ltm->tm_mday << endl;
+    cout << endl;
+    */
     PedidosArchivo PedidoArchivo;
+    ///Esto limpia el archivo temporal cada vez que entramos a la parte de realizar un pedido
     PedidoArchivo.limpiarArchivoTemporal();
-    int opcion;
     Pedidos pedido;
+    int opcion;
     do
     {
         cout << " ------------------------------------------ " << endl;
@@ -126,6 +140,7 @@ void Pedidos::realizarPedido()
         cout << "| 3 - Ajustar la cantidad de un producto   |" << endl;
         cout << "| 4 - Elimiar un producto del carrito      |" << endl;
         cout << "| 5 - Realizar pago                        |" << endl;
+        cout << "| 0 - Salir                                |" << endl;
         cout << " ------------------------------------------ " << endl;
         cin >> opcion;
         switch (opcion)
@@ -160,23 +175,22 @@ void Pedidos::agregarProductosAlPedido(Pedidos pedido)
     ProductosArchivo ProArchivo;
     Productos producto;
     Productos *listaDeProductos;
-
-    int cantidadDeProductosEncontrados = 0, productoSolicitado;
-
     listaDeProductos = new Productos[ProArchivo.obtenerCantidadDeProductos()];
 
+    ///Variables auxiliares para la busqueda de los productos
+    int cantidadDeProductosEncontrados = 0, productoSolicitado = 0;
     string busqueda;
+    bool productosNoEncontrados = true, variableProvisoria;///Variable con nombre provisorio para el while mientras busca el producto
+
     cout << "Indique el nombre del producto a buscar" << endl;
     cin >> busqueda;
 
-    bool productosNoEncontrados = true;
-
     producto.buscarUnProducto(listaDeProductos, busqueda, cantidadDeProductosEncontrados);
-
     for (int i = 0; i < cantidadDeProductosEncontrados; i++)
     {
         int stockActualDelProducto = atoi(listaDeProductos[i].getStockActual().c_str());
-        if (stockActualDelProducto != 0)
+        int stockMinimoDelProducto = atoi(listaDeProductos[i].getStockMinimo().c_str());
+        if (stockActualDelProducto > stockMinimoDelProducto)
         {
             cout << "-----------------------------" << endl;
             cout << "Producto Nø: " << i+1 << endl;
@@ -184,53 +198,97 @@ void Pedidos::agregarProductosAlPedido(Pedidos pedido)
             productosNoEncontrados = false;
         }
     }
+
     ///Si no pudo encontrar el producto en la lista de productos o este tiene stock en 0, va a avisarle al cliente
     ///Y saltearse los pasos para agregar el producto al carrito
-    bool variableProvisoria;
     if (productosNoEncontrados)
     {
         cout << "No se ha encontrado ning£n :( " << endl;
     }
     else
     {
-        ///Variable provisoria para el while mientras busca el pedido
         cout << "Ingrese el n£mero del producto que desea llevar, si no desea llevar ninguno presione 0" << endl;
         do
         {
-            ///Revisar porqeu este if no funciona, sin importar que n£mero ingrese el usuario
             variableProvisoria = false;
             cin >> productoSolicitado;
-            if (productoSolicitado == 0) {
+            if (productoSolicitado == 0)
+            {
                 cout << "Entendido" << endl;
             }
-            else if (productoSolicitado <= -1 && productoSolicitado > (cantidadDeProductosEncontrados + 1))
+            else if (productoSolicitado <= -1 || (productoSolicitado > (cantidadDeProductosEncontrados)))
             {
                 variableProvisoria = true;
                 cout << "Error, ingrese un n£mero de producto correcto" << endl;
             }
-        }
-        while (variableProvisoria == true);
-
-        cout << "Producto solicitado: " << productoSolicitado << " y variable provisoria " << variableProvisoria << endl;
-        int cantidadDeUnidades, stockActualDelProducto = atoi(listaDeProductos[productoSolicitado].getStockActual().c_str());
-        cout << "Cantidad de art¡culos: ";
-        do
-        {
-            cin >> cantidadDeUnidades;
-            if (cantidadDeUnidades > stockActualDelProducto)
+            else
             {
-                cout << "Lo sentimos, s¢lo se encuentran disponibles " << stockActualDelProducto << " de unidades" << endl;
+                cout << "Cantidad de art¡culos a agregar al carrito: ";
+                int cantidadDeUnidades = 0;
+                int stockActualDelProducto = atoi(listaDeProductos[productoSolicitado - 1].getStockActual().c_str());
+                do
+                {
+                    cin >> cantidadDeUnidades;
+                    if (cantidadDeUnidades > stockActualDelProducto)
+                    {
+                        cout << "Lo sentimos, s¢lo se encuentran disponibles " << stockActualDelProducto << " de unidades" << endl;
+                    }
+                }
+                while (cantidadDeUnidades > stockActualDelProducto);
+                ///Agregando la lista de productos al archivo temporal
+                pedido.setIdDelProducto(listaDeProductos[productoSolicitado - 1].getSku());
+                pedido.setNombreDelProducto(listaDeProductos[productoSolicitado - 1].getNombreProducto());
+                pedido.setCantidadSolicitada(to_string(cantidadDeUnidades));
+                pedido.setPrecioUnitario(listaDeProductos[productoSolicitado - 1].getPrecioProducto());
+                if (PedidoArchivo.guardarPedidoEnArchivoTemporal(pedido))
+                {
+                    cout << "Se ha agregado el producto al carrito de compras" << endl;
+                }
+                else
+                {
+                    cout << "No se ha podido guardar el producto en el carrito de compras" << endl;
+                }
             }
         }
-        while (cantidadDeUnidades > stockActualDelProducto);
-        listaDeProductos[productoSolicitado].getStockActual();
-
-
-        //PedidoArchivo.guardarPedidoEnArchivoTemporal(listaDeProductos[productoSolicitado]);
+        while (variableProvisoria == true);
     }
+    delete[] listaDeProductos;
+
 }
 
-void Pedidos::mostrarCarritoDeCompras() {}
+void Pedidos::mostrarCarritoDeCompras()
+{
+    bool carritoVacio = true;
+    PedidosArchivo pedidoArchivo;
+    Pedidos *pedidoArray;
+    pedidoArray = new Pedidos[pedidoArchivo.obtenerCantidadDeProductosEnCarrito()];
+    pedidoArchivo.leerPedidoEnArchivoTemporal(pedidoArray);
+
+    float totalCarrito = 0.f, cantidadDeProductos = 0.f;
+
+    for (int i = 0; i < pedidoArchivo.obtenerCantidadDeProductosEnCarrito(); i++)
+    {
+
+        cout << pedidoArray[i].getNombreDelProducto() << " | " << pedidoArray[i].getPrecioUnitario() << endl;
+        cantidadDeProductos = stof(pedidoArray[i].getCantidadSolicitada());
+        totalCarrito += (pedidoArray[i].getPrecioUnitario() * cantidadDeProductos);
+        carritoVacio = false;
+    }
+
+    if (carritoVacio)
+    {
+        cout << "El carrito est  vac¡o, intenta agregando m s productos :)" << endl;
+    }
+    else
+    {
+        cout << "Total $"<<  totalCarrito << endl;
+    }
+
+    delete[] pedidoArray;
+}
 void Pedidos::ajustarCantidadDeProducto() {}
 void Pedidos::eliminarUnProductoDelCarrito() {}
-bool Pedidos::realizarPago() {}
+bool Pedidos::realizarPago()
+{
+    return true;
+}

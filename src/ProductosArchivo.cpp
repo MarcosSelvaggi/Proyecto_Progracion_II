@@ -123,7 +123,7 @@ void ProductosArchivo::leerProductos(Productos *listaDeProductos, int totalProdu
         listaDeProductos[i].setPrecio(stof(producto.c_str()));
 
         getline(informacionProducto, producto, ',');
-        ProArchivo.obtenerCategoriaProducto(producto);  ///Revisar porque no devuelve el nombre de la categoria en vez del nombre
+        ProArchivo.obtenerCategoriaProducto(producto);  ///Corregido el problema de que no tra¡a la categoria
         listaDeProductos[i].setCategoria(producto);
 
         getline(informacionProducto, producto, ',');
@@ -173,8 +173,6 @@ void ProductosArchivo::obtenerCategoriaProducto(string &categoriaBuscada)
 
     while(getline(ArchivoCSV, linea))
     {
-        getline(ArchivoCSV, linea);
-
         stringstream buscarCategoria(linea);
 
         ///Obtenemos el id de la categoria y su nombre

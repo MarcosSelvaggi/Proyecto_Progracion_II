@@ -7,7 +7,7 @@ sku,codigoDeBarras,nombreProducto,stockMinimo,StockActual,precioProducto,categor
 15440,457042285719,Carne molida,0,4,349.52,14,false
 87785,473920841352,Fideos frescos,0,32,802.63,2,false
 71875,683020534920,Cerveza rubia,0,59,2022.57,9,true
-13714,137931573221,Agua mineral,0,69,1247.13,9,false
+13714,137931573221,Agua mineral,0,100,1247.13,9,false
 30718,144697392320,Gaseosa cola,0,38,2771.65,4,false
 59586,607457005720,Alimento para perros,0,100,2938.91,14,false
 17658,594781499398,Detergente,0,36,2090,12,false

@@ -1,6 +1,7 @@
 #include "PedidosArchivo.h"
 #include <string>
 #include <fstream>
+#include <sstream>
 
 using namespace std;
 
@@ -16,10 +17,31 @@ void PedidosArchivo::limpiarArchivoTemporal()
         return;
     }
 
-    ArchivoTemporal << "IdPedido, NumCliente, LegajoEmpleado, IdProducto, NombreProducto, CantidadSolicitada, PrecioUnitario, Anio, Mes, Dia \n";
+    ArchivoTemporal << "IdProducto, NombreProducto, CantidadSolicitada, PrecioUnitario \n";
 
     ArchivoTemporal.close();
 }
+int PedidosArchivo::obtenerCantidadDeProductosEnCarrito()
+{
+    ifstream ArchivoTemporal("ArchivoDePedidoTemporal.csv");
+
+    if (!ArchivoTemporal.is_open())
+    {
+        return -1;
+    }
+    int cantidad = 0;
+
+    string linea;
+    getline(ArchivoTemporal, linea);
+
+    while(getline(ArchivoTemporal, linea))
+    {
+        cantidad++;
+    }
+    ArchivoTemporal.close();
+    return cantidad;
+}
+
 bool PedidosArchivo::guardarPedidoEnArchivoTemporal(Pedidos &pedido)
 {
     ofstream ArchivoTemporal("ArchivoDePedidoTemporal.csv", ios::app);
@@ -29,20 +51,48 @@ bool PedidosArchivo::guardarPedidoEnArchivoTemporal(Pedidos &pedido)
         return false;
     }
 
-    ArchivoTemporal << pedido.getNumPedido() << ","
-                    << pedido.getNumCliente() << ","
-                    << pedido.getNumLegajoEmpleado() << ","
-                    << pedido.getIdDelProducto() << ","
+    ArchivoTemporal << pedido.getIdDelProducto() << ","
                     << pedido.getNombreDelProducto() << ","
                     << pedido.getCantidadSolicitada() << ","
-                    << pedido.getPrecioUnitario() << ","
-                    << pedido.getAnio() << ","
-                    << pedido.getMes() << ","
-                    << pedido.getDia() << "\n";
+                    << pedido.getPrecioUnitario() << "\n";
 
     ArchivoTemporal.close();
     return true;
 }
 
+void PedidosArchivo::leerPedidoEnArchivoTemporal(Pedidos *pedido)
+{
+    ifstream ArchivoTemporal("ArchivoDePedidoTemporal.csv");
 
-void PedidosArchivo::generarFactura(Pedidos &pedido){}
+    if (!ArchivoTemporal.is_open())
+    {
+        return;
+    }
+    int ubicacionEnArray = 0;
+    string linea;
+    getline(ArchivoTemporal, linea);
+
+    while(getline(ArchivoTemporal, linea))
+    {
+        stringstream lineaDelPedido(linea);
+        string infoDelPedido;
+
+        getline(lineaDelPedido, infoDelPedido, ',');
+        pedido[ubicacionEnArray].setIdDelProducto(infoDelPedido);
+
+        getline(lineaDelPedido, infoDelPedido, ',');
+        pedido[ubicacionEnArray].setNombreDelProducto(infoDelPedido);
+
+        getline(lineaDelPedido, infoDelPedido, ',');
+        pedido[ubicacionEnArray].setCantidadSolicitada(infoDelPedido);
+
+        getline(lineaDelPedido, infoDelPedido, ',');
+        pedido[ubicacionEnArray].setPrecioUnitario(stof(infoDelPedido.c_str()));
+        ubicacionEnArray++;
+    }
+
+    ArchivoTemporal.close();
+}
+
+
+void PedidosArchivo::generarFactura(Pedidos &pedido) {}
