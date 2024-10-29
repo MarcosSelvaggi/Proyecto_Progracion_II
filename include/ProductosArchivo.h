@@ -14,5 +14,9 @@ class ProductosArchivo
         bool modificarProducto(Productos *listaDeProductos, int totalProductos, int idProducto);
         void obtenerCategoriaProducto(std::string &categoriaBuscada);
 
+        /*Funci¢n deprecada
+        int stockPorCategoria(std::string categoriaBuscada);
+        */
+
 };
 

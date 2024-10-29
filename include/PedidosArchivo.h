@@ -17,6 +17,9 @@ class PedidosArchivo
         int obtenerCantidadDeProductosEnCarrito();
         bool guardarPedidoEnArchivoTemporal(Pedidos &pedido);
         void leerPedidoEnArchivoTemporal(Pedidos *pedido);
+        void modificarCantidadDeArticulosCarrito(int numProducto, int cantidadDeArticulos, bool eliminado);
+        bool registrarCompra(Pedidos &pedido);
+        int obtenerCantidadDePedidosRealizados();
 
         void generarFactura(Pedidos &pedido);
 

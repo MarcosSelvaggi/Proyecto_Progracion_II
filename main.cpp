@@ -7,11 +7,9 @@
 
 /*
     TODO LIST:
-        *Crear clase Pedidos
-            *Metodos para realizar pedidos y guardarlos
-        *Crear clase PedidosArchivos
-            *Metodos para guardar esos pedidos en archivos
-            *Metodo para crear los recibos de los cliente
+        *Crear lista completa con todos los productos
+        *Mejorar la forma en como se ven las facturas
+        *Metodo para crear los recibos de los cliente
         *Crear los informes
 
         *"Baja prioridad", realizar si hay tiempo y todo lo de arriba se termino
@@ -56,7 +54,7 @@ int main()
         cout << "5 - Gesti¢n de pedidos" << endl;
         cout << "6 - Informes" << endl;
         cout << "0 - Salir " << endl;
-        cout << "-----------------------------" << endl;
+        cout << "--------------------------------------------" << endl;
         cin >> opcion;
         system("cls");
         switch (opcion)

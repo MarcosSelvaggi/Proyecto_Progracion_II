@@ -202,28 +202,28 @@
 	<stdio.h>
 	<string.h>
 
-1729992532 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\productos.cpp
+1730238084 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\productos.cpp
 	"Productos.h"
 	"ProductosArchivo.h"
 	<iostream>
 	<stdlib.h>
 	<time.h>
 
-1729980405 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\productos.h
+1730237734 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\productos.h
 	<string>
 
-1729964564 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\productosarchivo.h
+1730230218 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\productosarchivo.h
 	"Productos.h"
 	<string>
 
-1730128966 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\productosarchivo.cpp
+1730230760 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\productosarchivo.cpp
 	"ProductosArchivo.h"
 	"Productos.h"
 	<fstream>
 	<string>
 	<sstream>
 
-1729984751 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\main.cpp
+1730240147 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\main.cpp
 	<iostream>
 	"Empleados.h"
 	"Clientes.h"
@@ -231,23 +231,29 @@
 	"Pedidos.h"
 	<windows.h>
 
-1730137943 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\pedidos.cpp
+1730240342 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\pedidos.cpp
 	<iostream>
 	"Pedidos.h"
 	"PedidosArchivo.h"
 	"Productos.h"
 	"ProductosArchivo.h"
+	"EmpleadosArchivos.h"
+	"Clientes.h"
+	"ClientesArchivo.h"
 	<time.h>
-
-1729980723 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\pedidos.h
 	<string>
 
-1730137862 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\pedidosarchivo.cpp
+1730235605 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\pedidos.h
+	<string>
+
+1730240101 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\pedidosarchivo.cpp
 	"PedidosArchivo.h"
+	"Productos.h"
 	<string>
 	<fstream>
 	<sstream>
+	<iostream>
 
-1730137253 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\pedidosarchivo.h
+1730231183 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\pedidosarchivo.h
 	"Pedidos.h"
 

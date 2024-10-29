@@ -1,2 +1,2 @@
-IdProducto, NombreProducto, CantidadSolicitada, PrecioUnitario 
-84268,Manzana roja,10,1394.42
+IdProducto, NombreProducto, CantidadSolicitada, PrecioUnitario, stockActual
+76767,Jabon,10,2514.63,45

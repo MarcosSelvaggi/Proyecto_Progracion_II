@@ -3,7 +3,11 @@
 #include "PedidosArchivo.h"
 #include "Productos.h"
 #include "ProductosArchivo.h"
+#include "EmpleadosArchivos.h"
+#include "Clientes.h"
+#include "ClientesArchivo.h"
 #include <time.h>
+#include <string>
 /*
 Como usar el time.h para obtener el d¡a, mes y anio y poder usarlos en los pedidos
 https://www.youtube.com/watch?v=0DtPa0HYQek
@@ -46,6 +50,10 @@ string Pedidos::getIdCategoriaProducto()
 string Pedidos::getCantidadSolicitada()
 {
     return _cantidadSolicitada;
+}
+string Pedidos::getStockDelProducto()
+{
+    return _stockDelProducto;
 }
 float Pedidos::getPrecioUnitario()
 {
@@ -98,6 +106,10 @@ void Pedidos::setCantidadSolicitada(string cantidad)
 {
     _cantidadSolicitada = cantidad;
 }
+void Pedidos::setStockDelProducto(string stockProducto)
+{
+    _stockDelProducto = stockProducto;
+}
 void Pedidos::setPrecioUnitario(float precio)
 {
     _precioUnitario = precio;
@@ -118,17 +130,7 @@ void Pedidos::setAnio(string anio)
 ///Metodos
 void Pedidos::realizarPedido()
 {
-    /*
-    time_t diaActual = time(0);
-    tm *ltm = localtime(&diaActual);
-    cout << "A¤o: " << 1900 + ltm->tm_year << endl;
-    cout << "Mes: " << 1 + ltm->tm_mon << endl;
-    cout << "Dia: " << ltm->tm_mday << endl;
-    cout << endl;
-    */
     PedidosArchivo PedidoArchivo;
-    ///Esto limpia el archivo temporal cada vez que entramos a la parte de realizar un pedido
-    PedidoArchivo.limpiarArchivoTemporal();
     Pedidos pedido;
     int opcion;
     do
@@ -138,7 +140,7 @@ void Pedidos::realizarPedido()
         cout << "| 1 - Agregar productos al carrito         |" << endl;
         cout << "| 2 - Mostrar carrito de compras           |" << endl;
         cout << "| 3 - Ajustar la cantidad de un producto   |" << endl;
-        cout << "| 4 - Elimiar un producto del carrito      |" << endl;
+        cout << "| 4 - Limpiar carrito                      |" << endl;
         cout << "| 5 - Realizar pago                        |" << endl;
         cout << "| 0 - Salir                                |" << endl;
         cout << " ------------------------------------------ " << endl;
@@ -155,11 +157,32 @@ void Pedidos::realizarPedido()
             ajustarCantidadDeProducto();
             break;
         case 4:
-            eliminarUnProductoDelCarrito();
+            ///Esto limpia el archivo temporal cada vez que entramos a la parte de realizar un pedido
+            PedidoArchivo.limpiarArchivoTemporal();
             break;
         case 5:
-            realizarPago();
+        {
+
+            int pedidoRealizado = realizarPago();
+            if (pedidoRealizado == 1)
+            {
+                cout << "Se ha realizado el pago de forma exitosa" << endl;
+                PedidoArchivo.limpiarArchivoTemporal();
+            }
+            else if (pedidoRealizado == 0)
+            {
+                cout << "Hubo un error al procesar el pago" << endl;
+            }
+            else if (pedidoRealizado == 2)
+            {
+                cout << "El cliente se encuentra inactivo" << endl;
+            }
+            else
+            {
+                cout << "No hay ning£n usuario registrado con ese mail" << endl;
+            }
             break;
+        }
         case 0:
             break;
         default:
@@ -185,29 +208,24 @@ void Pedidos::agregarProductosAlPedido(Pedidos pedido)
     cout << "Indique el nombre del producto a buscar" << endl;
     cin >> busqueda;
 
-    producto.buscarUnProducto(listaDeProductos, busqueda, cantidadDeProductosEncontrados);
+    producto.buscarUnProductoConStock(listaDeProductos, busqueda, cantidadDeProductosEncontrados);
     for (int i = 0; i < cantidadDeProductosEncontrados; i++)
     {
-        int stockActualDelProducto = atoi(listaDeProductos[i].getStockActual().c_str());
-        int stockMinimoDelProducto = atoi(listaDeProductos[i].getStockMinimo().c_str());
-        if (stockActualDelProducto > stockMinimoDelProducto)
-        {
-            cout << "-----------------------------" << endl;
-            cout << "Producto Nø: " << i+1 << endl;
-            producto.imprimirElProducto(listaDeProductos[i], 1);
-            productosNoEncontrados = false;
-        }
+        cout << "-----------------------------" << endl;
+        cout << "Producto Nø: " << i+1 << endl;
+        producto.imprimirElProducto(listaDeProductos[i], 1);
+        productosNoEncontrados = false;
     }
 
     ///Si no pudo encontrar el producto en la lista de productos o este tiene stock en 0, va a avisarle al cliente
     ///Y saltearse los pasos para agregar el producto al carrito
     if (productosNoEncontrados)
     {
-        cout << "No se ha encontrado ning£n :( " << endl;
+        cout << "No se ha encontrado ning£n producto :( " << endl;
     }
     else
     {
-        cout << "Ingrese el n£mero del producto que desea llevar, si no desea llevar ninguno presione 0" << endl;
+        cout << "Ingrese el n£mero del producto que desea llevar, si no desea llevar ninguno presione 0 " << endl;
         do
         {
             variableProvisoria = false;
@@ -240,6 +258,7 @@ void Pedidos::agregarProductosAlPedido(Pedidos pedido)
                 pedido.setNombreDelProducto(listaDeProductos[productoSolicitado - 1].getNombreProducto());
                 pedido.setCantidadSolicitada(to_string(cantidadDeUnidades));
                 pedido.setPrecioUnitario(listaDeProductos[productoSolicitado - 1].getPrecioProducto());
+                pedido.setStockDelProducto(listaDeProductos[productoSolicitado - 1].getStockActual());
                 if (PedidoArchivo.guardarPedidoEnArchivoTemporal(pedido))
                 {
                     cout << "Se ha agregado el producto al carrito de compras" << endl;
@@ -265,11 +284,20 @@ void Pedidos::mostrarCarritoDeCompras()
     pedidoArchivo.leerPedidoEnArchivoTemporal(pedidoArray);
 
     float totalCarrito = 0.f, cantidadDeProductos = 0.f;
+    ///Esto se ve feo, ver si se puede cambiar para que se vea mejor
+    cout << " --------------------------------------------------------------" << endl;
+    cout << "|Productos" << "\t\t  "<< "| Unidades \t|  Precio Unitario \t|" << endl;
 
     for (int i = 0; i < pedidoArchivo.obtenerCantidadDeProductosEnCarrito(); i++)
     {
-
-        cout << pedidoArray[i].getNombreDelProducto() << " | " << pedidoArray[i].getPrecioUnitario() << endl;
+        ///Este string nombreProducto es usado para despu‚s agregarle espacios vac¡os para que
+        ///todo quede organizado en un cuadro por decirlo de alguna manera
+        string nombreProducto = pedidoArray[i].getNombreDelProducto();
+        for (int f = nombreProducto.length(); f < 25 ; f++ )
+        {
+            nombreProducto = nombreProducto + " ";
+        }
+        cout <<"|"<< nombreProducto <<"|\t" << pedidoArray[i].getCantidadSolicitada() <<"\t|\t $" << pedidoArray[i].getPrecioUnitario() <<"\t"<< "|" << endl;
         cantidadDeProductos = stof(pedidoArray[i].getCantidadSolicitada());
         totalCarrito += (pedidoArray[i].getPrecioUnitario() * cantidadDeProductos);
         carritoVacio = false;
@@ -277,18 +305,147 @@ void Pedidos::mostrarCarritoDeCompras()
 
     if (carritoVacio)
     {
-        cout << "El carrito est  vac¡o, intenta agregando m s productos :)" << endl;
+        cout << "|El carrito est  vac¡o, intenta agregando m s productos :) \t|" << endl;
     }
     else
     {
-        cout << "Total $"<<  totalCarrito << endl;
+        cout << "|Total" << "\t\t\t\t\t\t" << " $"<<  totalCarrito << "\t|" << endl;
     }
+
+    cout << " --------------------------------------------------------------" << endl;
 
     delete[] pedidoArray;
 }
-void Pedidos::ajustarCantidadDeProducto() {}
-void Pedidos::eliminarUnProductoDelCarrito() {}
-bool Pedidos::realizarPago()
+void Pedidos::ajustarCantidadDeProducto()
 {
-    return true;
+    PedidosArchivo PedidoArchivo;
+    if (PedidoArchivo.obtenerCantidadDeProductosEnCarrito() == 0)
+    {
+        cout << "El carrito est  vac¡o, intenta agregando m s productos :)\t" << endl;
+    }
+    else
+    {
+        Pedidos pedido;
+        Pedidos *listaProductos;
+        listaProductos = new Pedidos[PedidoArchivo.obtenerCantidadDeProductosEnCarrito()];
+        PedidoArchivo.leerPedidoEnArchivoTemporal(listaProductos);
+
+        int opcionProducto;
+        pedido.mostrarCarritoDeCompras();
+        cout << "¨Qu‚ producto quiere modificar?, ingrese el n£mero del producto, caso contrario oprima 0" << endl;
+        cin >> opcionProducto;
+        if (opcionProducto == 0)
+        {
+            cout << "Entendido, saliendo" << endl;
+        }
+        else if (opcionProducto <= -1 || opcionProducto > PedidoArchivo.obtenerCantidadDeProductosEnCarrito())
+        {
+            cout << "Error, ingrese un valor entre 1 y " << PedidoArchivo.obtenerCantidadDeProductosEnCarrito() << endl;
+        }
+        else
+        {
+            int opcionParaModificarProducto = 0;
+            do
+            {
+                cout << "¨Desea eliminarlo o cambiar la cantidad de productos?" << endl;
+                cout << "1 - Para cambiar la cantidad items a llevar en el pedido" << endl;
+                cout << "2 - Para eliminarlo del carrito" << endl;
+                cout << "0 - Para salir" << endl;
+                cin >> opcionParaModificarProducto;
+                switch (opcionParaModificarProducto)
+                {
+                case 1:
+                {
+                    int nuevaCantidadDeArticulos;
+                    int stockMaximoDelArticulo = stoi(listaProductos[opcionProducto - 1].getStockDelProducto().c_str());
+                    cout << "Ingrese la nueva cantidad art¡culos que desea llevar" << endl;
+                    cin >> nuevaCantidadDeArticulos;
+
+                    if (nuevaCantidadDeArticulos == 0)
+                    {
+                        ///Si el cliente pone 0 art¡culos lo elimina de la lista
+                        PedidoArchivo.modificarCantidadDeArticulosCarrito(opcionProducto, 0, true);
+                    }
+                    else if (stockMaximoDelArticulo < nuevaCantidadDeArticulos)
+                    {
+                        cout << "Lo sentimos, s¢lo se encuentran disponibles " << stockMaximoDelArticulo << " de articulos" << endl;
+                    }
+                    else
+                    {
+                        PedidoArchivo.modificarCantidadDeArticulosCarrito(opcionProducto, nuevaCantidadDeArticulos, false);
+                    }
+                    ///Con esto salimos del do/while porque ya se termin¢ la operaci¢n
+                    opcionParaModificarProducto = 0;
+                    break;
+                }
+                case 2:
+                    PedidoArchivo.modificarCantidadDeArticulosCarrito(opcionProducto, 0, true);
+                    opcionParaModificarProducto = 0;
+                    break;
+                case 0:
+                    cout << "Entendido, saliendo" << endl;
+                    break;
+                default:
+                    cout << "Error, ingrese un valor correcto" << endl;
+                    break;
+                }
+            }
+            while (opcionParaModificarProducto != 0);
+        }
+    }
+}
+int Pedidos::realizarPago()
+{
+    EmpleadosArchivos EmArchivo;
+    ///Con esto asignamos al empleado que armo el pedido
+    int cantidadDeEmpleados = EmArchivo.obtenerCantidadEmpleados();
+    PedidosArchivo PArchivo;
+    Pedidos pedido;
+    ClientesArchivo ClArchivo;
+    Clientes *listaClientes;
+    listaClientes = new Clientes[ClArchivo.obtenerCantidadDeClientes()];
+    ClArchivo.leerCliente(listaClientes);
+
+    string mailCliente;
+    cout << "Ingrese su mail para poder realizar el pedido" << endl;
+    cin >> mailCliente;
+    bool encontrado = false;
+    int clienteEncontrado;
+
+    for (int i = 0; i < ClArchivo.obtenerCantidadDeClientes(); i++)
+    {
+        if (mailCliente == listaClientes[i].getMail())
+        {
+            pedido.setNumCliente(to_string(listaClientes[i].getNumCliente()));
+            encontrado = true;
+            clienteEncontrado = i;
+            break;
+        }
+    }
+    if (!encontrado)
+    {
+        return -1;
+    }
+    else if (listaClientes[clienteEncontrado].getEliminado())
+    {
+        return 2;
+    }
+    else
+    {
+
+        pedido.setNumPedido(to_string(PArchivo.obtenerCantidadDePedidosRealizados()));
+        pedido.setNumLegajoEmpleado(to_string(cantidadDeEmpleados));
+
+        ///Funciones para manejar la fecha, esta se guarda seg£n la fecha de la computadora
+        time_t diaActual = time(0);
+        tm *ltm = localtime(&diaActual);
+        pedido.setDia(to_string(ltm->tm_mday));
+        int fecha =  1 + ltm->tm_mon;
+        pedido.setMes(to_string(fecha));
+        fecha = 1900 + ltm->tm_year;
+        pedido.setAnio(to_string(fecha));
+        PArchivo.generarFactura(pedido);
+        return PArchivo.registrarCompra(pedido);
+    }
+    return 0;
 }

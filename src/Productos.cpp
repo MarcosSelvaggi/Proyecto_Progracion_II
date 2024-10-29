@@ -290,6 +290,58 @@ void Productos::buscarUnProducto(Productos *listaCompras, string busqueda, int &
 
     delete[] listaProductos;
 }
+///Hace lo mismo que la anterior pero esta verifica que el stock actual sea mayor al m¡nimo, as¡ s¢lo devuelve los productos que est n a la venta
+void Productos::buscarUnProductoConStock(Productos *listaCompras, string busqueda, int &cantidadDeProductosEncontrados)
+{
+    ProductosArchivo ProArchivo;
+    Productos *listaProductos;
+    int  totalProductos = ProArchivo.obtenerCantidadDeProductos();
+    listaProductos = new Productos[totalProductos];
+
+    ProArchivo.leerProductos(listaProductos, totalProductos);
+
+    ///Forma legible que pone todas las letras en minusculas para que no sea case sensitive la busqueda
+    for (auto& x : busqueda)
+    {
+        x = tolower(x);
+    }
+
+    for (int i = 0; i < totalProductos; i++)
+    {
+        string nombreProducto = listaProductos[i].getNombreProducto();
+        int stockActual = stoi(listaProductos[i].getStockActual());
+        int stockMinimo = stoi(listaProductos[i].getStockMinimo());
+
+        ///Igual que antes, esto pone el nombre del producto en minusculas para que la busqueda sea case sensitive
+        for (auto& x : nombreProducto)
+        {
+            x = tolower(x);
+        }
+        ///Este if se encarga de lo siguiente
+            ///Compara que la busqueda que le pasamos este dentro de los nombres de los productos en la lista
+            ///Que el stock actual sea mayor al stock minimo
+            ///Que el producto no est‚ eliminado
+        ///Si se cumplen esas 3 cosas, el producto es copiado de un array al otro
+        if (nombreProducto.find(busqueda) != string::npos && stockActual > stockMinimo && (!listaProductos[i].getProductoEliminado()))
+        {
+            listaCompras[cantidadDeProductosEncontrados].setSku(listaProductos[i].getSku());
+            listaCompras[cantidadDeProductosEncontrados].setNombreProducto(listaProductos[i].getNombreProducto());
+            listaCompras[cantidadDeProductosEncontrados].setPrecio(listaProductos[i].getPrecioProducto());
+            listaCompras[cantidadDeProductosEncontrados].setCategoria(listaProductos[i].getCategoria());
+            listaCompras[cantidadDeProductosEncontrados].setStockActual(listaProductos[i].getStockActual());
+            listaCompras[cantidadDeProductosEncontrados].setStockMinimo(listaProductos[i].getStockMinimo());
+            listaCompras[cantidadDeProductosEncontrados].setCodigoDeBarras(listaProductos[i].getCodigoDeBarras());
+            listaCompras[cantidadDeProductosEncontrados].setProductoEliminado(listaProductos[i].getProductoEliminado());
+
+            ///Esta variable se encarga de que cuando se encuentre un producto y se agregue a la listaCompras, este sume 1 para
+            ///Poder llevar el array listaCompras
+            cantidadDeProductosEncontrados++;
+        }
+    }
+
+    delete[] listaProductos;
+}
+
 
 ///Imprime el producto por pantalla, recibe un producto y con el booleano se ve si la info es completa o no
 void Productos::imprimirElProducto(Productos producto, bool infoResumida)
@@ -455,9 +507,25 @@ void Productos::mostrarProductos(bool estaActivo, int &cantidad)
     }
 }
 ///Funci¢n por ahora de adorno, va a ser usada cuando se realice el pedido
-void Productos::modificarStockActual(Productos &producto, int cantidadDeProductos)
+void Productos::modificarStockActual(string numProducto, int cantidadDeProductos)
 {
-    int stockStringAInt = atoi(producto.getStockActual().c_str());
-    cantidadDeProductos = stockStringAInt  - cantidadDeProductos;
-    producto.setStockActual(to_string(cantidadDeProductos));
+    ProductosArchivo PArchivo;
+    Productos *listaProductos;
+    listaProductos = new Productos[PArchivo.obtenerCantidadDeProductos()];
+
+    PArchivo.leerProductos(listaProductos, PArchivo.obtenerCantidadDeProductos());
+
+    for(int i = 0; i < PArchivo.obtenerCantidadDeProductos(); i++)
+    {
+        if (numProducto == listaProductos[i].getSku())
+        {
+            int stockStringAInt = atoi(listaProductos[i].getStockActual().c_str());
+            cantidadDeProductos = stockStringAInt  - cantidadDeProductos;
+            listaProductos[i].setStockActual(to_string(cantidadDeProductos));
+        }
+    }
+
+    PArchivo.modificarProducto(listaProductos, PArchivo.obtenerCantidadDeProductos(), atoi(numProducto.c_str()));
+
+    delete[] listaProductos;
 }

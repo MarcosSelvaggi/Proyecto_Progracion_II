@@ -157,7 +157,6 @@ bool ProductosArchivo::modificarProducto(Productos *listaDeProductos, int totalP
 
     return true;
 }
-///Revisar porque s¢lo funciona con la categor¡a 2
 void ProductosArchivo::obtenerCategoriaProducto(string &categoriaBuscada)
 {
     ifstream ArchivoCSV("CategoriaDeProductos.csv");
@@ -187,3 +186,38 @@ void ProductosArchivo::obtenerCategoriaProducto(string &categoriaBuscada)
     }
     ArchivoCSV.close();
 }
+
+/*Funci¢n obsoleta
+///Obtiene la categor¡a del producto solicitado por el cliente y devuelve la cantidad de productos
+int ProductosArchivo::stockPorCategoria(string categoriaBuscada)
+{
+    ifstream ArchivoCSV("CategoriaDeProductos.csv");
+
+    if (!ArchivoCSV.is_open())
+    {
+        return -1;
+    }
+
+    string linea, idCategoria, nombreCategoria, stockPorCategoria;
+
+    getline(ArchivoCSV, linea); ///Se descarta el encabezado
+
+    while(getline(ArchivoCSV, linea))
+    {
+        stringstream buscarCategoria(linea);
+
+        ///Obtenemos el id de la categoria y su nombre
+        getline(buscarCategoria, idCategoria, ',');
+        getline(buscarCategoria, nombreCategoria, ',');
+        getline(buscarCategoria, stockPorCategoria, ',');
+
+        if (idCategoria == categoriaBuscada)  ///Verifica si el n£mero de la categoria es igual a la categoria buscada
+        {
+            categoriaBuscada = stockPorCategoria;
+            break;
+        }
+    }
+    ArchivoCSV.close();
+    return stoi(stockPorCategoria.c_str());
+}
+*/

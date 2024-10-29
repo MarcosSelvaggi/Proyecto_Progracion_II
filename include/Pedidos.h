@@ -15,6 +15,7 @@ public:
     std::string getNombreDelProducto();
     std::string getIdCategoriaProducto();
     std::string getCantidadSolicitada();
+    std::string getStockDelProducto();
     float getPrecioUnitario();
     std::string getDia();
     std::string getMes();
@@ -29,6 +30,7 @@ public:
     void setNombreDelProducto(std::string nombreProducto);
     void setIdCategoriaProducto(std::string idCategoria);
     void setCantidadSolicitada(std::string cantidadSolicitada);
+    void setStockDelProducto(std::string stockProducto);
     void setPrecioUnitario(float precio);
     void setDia(std::string dia);
     void setMes(std::string mes);
@@ -40,7 +42,7 @@ public:
     void mostrarCarritoDeCompras();
     void ajustarCantidadDeProducto();
     void eliminarUnProductoDelCarrito();
-    bool realizarPago();
+    int realizarPago();
 
 protected:
     std::string _numPedido;
@@ -51,6 +53,7 @@ protected:
     std::string _nombreProducto;
     std::string _cantidadSolicitada;
     std::string _IdCategoria;
+    std::string _stockDelProducto;
     float _precioUnitario;
     std::string _dia;
     std::string _mes;

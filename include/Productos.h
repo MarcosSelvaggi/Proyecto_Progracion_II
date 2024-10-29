@@ -35,9 +35,10 @@ class Productos
         void imprimirElProducto(Productos producto, bool infoResumida);
         void modificarProducto();
         void mostrarProductos(bool estaActivo, int &cantidad);
-        void modificarStockActual(Productos &producto, int cantidadDeProductos);
+        void modificarStockActual(std::string numProducto, int cantidadDeProductos);
         ///Funci¢n para buscar productos y cargarlos en la lista de compras para los pedidos
         void buscarUnProducto(Productos *listaCompras, std::string busqueda, int &cantidadDeProductosEncontrados);
+        void buscarUnProductoConStock(Productos *listaCompras, std::string busqueda, int &cantidadDeProductosEncontrados);
 
 
 
