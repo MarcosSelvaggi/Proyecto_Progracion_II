@@ -16,12 +16,9 @@
                 *Todo a string y con csv, en vez de char y archivo dat
 */
 using namespace std;
-#include "PedidosArchivo.h"
+
 int main()
 {
-    PedidosArchivo ped;
-    cout << "AAAA: " << ped.obtenerCantidadDePedidosRealizados()<< endl;
-    system("pause");
     ///Cambia el tama¤o de la consola
     //system("mode 650");
 

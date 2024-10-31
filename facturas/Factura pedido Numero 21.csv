@@ -1,0 +1,2 @@
+IdVenta, IdCliente, IdProducto, nombreProducto, cantidadSolicitada, precioUnitario, anio, mes, dia, direccionDeEntrega 
+21,1001,84268,Manzana roja,20,1394.42,2024,10,31,direccion 123

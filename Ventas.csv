@@ -29,3 +29,8 @@ IdPedido, IdCliente, LegajoEmpleado, IdProducto, nombreProducto, cantidadProduct
 17,658,3,41409,Sal fina,5,1481.03,2024,10,31
 17,1002,3,30718,Gaseosa cola,8,2771.65,2024,10,31
 18,1001,3,30718,Gaseosa cola,4,2771.65,2024,10,31
+19,1001,4,84268,Manzana roja,10,1394.42,2024,10,31
+20,1001,3,84268,Manzana roja,10,1394.42,2024,10,31
+21,1001,4,84268,Manzana roja,20,1394.42,2024,10,31
+22,1001,3,84268,Manzana roja,10,1394.42,2024,10,31
+23,1001,1,84268,Manzana roja,15,1394.42,2024,10,31

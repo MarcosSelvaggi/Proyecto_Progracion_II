@@ -263,8 +263,6 @@ void PedidosArchivo::generarFactura(Pedidos &pedido)
     Productos producto;
     for (int i = 0; i < PArchivo.obtenerCantidadDeProductosEnCarrito(); i++)
     {
-        int cantidadDeProductos = atoi(listaProductos[i].getCantidadSolicitada().c_str());
-        producto.modificarStockActual(listaProductos[i].getIdDelProducto(), cantidadDeProductos);
         ArchivoVentas << pedido.getNumPedido() << ","
                       << pedido.getNumCliente() << ","
                       << listaProductos[i].getIdDelProducto() << ","

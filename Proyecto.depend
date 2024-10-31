@@ -205,7 +205,7 @@
 	<stdio.h>
 	<string.h>
 
-1730238084 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\productos.cpp
+1730405167 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\productos.cpp
 	"Productos.h"
 	"ProductosArchivo.h"
 	<iostream>
@@ -226,7 +226,7 @@
 	<string>
 	<sstream>
 
-1730404167 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\main.cpp
+1730404844 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\main.cpp
 	<iostream>
 	"Empleados.h"
 	"Clientes.h"
@@ -234,9 +234,8 @@
 	"Pedidos.h"
 	"InformesYGestion.h"
 	<windows.h>
-	"PedidosArchivo.h"
 
-1730403761 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\pedidos.cpp
+1730404241 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\pedidos.cpp
 	<iostream>
 	"Pedidos.h"
 	"PedidosArchivo.h"
@@ -251,7 +250,7 @@
 1730394523 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\pedidos.h
 	<string>
 
-1730403859 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\pedidosarchivo.cpp
+1730404209 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\pedidosarchivo.cpp
 	"PedidosArchivo.h"
 	"Productos.h"
 	<string>

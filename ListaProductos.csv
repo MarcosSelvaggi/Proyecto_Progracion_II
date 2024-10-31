@@ -3,7 +3,7 @@ sku,codigoDeBarras,nombreProducto,stockMinimo,StockActual,precioProducto,categor
 23187,699839192824,Leche Entera La Serenisima,0,0,588.36,Snacks,false
 72849,153733957058,Papel para banio,0,89,2259.65,Limpieza,false
 46021,564905096419,Galletas de chocolate,0,-1,1891.16,Mascotas,false
-84268,395639057756,Manzana roja,0,0,1394.42,Productos Lácteos,false
+84268,395639057756,Manzana roja,0,5,1394.42,Productos Lácteos,false
 15440,457042285719,Carne molida,0,4,349.52,Mascotas,false
 87785,473920841352,Fideos frescos,0,32,802.63,Frutas y verduras,false
 71875,683020534920,Cerveza rubia,0,59,2022.57,Embutidos,false

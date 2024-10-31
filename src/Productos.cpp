@@ -522,6 +522,7 @@ void Productos::modificarStockActual(string numProducto, int cantidadDeProductos
             int stockStringAInt = atoi(listaProductos[i].getStockActual().c_str());
             cantidadDeProductos = stockStringAInt  - cantidadDeProductos;
             listaProductos[i].setStockActual(to_string(cantidadDeProductos));
+            break;
         }
     }
 
