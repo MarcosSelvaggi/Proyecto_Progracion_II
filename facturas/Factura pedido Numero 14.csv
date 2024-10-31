@@ -1,0 +1,3 @@
+IdVenta, IdCliente, IdProducto, nombreProducto, cantidadSolicitada, precioUnitario, anio, mes, dia, direccionDeEntrega 
+14,1001,46021,Galletas de chocolate,10,1891.16,2024,10,31,direccion 123
+14,1001,41409,Sal fina,5,1481.03,2024,10,31,direccion 123

@@ -41,6 +41,7 @@
 		<Unit filename="include/ClientesArchivo.h" />
 		<Unit filename="include/Empleados.h" />
 		<Unit filename="include/EmpleadosArchivos.h" />
+		<Unit filename="include/InformesYGestion.h" />
 		<Unit filename="include/Pedidos.h" />
 		<Unit filename="include/PedidosArchivo.h" />
 		<Unit filename="include/Persona.h" />
@@ -51,6 +52,7 @@
 		<Unit filename="src/ClientesArchivo.cpp" />
 		<Unit filename="src/Empleados.cpp" />
 		<Unit filename="src/EmpleadosArchivos.cpp" />
+		<Unit filename="src/InformesYGestion.cpp" />
 		<Unit filename="src/Pedidos.cpp" />
 		<Unit filename="src/PedidosArchivo.cpp" />
 		<Unit filename="src/Persona.cpp" />

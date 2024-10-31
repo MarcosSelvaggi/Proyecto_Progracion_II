@@ -4,6 +4,7 @@
 #include <string.h>
 #include <ctype.h>
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
@@ -90,7 +91,8 @@ void Empleados::menuEmpleados()
         cout << "4 - Eliminar un empleado del sistema " << endl;
         cout << "5 - Recuperar a un empleado eliminado" << endl;
         cout << "6 - Listar los empleados activos " << endl;
-        cout << "7 - Listas los empleados inactivos" << endl;
+        cout << "7 - Listar los empleados inactivos" << endl;
+        cout << "8 - Listar los empleados por apellidos" << endl;
         cout << "0 - Salir del menu de empleados " << endl;
         cin >> opcion;
 
@@ -193,31 +195,72 @@ void Empleados::menuEmpleados()
             }
             break;
         case 6:
+        {
+            int cantidadDeEmpleados = 0;
             for (int i = 0; i < Archivo.obtenerCantidadEmpleados(); i++)
             {
                 empleado = Archivo.leerEmpleado(i);
-                cout << "------------------------------" << endl;
-                mostrarEmpleado(empleado, true);
-            }
-            break;
-        case 7:
-            for (int i = 0; i < Archivo.obtenerCantidadEmpleados(); i++)
-            {
-                empleado = Archivo.leerEmpleado(i);
-                cout << "------------------------------" << endl;
+                if (!empleado.getEliminado()) cantidadDeEmpleados++;
                 mostrarEmpleado(empleado, false);
             }
+            if (cantidadDeEmpleados == 0) cout << "No hay ning£n empleado activo" << endl;
+            break;
+        }
+        case 7:
+        {
+            int cantidadDeEmpleados = 0;
+            for (int i = 0; i < Archivo.obtenerCantidadEmpleados(); i++)
+            {
+                empleado = Archivo.leerEmpleado(i);
+                mostrarEmpleado(empleado, true);
+                if (empleado.getEliminado()) cantidadDeEmpleados++;
+            }
+            if (cantidadDeEmpleados == 0) cout << "No hay ning£n empleado inactivo" << endl;
+            break;
+        }
         break;
-    case 0:
-        cout << "Saliendo... " << endl;
-        break;
-    default:
-        cout << "Error, ingrese un valor correcto " << endl;
-        break;
+        case 8:
+        {
+            Empleados *listaEmpleados;
+            listaEmpleados = new Empleados[Archivo.obtenerCantidadEmpleados()];
+            for (int i = 0; i < Archivo.obtenerCantidadEmpleados(); i++)
+            {
+                listaEmpleados[i] = Archivo.leerEmpleado(i);
+            }
+
+            ///No pude hacer funcionar el sort, investigar en caso de que haya tiempo, sino quedar  este
+            for (int i = 0; i < Archivo.obtenerCantidadEmpleados(); i++)
+            {
+                for (int j = i + 1; j < Archivo.obtenerCantidadEmpleados(); j++)
+                {
+                    if (strcmp(listaEmpleados[i].getApellido(), listaEmpleados[j].getApellido()) > 0)
+                    {
+                        Empleados emp = listaEmpleados[i];
+                        listaEmpleados[i] = listaEmpleados[j];
+                        listaEmpleados[j] = emp;
+                    }
+                }
+            }
+
+            for (int i = 0; i < Archivo.obtenerCantidadEmpleados(); i++)
+            {
+                mostrarEmpleado(listaEmpleados[i]);
+            }
+
+            delete[] listaEmpleados;
+
+            break;
+        }
+        case 0:
+            cout << "Saliendo..." << endl;
+            break;
+        default:
+            cout << "Error, ingrese un valor correcto" << endl;
+            break;
+        }
+        cout << endl;
     }
-    cout << endl << endl;
-}
-while (opcion != 0);
+    while (opcion != 0);
 }
 
 Empleados Empleados::agregarEmpleado()
@@ -265,6 +308,7 @@ void Empleados::mostrarEmpleado(Empleados empleado, bool eliminado)
 {
     if (empleado.getEliminado() == eliminado)
     {
+        cout << "------------------------------" << endl;
         cout << "Nombre: " << empleado.getNombre() << endl;
         cout << "Apellido: " << empleado.getApellido() << endl;
         cout << "DNI: " << empleado.getDNI() << endl;
@@ -273,6 +317,19 @@ void Empleados::mostrarEmpleado(Empleados empleado, bool eliminado)
         cout << "Direcccion de email: " << empleado.getMail() << endl;
         cout << "Fecha de ingreso: " << empleado.getDiaIngreso() << "/" << empleado.getMesIngreso() << "/" << empleado.getAnioIngreso() << endl;
     }
+}
+
+///Sobrecargamos la funci¢n para que pueda ser usada cuando ordenamos los empleados
+void Empleados::mostrarEmpleado(Empleados empleado)
+{
+    cout << "------------------------------" << endl;
+    cout << "Nombre: " << empleado.getNombre() << endl;
+    cout << "Apellido: " << empleado.getApellido() << endl;
+    cout << "DNI: " << empleado.getDNI() << endl;
+    cout << "Legajo: " << empleado.getLegajoEmpleado() << endl;
+    cout << "N£mero de telefono: " << empleado.getNumTelefono() << endl;
+    cout << "Direcccion de email: " << empleado.getMail() << endl;
+    cout << "Fecha de ingreso: " << empleado.getDiaIngreso() << "/" << empleado.getMesIngreso() << "/" << empleado.getAnioIngreso() << endl;
 }
 
 void Empleados::modificarEmpleado(Empleados empleado, int legajo)

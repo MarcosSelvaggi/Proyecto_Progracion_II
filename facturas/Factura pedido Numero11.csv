@@ -1,0 +1,2 @@
+IdVenta, IdCliente, IdProducto, nombreProducto, cantidadSolicitada, precioUnitario, anio, mes, dia, direccionDeEntrega 
+11,1001,76767,Jabon,10,2514.63,2024,10,29,direccion 123

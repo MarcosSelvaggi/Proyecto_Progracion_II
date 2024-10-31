@@ -27,6 +27,7 @@ public:
     void mostrarEmpleado(Empleados empleado, bool eliminado);
     void modificarEmpleado(Empleados empleado, int legajo);
     Empleados agregarEmpleado();
+    void mostrarEmpleado(Empleados empleado);
 
 private:
     int _legajoEmpleado;

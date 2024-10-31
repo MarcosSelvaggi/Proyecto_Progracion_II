@@ -1,21 +1,21 @@
 sku,codigoDeBarras,nombreProducto,stockMinimo,StockActual,precioProducto,categoriaProducto,productoEliminado
-76767,609003982922,Jabon,0,45,2514.63,Snacks,false
+76767,609003982922,Jabon,0,-5,2514.63,Snacks,false
 23187,699839192824,Leche Entera La Serenisima,0,0,588.36,Snacks,false
 72849,153733957058,Papel para banio,0,89,2259.65,Limpieza,false
-46021,564905096419,Galletas de chocolate,0,37,1891.16,Mascotas,false
+46021,564905096419,Galletas de chocolate,0,-1,1891.16,Mascotas,false
 84268,395639057756,Manzana roja,0,0,1394.42,Productos Lácteos,false
 15440,457042285719,Carne molida,0,4,349.52,Mascotas,false
 87785,473920841352,Fideos frescos,0,32,802.63,Frutas y verduras,false
 71875,683020534920,Cerveza rubia,0,59,2022.57,Embutidos,false
-13714,137931573221,Agua mineral,0,100,1247.13,Embutidos,false
-30718,144697392320,Gaseosa cola,0,38,2771.65,Bebidas sin alcohol,false
-59586,607457005720,Alimento para perros,0,85,2938.91,Mascotas,false
+13714,137931573221,Agua mineral,0,88,1247.13,Embutidos,false
+30718,144697392320,Gaseosa cola,0,14,2771.65,Bebidas sin alcohol,false
+59586,607457005720,Alimento para perros,0,69,2938.91,Mascotas,false
 17658,594781499398,Detergente,0,36,2090,Limpieza,false
-94899,954016762620,Jugo de naranja,0,6,2602.36,Pastas frescas y tapas,false
+94899,954016762620,Jugo de naranja,0,-6,2602.36,Pastas frescas y tapas,false
 84318,973788151534,Pescado fresco,0,6,2353.15,Limpieza,false
 68421,307883448379,Queso cremoso,0,32,1437.86,Frutas y verduras,false
 17008,269752867593,Helado de vainilla,0,110,843.31,Bebés,false
 11456,879749116233,Chocolates surtidos,0,0,315.87,Congelados,false
-45190,123509449200,Tomate fresco,0,38,610.22,Carnes y pescados,false
-41409,557904597085,Sal fina,0,57,1481.03,Higiene y cuidado,false
-29758,487860510830,Frutos secos mixtos,0,90,2240.11,Pastas frescas y tapas,false
+45190,123509449200,Tomate fresco,0,-8,610.22,Carnes y pescados,false
+41409,557904597085,Sal fina,0,7,1481.03,Higiene y cuidado,false
+29758,487860510830,Frutos secos mixtos,0,72,2240.11,Pastas frescas y tapas,false

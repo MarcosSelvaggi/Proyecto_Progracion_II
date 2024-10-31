@@ -164,7 +164,7 @@
 1729807691 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\clientes.h
 	"Persona.h"
 
-1729615559 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\persona.h
+1730384688 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\persona.h
 
 1729703964 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\clientesarchivo.h
 	"Clientes.h"
@@ -178,26 +178,29 @@
 	<string>
 	<sstream>
 
-1729795983 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\empleados.cpp
+1730389190 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\empleados.cpp
 	"Empleados.h"
 	"EmpleadosArchivos.h"
 	<stdio.h>
 	<string.h>
 	<ctype.h>
 	<iostream>
+	<algorithm>
 
-1729795861 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\empleados.h
+1730384938 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\empleados.h
 	"Persona.h"
 
-1729205316 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\empleadosarchivos.h
+1730389203 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\empleadosarchivos.h
 	"Empleados.h"
 
-1729550951 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\empleadosarchivos.cpp
+1730390332 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\empleadosarchivos.cpp
 	"EmpleadosArchivos.h"
 	<stdio.h>
 	<string.h>
+	<time.h>
+	<stdlib.h>
 
-1729615590 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\persona.cpp
+1730384691 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\persona.cpp
 	"Persona.h"
 	<stdio.h>
 	<string.h>
@@ -223,15 +226,17 @@
 	<string>
 	<sstream>
 
-1730240147 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\main.cpp
+1730404167 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\main.cpp
 	<iostream>
 	"Empleados.h"
 	"Clientes.h"
 	"Productos.h"
 	"Pedidos.h"
+	"InformesYGestion.h"
 	<windows.h>
+	"PedidosArchivo.h"
 
-1730240342 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\pedidos.cpp
+1730403761 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\pedidos.cpp
 	<iostream>
 	"Pedidos.h"
 	"PedidosArchivo.h"
@@ -243,17 +248,32 @@
 	<time.h>
 	<string>
 
-1730235605 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\pedidos.h
+1730394523 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\pedidos.h
 	<string>
 
-1730240101 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\pedidosarchivo.cpp
+1730403859 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\pedidosarchivo.cpp
 	"PedidosArchivo.h"
 	"Productos.h"
 	<string>
 	<fstream>
 	<sstream>
-	<iostream>
 
-1730231183 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\pedidosarchivo.h
+1730403772 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\pedidosarchivo.h
 	"Pedidos.h"
+	<string>
+
+1730399109 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\informesygestion.cpp
+	"InformesYGestion.h"
+	<iostream>
+	<string>
+	"Pedidos.h"
+	"PedidosArchivo.h"
+	"Empleados.h"
+	"EmpleadosArchivos.h"
+	"Clientes.h"
+	"ClientesArchivo.h"
+
+1730397262 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\informesygestion.h
+	"Pedidos.h"
+	<string>
 

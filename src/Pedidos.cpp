@@ -31,7 +31,7 @@ string Pedidos::getNumLegajoEmpleado()
 {
     return _numLegajoEmpleado;
 }
-string Pedidos::getDireccionDeEntre()
+string Pedidos::getDireccionDeEntrega()
 {
     return _direccionDeEntrega;
 }
@@ -86,7 +86,7 @@ void Pedidos::setNumLegajoEmpleado(string numLegajo)
 {
     _numLegajoEmpleado = numLegajo;
 }
-void Pedidos::setDireccionDeEntre(string direccion)
+void Pedidos::setDireccionDeEntrega(string direccion)
 {
     _direccionDeEntrega = direccion;
 }
@@ -238,6 +238,10 @@ void Pedidos::agregarProductosAlPedido(Pedidos pedido)
             {
                 variableProvisoria = true;
                 cout << "Error, ingrese un n£mero de producto correcto" << endl;
+            }
+            else if (PedidoArchivo.productoEnElCarrito(listaDeProductos[productoSolicitado - 1].getSku()))
+            {
+                cout << "Ese producto ya se encuentra en el carrito" << endl;
             }
             else
             {
@@ -396,21 +400,25 @@ void Pedidos::ajustarCantidadDeProducto()
 }
 int Pedidos::realizarPago()
 {
+    ///Declaraci¢n de variables u objetos
     EmpleadosArchivos EmArchivo;
-    ///Con esto asignamos al empleado que armo el pedido
-    int cantidadDeEmpleados = EmArchivo.obtenerCantidadEmpleados();
     PedidosArchivo PArchivo;
-    Pedidos pedido;
     ClientesArchivo ClArchivo;
+    Pedidos pedido;
     Clientes *listaClientes;
     listaClientes = new Clientes[ClArchivo.obtenerCantidadDeClientes()];
     ClArchivo.leerCliente(listaClientes);
+    ///Este bool es para ver si encontr¢ el mail del cliente o no
+    bool encontrado = false;
+    ///Entero para buscar despu‚s en el array de clientes
+    int clienteEncontrado = 0;
+    ///Esta variable se usa para devolver el resultado de si pudo o no realizar el pedido
+    int resultadoADevolver = 0;
 
+    ///Ingresamos el mail con el que vamos a realizar la compra
     string mailCliente;
     cout << "Ingrese su mail para poder realizar el pedido" << endl;
     cin >> mailCliente;
-    bool encontrado = false;
-    int clienteEncontrado;
 
     for (int i = 0; i < ClArchivo.obtenerCantidadDeClientes(); i++)
     {
@@ -424,17 +432,36 @@ int Pedidos::realizarPago()
     }
     if (!encontrado)
     {
-        return -1;
+        resultadoADevolver = -1;
     }
     else if (listaClientes[clienteEncontrado].getEliminado())
     {
-        return 2;
+        resultadoADevolver = 2;
     }
     else
     {
+        ///Con esto asignamos al empleado que armara el pedido
+        int cantidadDeEmpleados = EmArchivo.seleccionarEmpleadoParaArmarPedido();
 
-        pedido.setNumPedido(to_string(PArchivo.obtenerCantidadDePedidosRealizados()));
+        pedido.setNumPedido(to_string(PArchivo.obtenerCantidadDePedidosRealizados()+ 1));
         pedido.setNumLegajoEmpleado(to_string(cantidadDeEmpleados));
+        int opcion;
+        cout << "La direcci¢n de entre est  configurada para: " << listaClientes[clienteEncontrado].getDireccionDelCliente() << endl;
+        cout << "Si desea cambiar la direcci¢n de entrega ingrese 1, caso contrario 0" << endl;
+        cin >> opcion;
+
+        if (opcion == 0)
+        {
+            pedido.setDireccionDeEntrega(listaClientes[clienteEncontrado].getDireccionDelCliente());
+        }
+        else
+        {
+            string direccion;
+            cout << "Ingrese la nueva direcci¢n de entrega" << endl;
+            cin.ignore();
+            getline(cin, direccion);
+            pedido.setDireccionDeEntrega(direccion);
+        }
 
         ///Funciones para manejar la fecha, esta se guarda seg£n la fecha de la computadora
         time_t diaActual = time(0);
@@ -445,7 +472,11 @@ int Pedidos::realizarPago()
         fecha = 1900 + ltm->tm_year;
         pedido.setAnio(to_string(fecha));
         PArchivo.generarFactura(pedido);
-        return PArchivo.registrarCompra(pedido);
+        resultadoADevolver = PArchivo.registrarCompra(pedido);
     }
-    return 0;
+
+    delete[] listaClientes;
+    return resultadoADevolver;
 }
+
+

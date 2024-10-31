@@ -1,0 +1,2 @@
+IdVenta, IdCliente, IdProducto, nombreProducto, cantidadSolicitada, precioUnitario, anio, mes, dia, direccionDeEntrega 
+13,1001,45190,Tomate fresco,8,610.22,2024,10,29,calle falsa 123

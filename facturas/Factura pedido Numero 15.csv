@@ -1,0 +1,2 @@
+IdVenta, IdCliente, IdProducto, nombreProducto, cantidadSolicitada, precioUnitario, anio, mes, dia, direccionDeEntrega 
+15,1001,45190,Tomate fresco,15,610.22,2024,10,31,direccion 123

@@ -3,13 +3,12 @@
 #include "Clientes.h"
 #include "Productos.h"
 #include "Pedidos.h"
-#include <windows.h> ///Si no se cambia el tama¤o de la fuente no es necesario incluir windows.h
-
+#include "InformesYGestion.h"
+#include <windows.h> ///Si no se cambia el tama¤o de la ventana no es necesario incluir windows.h
 /*
     TODO LIST:
         *Crear lista completa con todos los productos
         *Mejorar la forma en como se ven las facturas
-        *Metodo para crear los recibos de los cliente
         *Crear los informes
 
         *"Baja prioridad", realizar si hay tiempo y todo lo de arriba se termino
@@ -17,9 +16,12 @@
                 *Todo a string y con csv, en vez de char y archivo dat
 */
 using namespace std;
-
+#include "PedidosArchivo.h"
 int main()
 {
+    PedidosArchivo ped;
+    cout << "AAAA: " << ped.obtenerCantidadDePedidosRealizados()<< endl;
+    system("pause");
     ///Cambia el tama¤o de la consola
     //system("mode 650");
 
@@ -27,20 +29,6 @@ int main()
     //HWND consoleWindow = GetConsoleWindow();
     //ShowWindow(consoleWindow, SW_MAXIMIZE);
 
-    ///Cambia el tama¤o de la fuente, toca ver un poco m s
-    /*
-    static CONSOLE_FONT_INFOEX  fontex;
-    fontex.cbSize = sizeof(CONSOLE_FONT_INFOEX);
-    HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
-    GetCurrentConsoleFontEx(hOut, 0, &fontex);
-    fontex.FontWeight = 700;
-    fontex.dwFontSize.X = 36;
-    fontex.dwFontSize.Y = 36; */ ///Cambia el tama¤o de la fuente
-
-    /// Con esto cambia la fuente de la consola, quise poner Calibri pero se ve fea :(
-    /*wcscpy(fontex.FaceName, L"Calibri");
-    SetCurrentConsoleFontEx(hOut, 0, &fontex);
-    */
     int opcion;
     do
     {
@@ -81,6 +69,12 @@ int main()
         {
             Pedidos Pedido;
             Pedido.realizarPedido();
+            break;
+        }
+        case 5:
+        {
+            InformesYGestion info;
+            info.visualizarVentas();
             break;
         }
         case 0:

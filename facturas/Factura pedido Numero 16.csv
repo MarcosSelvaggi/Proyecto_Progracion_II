@@ -1,0 +1,5 @@
+IdVenta, IdCliente, IdProducto, nombreProducto, cantidadSolicitada, precioUnitario, anio, mes, dia, direccionDeEntrega 
+16,1001,59586,Alimento para perros,5,2938.91,2024,10,31,direccion 123
+16,1001,29758,Frutos secos mixtos,9,2240.11,2024,10,31,direccion 123
+IdVenta, IdCliente, IdProducto, nombreProducto, cantidadSolicitada, precioUnitario, anio, mes, dia, direccionDeEntrega 
+16,658,41409,Sal fina,5,1481.03,2024,10,31,4995 Melrose Park

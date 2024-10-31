@@ -1,0 +1,7 @@
+IdVenta, IdCliente, IdProducto, nombreProducto, cantidadSolicitada, precioUnitario, anio, mes, dia, direccionDeEntrega 
+12,1001,76767,Jabon,15,2514.63,2024,10,29,calle
+12,1001,94899,Jugo de naranja,6,2602.36,2024,10,29,calle
+12,1001,41409,Sal fina,15,1481.03,2024,10,29,calle
+12,1001,59586,Alimento para perros,3,2938.91,2024,10,29,calle
+12,1001,13714,Agua mineral,6,1247.13,2024,10,29,calle
+12,1001,46021,Galletas de chocolate,9,1891.16,2024,10,29,calle

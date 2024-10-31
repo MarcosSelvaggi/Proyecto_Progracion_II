@@ -10,7 +10,7 @@ public:
     std::string getNumPedido();
     std::string getNumCliente();
     std::string getNumLegajoEmpleado();
-    std::string getDireccionDeEntre();
+    std::string getDireccionDeEntrega();
     std::string getIdDelProducto();
     std::string getNombreDelProducto();
     std::string getIdCategoriaProducto();
@@ -25,7 +25,7 @@ public:
     void setNumPedido(std::string numPedido);
     void setNumCliente(std::string numCliente);
     void setNumLegajoEmpleado(std::string numLegajo);
-    void setDireccionDeEntre(std::string direccion);
+    void setDireccionDeEntrega(std::string direccion);
     void setIdDelProducto(std::string idProducto);
     void setNombreDelProducto(std::string nombreProducto);
     void setIdCategoriaProducto(std::string idCategoria);

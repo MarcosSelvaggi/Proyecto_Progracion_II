@@ -1,9 +1,9 @@
-IdPedido, IdCliente, LegajoEmpleado, IdProducto, nombreProducto, cantidadProducto, precioUnitario, dia, mes, anio
+IdPedido, IdCliente, LegajoEmpleado, IdProducto, nombreProducto, cantidadProducto, precioUnitario, anio, mes, dia
 1,2,2,84268,Manzana roja,96,1394.42,2024,10,29
 2,2,2,84268,Manzana roja,96,1394.42,2024,10,29
 3,2,2,59586,Alimento para perros,15,2938.91,2024,10,29
 3,2,2,41409,Sal fina,15,1481.03,2024,10,29
-4,,2,41409,Sal fina,5,1481.03,2024,10,29
+4,2,2,41409,Sal fina,5,1481.03,2024,10,29
 5,1002,2,41409,Sal fina,2,1481.03,2024,10,29
 6,1001,2,76767,Jabon,8,2514.63,2024,10,29
 6,1001,2,76767,Jabon,15,2514.63,2024,10,29
@@ -13,3 +13,19 @@ IdPedido, IdCliente, LegajoEmpleado, IdProducto, nombreProducto, cantidadProduct
 8,1001,2,76767,Jabon,15,2514.63,2024,10,29
 9,1001,2,41409,Sal fina,15,1481.03,2024,10,29
 10,1001,2,41409,Sal fina,13,1481.03,2024,10,29
+11,1001,2,76767,Jabon,10,2514.63,2024,10,29
+12,1001,2,76767,Jabon,15,2514.63,2024,10,29
+12,1001,2,94899,Jugo de naranja,6,2602.36,2024,10,29
+12,1001,2,41409,Sal fina,15,1481.03,2024,10,29
+12,1001,2,59586,Alimento para perros,3,2938.91,2024,10,29
+12,1001,2,13714,Agua mineral,6,1247.13,2024,10,29
+12,1001,2,46021,Galletas de chocolate,9,1891.16,2024,10,29
+13,1001,2,45190,Tomate fresco,8,610.22,2024,10,29
+14,1001,4,46021,Galletas de chocolate,10,1891.16,2024,10,31
+14,1001,4,41409,Sal fina,5,1481.03,2024,10,31
+15,1001,4,45190,Tomate fresco,15,610.22,2024,10,31
+16,1001,1,59586,Alimento para perros,5,2938.91,2024,10,31
+16,1001,1,29758,Frutos secos mixtos,9,2240.11,2024,10,31
+17,658,3,41409,Sal fina,5,1481.03,2024,10,31
+17,1002,3,30718,Gaseosa cola,8,2771.65,2024,10,31
+18,1001,3,30718,Gaseosa cola,4,2771.65,2024,10,31

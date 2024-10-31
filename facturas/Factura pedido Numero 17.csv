@@ -1,0 +1,2 @@
+IdVenta, IdCliente, IdProducto, nombreProducto, cantidadSolicitada, precioUnitario, anio, mes, dia, direccionDeEntrega 
+17,1002,30718,Gaseosa cola,8,2771.65,2024,10,31,1234 calle falsa

@@ -11,6 +11,7 @@ class EmpleadosArchivos
         bool listarEmpleados(Empleados registro[], int cantidad);
         int obtenerCantidadEmpleados();
         bool modificarEmpleado(const Empleados &Emp, int pos);
+        int seleccionarEmpleadoParaArmarPedido();
 
     protected:
 

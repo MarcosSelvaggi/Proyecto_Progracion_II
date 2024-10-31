@@ -3,12 +3,13 @@
 #include <string>
 #include <fstream>
 #include <sstream>
-#include <iostream>
+
 using namespace std;
 
 PedidosArchivo::PedidosArchivo()
 {
 }
+
 void PedidosArchivo::limpiarArchivoTemporal()
 {
     ofstream ArchivoTemporal("ArchivoDePedidoTemporal.csv");
@@ -22,6 +23,7 @@ void PedidosArchivo::limpiarArchivoTemporal()
 
     ArchivoTemporal.close();
 }
+
 int PedidosArchivo::obtenerCantidadDeProductosEnCarrito()
 {
     ifstream ArchivoTemporal("ArchivoDePedidoTemporal.csv");
@@ -97,6 +99,7 @@ void PedidosArchivo::leerPedidoEnArchivoTemporal(Pedidos *pedido)
 
     ArchivoTemporal.close();
 }
+
 ///Recibe el n£mero del producto a modificar, su nueva cantidad en caso de que corresponda y caso contrario recibe el booleano que lo elimina
 void PedidosArchivo::modificarCantidadDeArticulosCarrito(int numProducto, int cantidadDeArticulos, bool eliminado)
 {
@@ -141,6 +144,7 @@ void PedidosArchivo::modificarCantidadDeArticulosCarrito(int numProducto, int ca
 
     delete[] listaProductos;
 }
+
 bool PedidosArchivo::registrarCompra(Pedidos &pedido)
 {
     PedidosArchivo PArchivo;
@@ -175,9 +179,24 @@ bool PedidosArchivo::registrarCompra(Pedidos &pedido)
     delete[] listaProductos;
     return true;
 }
+
+bool PedidosArchivo::productoEnElCarrito(string numProducto)
+{
+    PedidosArchivo PArchivos;
+    Pedidos *pedido;
+    pedido = new Pedidos[PArchivos.obtenerCantidadDeProductosEnCarrito()];
+    PArchivos.leerPedidoEnArchivoTemporal(pedido);
+
+    for (int i = 0; i < PArchivos.obtenerCantidadDeProductosEnCarrito();i++)
+    {
+        if (numProducto == pedido[i].getIdDelProducto()) return true;
+    }
+    return false;
+}
+
 int PedidosArchivo::obtenerCantidadDePedidosRealizados()
 {
-    int cantidadDePedidos = 1;
+    int cantidadDePedidos = 0;
 
     ifstream ArchivoVentas("Ventas.csv");
     if (!ArchivoVentas.is_open())
@@ -202,11 +221,34 @@ int PedidosArchivo::obtenerCantidadDePedidosRealizados()
     return cantidadDePedidos;
 }
 
+///Metodo auxiliar para obtener la cantidad de l¡neas que tiene el CSV
+int PedidosArchivo::cantidadDeVentasGuardadas()
+{
+    int cantidadDePedidos = 0;
+
+    ifstream ArchivoVentas("Ventas.csv");
+    if (!ArchivoVentas.is_open())
+    {
+        return -1;
+    }
+
+    string linea;
+
+    getline(ArchivoVentas, linea);
+
+    while (getline(ArchivoVentas, linea))
+    {
+         cantidadDePedidos++;
+
+    }
+    return cantidadDePedidos;
+}
+
 void PedidosArchivo::generarFactura(Pedidos &pedido)
 {
     string nombreArchivo;
     PedidosArchivo PArchivo;
-    nombreArchivo = "facturas\\Factura pedido Numero" + to_string(PArchivo.obtenerCantidadDePedidosRealizados()) + ".csv";
+    nombreArchivo = "facturas\\Factura pedido Numero " + to_string(PArchivo.obtenerCantidadDePedidosRealizados() + 1) + ".csv";
     if (PArchivo.obtenerCantidadDeProductosEnCarrito() == 0) return;
     Pedidos *listaProductos;
     listaProductos = new Pedidos[PArchivo.obtenerCantidadDeProductosEnCarrito()];
@@ -217,6 +259,7 @@ void PedidosArchivo::generarFactura(Pedidos &pedido)
     {
         return;
     }
+    ArchivoVentas << "IdVenta, IdCliente, IdProducto, nombreProducto, cantidadSolicitada, precioUnitario, anio, mes, dia, direccionDeEntrega \n";
     Productos producto;
     for (int i = 0; i < PArchivo.obtenerCantidadDeProductosEnCarrito(); i++)
     {
@@ -224,16 +267,70 @@ void PedidosArchivo::generarFactura(Pedidos &pedido)
         producto.modificarStockActual(listaProductos[i].getIdDelProducto(), cantidadDeProductos);
         ArchivoVentas << pedido.getNumPedido() << ","
                       << pedido.getNumCliente() << ","
-                      << pedido.getNumLegajoEmpleado() << ","
                       << listaProductos[i].getIdDelProducto() << ","
                       << listaProductos[i].getNombreDelProducto() << ","
                       << listaProductos[i].getCantidadSolicitada() << ","
                       << listaProductos[i].getPrecioUnitario() << ","
                       << pedido.getAnio() << ","
                       << pedido.getMes() << ","
-                      << pedido.getDia() << "\n";
+                      << pedido.getDia() << ","
+                      << pedido.getDireccionDeEntrega() << "\n";
 
     }
     ArchivoVentas.close();
     delete[] listaProductos;
+}
+
+void PedidosArchivo::cargarDatosDeVentas(Pedidos *listaPedidos)
+{
+    ifstream archivoVentas("Ventas.csv");
+
+    if (!archivoVentas.is_open())
+    {
+        return;
+    }
+
+    string linea, infoPedido;
+    //Descartar el encabezado
+    getline(archivoVentas, linea);
+    int ubicacionDelPedido = 0;
+
+    while (getline(archivoVentas, linea))
+    {
+        stringstream manejarDatos(linea);
+
+        getline(manejarDatos, infoPedido, ',');
+        listaPedidos[ubicacionDelPedido].setNumPedido(infoPedido);
+
+        getline(manejarDatos, infoPedido, ',');
+        listaPedidos[ubicacionDelPedido].setNumCliente(infoPedido);
+
+        getline(manejarDatos, infoPedido, ',');
+        listaPedidos[ubicacionDelPedido].setNumLegajoEmpleado(infoPedido);
+
+        getline(manejarDatos, infoPedido, ',');
+        listaPedidos[ubicacionDelPedido].setIdDelProducto(infoPedido);
+
+        getline(manejarDatos, infoPedido, ',');
+        listaPedidos[ubicacionDelPedido].setNombreDelProducto(infoPedido);
+
+        getline(manejarDatos, infoPedido, ',');
+        listaPedidos[ubicacionDelPedido].setCantidadSolicitada(infoPedido);
+
+        getline(manejarDatos, infoPedido, ',');
+        listaPedidos[ubicacionDelPedido].setPrecioUnitario(stof(infoPedido.c_str()));
+
+        getline(manejarDatos, infoPedido, ',');
+        listaPedidos[ubicacionDelPedido].setAnio(infoPedido);
+
+        getline(manejarDatos, infoPedido, ',');
+        listaPedidos[ubicacionDelPedido].setMes(infoPedido);
+
+        getline(manejarDatos, infoPedido, ',');
+        listaPedidos[ubicacionDelPedido].setDia(infoPedido);
+        ubicacionDelPedido++;
+    }
+
+    archivoVentas.close();
+
 }
