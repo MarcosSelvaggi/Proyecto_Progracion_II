@@ -28,6 +28,7 @@ public:
     void modificarEmpleado(Empleados empleado, int legajo);
     Empleados agregarEmpleado();
     void mostrarEmpleado(Empleados empleado);
+    void ordenarEmpleados(Empleados *listaEmpleados, int cantidadEmpleados);
 
 private:
     int _legajoEmpleado;

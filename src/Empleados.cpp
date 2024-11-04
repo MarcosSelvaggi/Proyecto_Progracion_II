@@ -1,10 +1,7 @@
 #include "Empleados.h"
 #include "EmpleadosArchivos.h"
-#include <stdio.h>
 #include <string.h>
-#include <ctype.h>
 #include <iostream>
-#include <algorithm>
 
 using namespace std;
 
@@ -229,18 +226,7 @@ void Empleados::menuEmpleados()
             }
 
             ///No pude hacer funcionar el sort, investigar en caso de que haya tiempo, sino quedar  este
-            for (int i = 0; i < Archivo.obtenerCantidadEmpleados(); i++)
-            {
-                for (int j = i + 1; j < Archivo.obtenerCantidadEmpleados(); j++)
-                {
-                    if (strcmp(listaEmpleados[i].getApellido(), listaEmpleados[j].getApellido()) > 0)
-                    {
-                        Empleados emp = listaEmpleados[i];
-                        listaEmpleados[i] = listaEmpleados[j];
-                        listaEmpleados[j] = emp;
-                    }
-                }
-            }
+            ordenarEmpleados(listaEmpleados, Archivo.obtenerCantidadEmpleados());
 
             for (int i = 0; i < Archivo.obtenerCantidadEmpleados(); i++)
             {
@@ -421,3 +407,21 @@ void Empleados::modificarEmpleado(Empleados empleado, int legajo)
         cout << "No se ha podido modificar la informaci¢n de forma correcta" << endl;
     }
 }
+
+
+void Empleados::ordenarEmpleados(Empleados *listaEmpleados, int cantidadEmpleados)
+{
+    for (int i = 0; i < cantidadEmpleados; i++)
+    {
+        for (int j = i + 1; j < cantidadEmpleados; j++)
+        {
+            if (strcmp(listaEmpleados[i].getApellido(), listaEmpleados[j].getApellido()) > 0)
+            {
+                Empleados emp = listaEmpleados[i];
+                listaEmpleados[i] = listaEmpleados[j];
+                listaEmpleados[j] = emp;
+            }
+        }
+    }
+}
+

@@ -1,7 +1,6 @@
 #include "ProductosArchivo.h"
 #include "Productos.h"
 #include <fstream>
-#include <string>
 #include <sstream>
 
 using namespace std;
@@ -52,7 +51,7 @@ bool ProductosArchivo::agregarProductoAlArchivo(Productos &producto)
                << producto.getStockActual() << ","
                << producto.getPrecioProducto() << ","
                << producto.getCategoria() << ","
-               << "false" << "\n";
+               << (producto.getProductoEliminado() ? "TRUE" : "FALSE") << "\n";
     ArchivoCSV.close();
     return true;
 }
@@ -127,7 +126,7 @@ void ProductosArchivo::leerProductos(Productos *listaDeProductos, int totalProdu
         listaDeProductos[i].setCategoria(producto);
 
         getline(informacionProducto, producto, ',');
-        (producto == "true" ? listaDeProductos[i].setProductoEliminado(true) : listaDeProductos[i].setProductoEliminado(false));
+        (producto == "TRUE" ? listaDeProductos[i].setProductoEliminado(true) : listaDeProductos[i].setProductoEliminado(false));
 
     }
 
@@ -187,7 +186,7 @@ void ProductosArchivo::obtenerCategoriaProducto(string &categoriaBuscada)
     ArchivoCSV.close();
 }
 
-/*Funci¢n obsoleta
+
 ///Obtiene la categor¡a del producto solicitado por el cliente y devuelve la cantidad de productos
 int ProductosArchivo::stockPorCategoria(string categoriaBuscada)
 {
@@ -218,6 +217,6 @@ int ProductosArchivo::stockPorCategoria(string categoriaBuscada)
         }
     }
     ArchivoCSV.close();
-    return stoi(stockPorCategoria.c_str());
+    return atoi(stockPorCategoria.c_str());
 }
-*/
+

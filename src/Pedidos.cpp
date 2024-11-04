@@ -7,7 +7,7 @@
 #include "Clientes.h"
 #include "ClientesArchivo.h"
 #include <time.h>
-#include <string>
+
 /*
 Como usar el time.h para obtener el d¡a, mes y anio y poder usarlos en los pedidos
 https://www.youtube.com/watch?v=0DtPa0HYQek
@@ -126,7 +126,7 @@ void Pedidos::setAnio(string anio)
 {
     _anio = anio;
 }
-
+#include <iomanip>
 ///Metodos
 void Pedidos::realizarPedido()
 {
@@ -248,15 +248,17 @@ void Pedidos::agregarProductosAlPedido(Pedidos pedido)
                 cout << "Cantidad de art¡culos a agregar al carrito: ";
                 int cantidadDeUnidades = 0;
                 int stockActualDelProducto = atoi(listaDeProductos[productoSolicitado - 1].getStockActual().c_str());
+                int stockCategoria = ProArchivo.stockPorCategoria(listaDeProductos[productoSolicitado - 1].getCategoria());
+                int stockMinimo = (stockActualDelProducto > stockCategoria) ? stockCategoria : stockActualDelProducto;
                 do
                 {
                     cin >> cantidadDeUnidades;
-                    if (cantidadDeUnidades > stockActualDelProducto)
+                    if (cantidadDeUnidades > stockMinimo)
                     {
-                        cout << "Lo sentimos, s¢lo se encuentran disponibles " << stockActualDelProducto << " de unidades" << endl;
+                        cout << "Lo sentimos, s¢lo se encuentran disponibles " << stockMinimo << " de unidades" << endl;
                     }
                 }
-                while (cantidadDeUnidades > stockActualDelProducto);
+                while (cantidadDeUnidades > stockMinimo);
                 ///Agregando la lista de productos al archivo temporal
                 pedido.setIdDelProducto(listaDeProductos[productoSolicitado - 1].getSku());
                 pedido.setNombreDelProducto(listaDeProductos[productoSolicitado - 1].getNombreProducto());
@@ -289,15 +291,15 @@ void Pedidos::mostrarCarritoDeCompras()
 
     float totalCarrito = 0.f, cantidadDeProductos = 0.f;
     ///Esto se ve feo, ver si se puede cambiar para que se vea mejor
-    cout << " --------------------------------------------------------------" << endl;
-    cout << "|Productos" << "\t\t  "<< "| Unidades \t|  Precio Unitario \t|" << endl;
+    cout << " ---------------------------------------------------------------------------------------" << endl;
+    cout << "|Productos \t \t \t \t \t   | Unidades " << setw(5) <<"  |  Precio Unitario \t" <<  "|" << endl;
 
     for (int i = 0; i < pedidoArchivo.obtenerCantidadDeProductosEnCarrito(); i++)
     {
         ///Este string nombreProducto es usado para despu‚s agregarle espacios vac¡os para que
-        ///todo quede organizado en un cuadro por decirlo de alguna manera
+        ///todo quede organizado en un cuadro
         string nombreProducto = pedidoArray[i].getNombreDelProducto();
-        for (int f = nombreProducto.length(); f < 25 ; f++ )
+        for (int f = nombreProducto.length(); f < 50 ; f++ )
         {
             nombreProducto = nombreProducto + " ";
         }
@@ -313,10 +315,10 @@ void Pedidos::mostrarCarritoDeCompras()
     }
     else
     {
-        cout << "|Total" << "\t\t\t\t\t\t" << " $"<<  totalCarrito << "\t|" << endl;
+        cout << "|Total" << "\t\t\t\t\t\t\t\t\t" << " $"<<  totalCarrito << "\t|" << endl;
     }
 
-    cout << " --------------------------------------------------------------" << endl;
+    cout << " ---------------------------------------------------------------------------------------" << endl;
 
     delete[] pedidoArray;
 }

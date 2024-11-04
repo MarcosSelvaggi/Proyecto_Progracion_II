@@ -1,6 +1,5 @@
 #include "PedidosArchivo.h"
 #include "Productos.h"
-#include <string>
 #include <fstream>
 #include <sstream>
 

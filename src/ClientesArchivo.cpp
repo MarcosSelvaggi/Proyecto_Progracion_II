@@ -1,9 +1,7 @@
 #include "ClientesArchivo.h"
 #include "Clientes.h"
 #include <fstream>
-#include <stdio.h>
 #include <string.h>
-#include <string>
 #include <sstream>
 
 using namespace std;

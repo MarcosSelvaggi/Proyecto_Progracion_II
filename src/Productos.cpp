@@ -1,7 +1,6 @@
 #include "Productos.h"
 #include "ProductosArchivo.h"
 #include <iostream>
-#include <stdlib.h>
 #include <time.h>
 
 using namespace std;
@@ -506,7 +505,7 @@ void Productos::mostrarProductos(bool estaActivo, int &cantidad)
         }
     }
 }
-///Funci¢n por ahora de adorno, va a ser usada cuando se realice el pedido
+///Modifica el stock del producto indicado
 void Productos::modificarStockActual(string numProducto, int cantidadDeProductos)
 {
     ProductosArchivo PArchivo;

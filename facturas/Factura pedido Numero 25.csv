@@ -1,0 +1,6 @@
+IdVenta, IdCliente, IdProducto, nombreProducto, cantidadSolicitada, precioUnitario, anio, mes, dia, direccionDeEntrega 
+25,1001,84268,Manzana roja,15,1568.8,2024,11,4,direccion 123
+25,1001,64847,Vinagre de manzana,12,152.78,2024,11,4,direccion 123
+25,1001,68095,Physalis,20,9920.89,2024,11,4,direccion 123
+25,1001,85586,Limpiador de manchas de alimentos,10,3340.15,2024,11,4,direccion 123
+25,1001,32980,Perejil,8,13546.7,2024,11,4,direccion 123

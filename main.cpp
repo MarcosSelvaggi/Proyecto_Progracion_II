@@ -74,6 +74,12 @@ int main()
             info.visualizarVentas();
             break;
         }
+        case 6:
+        {
+            InformesYGestion info;
+            info.menuInformes();
+            break;
+        }
         case 0:
             cout << "Saliendo... " << endl;
             break;

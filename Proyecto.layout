@@ -2,123 +2,127 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="include\PedidosArchivo.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="53" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\Persona.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="830" topLine="10" />
-		</Cursor>
-	</File>
-	<File name="src\InformesYGestion.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2785" topLine="41" />
-		</Cursor>
-	</File>
-	<File name="include\ProductosArchivo.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="36" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\Persona.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="430" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="10" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="661" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\ProductosArchivo.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3779" topLine="117" />
-		</Cursor>
-	</File>
 	<File name="include\EmpleadosArchivos.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="473" topLine="0" />
 		</Cursor>
 	</File>
+	<File name="src\Productos.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="8" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="55" topLine="382" />
+		</Cursor>
+		<Folding>
+			<Collapse line="346" />
+			<Collapse line="489" />
+			<Collapse line="509" />
+		</Folding>
+	</File>
+	<File name="include\PedidosArchivo.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="53" topLine="0" />
+		</Cursor>
+	</File>
 	<File name="src\ClientesArchivo.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1868" topLine="51" />
-		</Cursor>
-	</File>
-	<File name="src\Empleados.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="8" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3137" topLine="102" />
-		</Cursor>
-		<Folding>
-			<Collapse line="209" />
-			<Collapse line="222" />
-			<Collapse line="266" />
-			<Collapse line="307" />
-			<Collapse line="323" />
-			<Collapse line="335" />
-		</Folding>
-	</File>
-	<File name="src\EmpleadosArchivos.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="8" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="755" topLine="19" />
-		</Cursor>
-	</File>
-	<File name="src\PedidosArchivo.cpp" open="1" top="1" tabpos="4" split="0" active="1" splitpos="0" zoom_1="8" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="7863" topLine="71" />
-		</Cursor>
-		<Folding>
-			<Collapse line="13" />
-			<Collapse line="27" />
-			<Collapse line="48" />
-			<Collapse line="67" />
-			<Collapse line="104" />
-			<Collapse line="183" />
-			<Collapse line="197" />
-			<Collapse line="225" />
-			<Collapse line="282" />
-		</Folding>
-	</File>
-	<File name="include\Productos.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1727" topLine="11" />
+			<Cursor1 position="92" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="include\Pedidos.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1473" topLine="30" />
+			<Cursor1 position="1473" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="include\Empleados.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="803" topLine="0" />
+			<Cursor1 position="915" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\Pedidos.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
+	<File name="src\ProductosArchivo.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="16193" topLine="267" />
+			<Cursor1 position="6064" topLine="115" />
 		</Cursor>
-		<Folding>
-			<Collapse line="131" />
-			<Collapse line="282" />
-			<Collapse line="323" />
-		</Folding>
 	</File>
-	<File name="src\Productos.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="8" zoom_2="0">
+	<File name="src\Persona.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="19060" topLine="342" />
+			<Cursor1 position="20" topLine="0" />
 		</Cursor>
-		<Folding>
-			<Collapse line="347" />
-			<Collapse line="365" />
-			<Collapse line="490" />
-		</Folding>
 	</File>
 	<File name="src\Clientes.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="9" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="9237" topLine="20" />
+			<Cursor1 position="72" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\InformesYGestion.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="467" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\Empleados.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="8" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="75" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\PedidosArchivo.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="8" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="51" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="12" />
+			<Collapse line="26" />
+			<Collapse line="47" />
+			<Collapse line="66" />
+			<Collapse line="103" />
+			<Collapse line="182" />
+			<Collapse line="196" />
+			<Collapse line="224" />
+			<Collapse line="281" />
+		</Folding>
+	</File>
+	<File name="src\Pedidos.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9192" topLine="139" />
+		</Cursor>
+		<Folding>
+			<Collapse line="131" />
+			<Collapse line="195" />
+			<Collapse line="325" />
+		</Folding>
+	</File>
+	<File name="include\ProductosArchivo.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\EmpleadosArchivos.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="8" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="90" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\Persona.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="12" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\InformesYGestion.cpp" open="1" top="1" tabpos="5" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9681" topLine="113" />
+		</Cursor>
+		<Folding>
+			<Collapse line="66" />
+			<Collapse line="145" />
+			<Collapse line="174" />
+			<Collapse line="200" />
+			<Collapse line="362" />
+		</Folding>
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="10" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2183" topLine="57" />
+		</Cursor>
+	</File>
+	<File name="include\Productos.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1727" topLine="0" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>
