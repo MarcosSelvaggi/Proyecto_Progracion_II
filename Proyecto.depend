@@ -197,13 +197,12 @@
 	"Persona.h"
 	<string.h>
 
-1730731384 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\productos.cpp
+1730765455 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\productos.cpp
 	"Productos.h"
 	"ProductosArchivo.h"
 	<iostream>
-	<time.h>
 
-1730237734 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\productos.h
+1730764482 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\productos.h
 	<string>
 
 1730736547 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\productosarchivo.h
@@ -225,7 +224,7 @@
 	"InformesYGestion.h"
 	<windows.h>
 
-1730737792 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\pedidos.cpp
+1730898225 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\pedidos.cpp
 	<iostream>
 	"Pedidos.h"
 	"PedidosArchivo.h"
@@ -235,14 +234,15 @@
 	"Clientes.h"
 	"ClientesArchivo.h"
 	<time.h>
-	<iomanip>
 
 1730394523 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\pedidos.h
 	<string>
 
-1730731349 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\pedidosarchivo.cpp
+1730898541 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\pedidosarchivo.cpp
 	"PedidosArchivo.h"
 	"Productos.h"
+	"Clientes.h"
+	"ClientesArchivo.h"
 	<fstream>
 	<sstream>
 
@@ -250,7 +250,7 @@
 	"Pedidos.h"
 	<string>
 
-1730743132 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\informesygestion.cpp
+1730822553 source:c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\src\informesygestion.cpp
 	"InformesYGestion.h"
 	<iostream>
 	"Pedidos.h"
@@ -263,6 +263,7 @@
 	"ProductosArchivo.h"
 	<time.h>
 	<iomanip>
+	<unordered_map>
 
 1730416121 c:\users\marco\onedrive\documents\github\proyecto_progracion_ii\include\informesygestion.h
 	"Pedidos.h"

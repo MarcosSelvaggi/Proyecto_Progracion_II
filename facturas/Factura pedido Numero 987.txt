@@ -1,0 +1,9 @@
+Pedido Numero987 	 Fecha 6|11|2024
+Cliente: Maximilien Lovell
+Direccion: 12473 Badeau Pass
+
+Abajo se detalla la informaci¢n del pedido 
+Producto 	 	 | cantidad | precio unitario 
+Limpiador de manchas de alimentos       |4|3340.15|
+Galletas de jengibre molido             |4|11741.7|
+El total es 	 	 	 	 60327.4

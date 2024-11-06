@@ -1,0 +1,8 @@
+Pedido Numero 989 	 Fecha 6|11|2024
+Cliente: ¦¢<®– 
+Direccion: Martin Rodriguez 2320
+
+Abajo se detalla la informacion del pedido 
+Producto 	 	 	 	| unidades | precio unitario 
+Zanahorias                              |  8    |  3119.05  |
+El total es 	 	 	 	 	24952.4

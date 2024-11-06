@@ -1,0 +1,2 @@
+IdVenta, IdCliente, IdProducto, nombreProducto, cantidadSolicitada, precioUnitario, anio, mes, dia, direccionDeEntrega 
+984,1003,98762,Manzanas,8,6564.43,2024,11,4,Martin Rodriguez 2320

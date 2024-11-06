@@ -1,0 +1,11 @@
+Pedido Numero 990 	 Fecha 6|11|2024
+Cliente: Jeralee Tapp
+Direccion: direccion nueva 1942
+
+Abajo se detalla la informacion del pedido 
+Producto 	 	 	 	| unidades | precio unitario 
+Zanahorias                              |    4    |  3119.05
+Manzanas                                |    2    |  6564.43
+Papaya                                  |    1    |  14501.6
+Limpiador de manchas de jugos           |    2    |  10486.5
+El total es 	 	 	 	 	 	61079.7

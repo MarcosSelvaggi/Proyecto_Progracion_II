@@ -981,3 +981,21 @@ idPedido,idCliente,legajoEmpleado,idProducto,nombreProducto,cantidadProducto,pre
 980,784,1,51245,Martini,1,7359.85,2024,10,9
 981,801,3,32119,Melón cantalupo,4,13859.88,2024,10,13
 982,938,1,92906,Nabos,3,12942.76,2024,10,25
+983,1001,3,99951,Caramelos de menta,8,958.6,2024,11,4
+983,1001,3,99716,Ginger Ale,4,13073.2,2024,11,4
+983,1001,3,64847,Vinagre de manzana,8,152.78,2024,11,4
+983,1001,3,85586,Limpiador de manchas de alimentos,8,3340.15,2024,11,4
+984,1003,3,98762,Manzanas,8,6564.43,2024,11,4
+985,1003,1,64847,Vinagre de manzana,5,152.78,2024,11,6
+985,1003,1,99561,Removedor de manchas,4,8298.8,2024,11,6
+985,1003,1,85519,Limpiador de manchas de rotulador,2,293.23,2024,11,6
+986,1001,3,64847,Vinagre de manzana,2,152.78,2024,11,6
+986,1001,3,42657,Zombie,3,5830.78,2024,11,6
+987,991,3,85586,Limpiador de manchas de alimentos,4,3340.15,2024,11,6
+987,991,3,56264,Galletas de jengibre molido,4,11741.7,2024,11,6
+988,977,3,74431,Limpiador de manchas de jugos,4,10486.5,2024,11,6
+989,1003,1,49587,Zanahorias,8,3119.05,2024,11,6
+990,2,4,49587,Zanahorias,4,3119.05,2024,11,6
+990,2,4,98762,Manzanas,2,6564.43,2024,11,6
+990,2,4,75828,Papaya,1,14501.6,2024,11,6
+990,2,4,74431,Limpiador de manchas de jugos,2,10486.5,2024,11,6

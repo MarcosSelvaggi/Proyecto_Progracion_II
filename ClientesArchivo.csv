@@ -1001,3 +1001,4 @@ id,nombre,apellido,email,numeroDeTelefono,direccion,eliminado
 1000,Franchot,Petrovykh,fpetrovykhrr@fema.gov,5263707277,164 Alpine Center,true
 1001,Marco,Das,das.sel@mail.com,41231231,direccion 123,false
 1002,Daniel,Ortega,danimail@mail.com,4123124213,1234 calle falsa,false
+1003,Carlos,Rodriguez,carlos.rodriguez@mail.com,1145907615,Martin Rodriguez 2320,false

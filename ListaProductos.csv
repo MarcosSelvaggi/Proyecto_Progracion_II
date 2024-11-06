@@ -1,670 +1,671 @@
 sku,codigoDeBarras,nombreProducto,stockMinimo,StockActual,precioProducto,categoriaProducto,productoEliminado
-76867,853856239968,7UP,0,61,7899.16,Embutidos,FALSE
-93954,834643468451,7UP Cero Azúcar,0,210,10511.6,Higiene y cuidado,FALSE
-75549,630748726041,A&W Cero Azúcar,0,276,9362.75,Frutas y verduras,FALSE
-27842,238868891569,A&W Root Beer,0,32,9784.57,Frutos secos,FALSE
-98469,324245897203,Abrillantador de muebles,0,92,3396.38,Mascotas,FALSE
-78167,969446142026,Absenta,0,174,11176.9,Galletitas y panadería,TRUE
-69643,298574001132,Aceite de cacahuete,0,95,523.93,Carnes y pescados,TRUE
-96771,606910677210,Aceite de canola,0,114,12778.7,Galletitas y panadería,FALSE
-79747,433044087458,Aceite de coco,0,237,8509.3,Bebidas sin alcohol,FALSE
-99950,518846613156,Aceite de girasol,0,112,6171.03,Almacen,FALSE
-32849,533415787373,Aceite de oliva,0,106,3857.76,Frutas y verduras,TRUE
-44147,251098148869,Aceite de oliva virgen extra,0,280,10102.9,Pastas frescas y tapas,FALSE
-12005,774243436811,Aceite de sésamo,0,142,13711.5,Limpieza,TRUE
-27970,357562661321,Aceite de trufa,0,249,11077.7,Golosinas y chocolates,TRUE
-54431,102310542623,Aceite vegetal,0,62,7292.6,Frutos secos,FALSE
-26954,591305849774,Aceitunas,0,39,233.61,Snacks,TRUE
-93945,643801658239,Agua con gas,0,142,10154.4,Embutidos,FALSE
-76437,175968072050,Agua embotellada,0,197,3667.91,Snacks,FALSE
-70943,383316017722,Agua mineral,0,208,13866.4,Bebés,FALSE
-80015,437873936707,Aguacate,0,127,6782.51,Congelados,FALSE
-68591,849913089317,AHA Sparkling Water (Cítricos),0,208,8908.57,Pastas frescas y tapas,FALSE
-91481,424848627513,AHA Sparkling Water (Durazno),0,164,2381.88,Frutas y verduras,TRUE
-46325,631086046898,AHA Sparkling Water (Fresa),0,101,1072.65,Embutidos,FALSE
-49196,529237189977,AHA Sparkling Water (Jengibre),0,244,3867.37,Galletitas y panadería,FALSE
-60572,721849602037,Ajo,0,163,8168.62,Bebidas con alcohol,TRUE
-48425,601818902701,Albahaca,0,3,14249.9,Pastas frescas y tapas,FALSE
-65351,435467898378,Albahaca tailandesa,0,300,7730.97,Frutas y verduras,TRUE
-51742,361159863067,Alcachofas,0,173,13671.6,Bebés,FALSE
-76653,310639500909,Alcaparras,0,246,2973.43,Mascotas,FALSE
-35308,782477297483,Algodón de azúcar,0,208,8305.23,Snacks,TRUE
-87715,269395922299,Almendras,0,135,3165.34,Bebés,FALSE
-74344,571480732931,Almendras (frescas),0,291,14663.4,Almacen,TRUE
-87591,892409340120,Alubias blancas,0,27,891.35,Embutidos,TRUE
-64403,677312202316,Amaretto,0,138,13740.9,Pastas frescas y tapas,TRUE
-67608,660656959764,Amaretto sour,0,62,12603.3,Mascotas,FALSE
-36316,260686733803,Ambientador,0,286,4192.33,Bebés,TRUE
-21782,909223454464,Aperol Spritz,0,55,10980.1,Golosinas y chocolates,FALSE
-21247,507044458303,Apio,0,138,12071.1,Congelados,FALSE
-33773,220175959064,Apio nabo,0,3,10194.3,Snacks,FALSE
-52860,962344945236,Arándanos,0,13,9421.74,Productos Lácteos,TRUE
-55703,443027389306,Arroz,0,148,8570.25,Bebés,FALSE
-63032,516238634872,Arroz basmati,0,282,11836.1,Congelados,TRUE
-60305,917089325987,Arroz integral,0,230,8936.26,Productos Lácteos,FALSE
-25115,704811740266,Arroz jazmín,0,27,13724.9,Limpieza,TRUE
-52459,393382563306,Arroz para risotto,0,291,13755.1,Congelados,TRUE
-63035,432549583415,Arroz para sushi,0,173,10304,Higiene y cuidado,TRUE
-89693,140808061074,Atún enlatado,0,185,2648.74,Pastas frescas y tapas,FALSE
-40172,396979727030,Avena,0,80,2478.23,Productos Lácteos,FALSE
-39781,308563379932,Azúcar,0,212,4961.23,Bebés,FALSE
-64019,892340030014,Azúcar blanco,0,188,6769.81,Galletitas y panadería,FALSE
-96196,927497019144,Azúcar glas,0,96,10841.5,Congelados,FALSE
-87063,418240085698,Azúcar moreno,0,200,14588.4,Bebés,FALSE
-16487,262556369568,Bai Bubbles (Cítricos),0,297,9240.74,Productos Lácteos,TRUE
-46878,430256985886,Bai Bubbles (Moras),0,293,10550.3,Galletitas y panadería,TRUE
-90851,580110070834,Baijiu,0,22,12939.6,Bebidas con alcohol,TRUE
-79286,373140487599,Barq's Root Beer,0,200,5750.66,Mascotas,FALSE
-70480,621359994664,Barritas de granola,0,131,13660.7,Productos Lácteos,TRUE
-76579,109626194076,Barritas energéticas,0,276,139.25,Higiene y cuidado,TRUE
-67378,107168903444,Bebidas carbonatadas,0,204,2120.02,Frutas y verduras,TRUE
-31508,844307200776,Bebidas deportivas,0,270,3979.07,Golosinas y chocolates,TRUE
-46054,317040563016,Bebidas en polvo,0,144,1666.8,Higiene y cuidado,TRUE
-23996,897108411802,Bebidas energéticas,0,289,4711.84,Mascotas,TRUE
-47312,294343301843,Bebidas gaseosas,0,64,12394.3,Frutos secos,TRUE
-55031,755074924273,Bellini,0,208,8235.26,Congelados,FALSE
-90115,958848980707,Berenjena blanca,0,166,6020.95,Bebés,TRUE
-78683,487518474447,Berenjena japonesa,0,139,6735.1,Embutidos,FALSE
-13773,735279128535,Berenjenas,0,176,8750.36,Limpieza,FALSE
-37042,157068858951,Berros,0,53,2577.74,Almacen,TRUE
-35207,944443581084,Betabel (remolacha),0,183,1782.11,Productos Lácteos,FALSE
-23006,414435163714,Black Russian,0,165,775.56,Embutidos,FALSE
-71464,872447752529,Blue Hawaii,0,269,14214.3,Snacks,TRUE
-83046,170261739795,Blue Lagoon,0,34,9478.72,Productos Lácteos,TRUE
-82267,328813558627,Bolsas de basura,0,12,9192.85,Limpieza,FALSE
-24684,413041369572,Bourbon,0,63,10722.7,Higiene y cuidado,FALSE
-74756,642418940734,Bramble,0,198,14264.3,Bebés,FALSE
-39879,645898833158,Brandy,0,108,4913.74,Almacen,TRUE
-53384,948017122255,Brócoli,0,271,8804.3,Frutos secos,TRUE
-29421,334090745851,Brotes de bambú,0,1,9038.26,Pastas frescas y tapas,FALSE
-54673,320358195992,Cacahuetes,0,296,2086.55,Galletitas y panadería,TRUE
-29787,854887370159,Cacao en polvo,0,297,14930,Galletitas y panadería,TRUE
-72989,487507456161,Café,0,214,6235.72,Pastas frescas y tapas,FALSE
-54828,126555550590,Café molido,0,71,3424.95,Galletitas y panadería,FALSE
-22807,565291760384,Caipirinha,0,193,6371.47,Golosinas y chocolates,FALSE
-88627,898402473814,Calabacín,0,299,9529.22,Bebidas con alcohol,FALSE
-11485,684408055463,Calabazas,0,194,5269.57,Frutas y verduras,TRUE
-19937,738483546482,Caldo de pollo,0,136,1351.23,Embutidos,FALSE
-73703,959525102341,Caldo de res,0,12,7205.95,Galletitas y panadería,TRUE
-79103,960018040230,Caldo de verduras,0,290,4125.89,Golosinas y chocolates,FALSE
-57368,743619034272,Caldo en cubos,0,205,8366.27,Carnes y pescados,FALSE
-73678,706841415535,Caldo en polvo,0,294,6577.38,Productos Lácteos,TRUE
-68983,415086646031,Canada Dry,0,50,998.93,Golosinas y chocolates,TRUE
-50046,592922122374,Canada Dry Cero Azúcar,0,247,1975.4,Snacks,FALSE
-76752,830924958540,Canada Dry Ginger Ale,0,73,14422.4,Galletitas y panadería,TRUE
-41252,180319060970,Canada Dry Tonic Water,0,212,2592.5,Snacks,TRUE
-51036,826572356925,Canónigos,0,212,3741.93,Frutos secos,TRUE
-91685,476988337871,Cape Codder,0,158,9267.71,Bebidas sin alcohol,TRUE
-46929,447715498024,Castañas,0,204,3271.13,Almacen,TRUE
-45509,675987738319,Castañas de agua,0,94,11619.4,Galletitas y panadería,TRUE
-75154,253611364272,Cebollas,0,98,11117.2,Pastas frescas y tapas,TRUE
-34063,357165208853,Cebollitas de verdeo,0,233,454.16,Carnes y pescados,FALSE
-50132,446179944504,Cepillo para fregar,0,269,281.65,Embutidos,FALSE
-23742,472603644331,Cerdo,0,214,10095.5,Bebidas sin alcohol,TRUE
-59403,395711888813,Cereales,0,98,4047.87,Golosinas y chocolates,FALSE
-32174,913563250402,Cereales para desayuno,0,8,10069.4,Bebidas sin alcohol,FALSE
-95653,963779557816,Cereza,0,171,7725.23,Pastas frescas y tapas,FALSE
-87238,106711429948,Cerveza,0,13,6073.1,Higiene y cuidado,TRUE
-35066,506661514195,Cerveza ale,0,191,7404.58,Mascotas,TRUE
-21842,431025144539,Cerveza alemana,0,30,6649.93,Frutas y verduras,FALSE
-16476,208569423748,Cerveza artesanal,0,253,3614.74,Bebés,FALSE
-79471,484173375277,Cerveza belga,0,270,10049,Limpieza,TRUE
-22513,490847335406,Cerveza de frutas,0,28,6774.91,Bebés,TRUE
-31542,322026147690,Cerveza de jengibre,0,287,4951.7,Bebidas sin alcohol,FALSE
-25897,556413092763,Cerveza de trigo,0,228,11848.4,Bebidas sin alcohol,TRUE
-12685,589321213311,Cerveza escocesa,0,240,4310.96,Bebidas sin alcohol,FALSE
-29698,752170150668,Cerveza india,0,115,13705.6,Galletitas y panadería,FALSE
-90054,255446596325,Cerveza IPA (India Pale Ale),0,294,12229.5,Limpieza,FALSE
-79545,279828473749,Cerveza lager,0,255,11841.3,Frutos secos,FALSE
-27386,651941364233,Cerveza mexicana,0,176,11436.1,Galletitas y panadería,TRUE
-63279,587277151581,Cerveza negra,0,71,12223.8,Golosinas y chocolates,FALSE
-94405,950653409856,Cerveza porter,0,272,3660.88,Almacen,TRUE
-12491,970166847604,Cerveza sin alcohol,0,10,14976.3,Almacen,TRUE
-97617,883238185882,Cerveza stout,0,153,11264.8,Bebés,FALSE
-46732,565505428634,Champán,0,75,124.71,Snacks,TRUE
-22697,885392255770,Champiñones,0,278,2986.6,Bebidas sin alcohol,TRUE
-52930,871053806574,Cheerwine,0,45,13645.7,Embutidos,FALSE
-19349,388210717535,Cheerwine Cero Azúcar,0,154,11480.8,Frutos secos,FALSE
-76165,517782362903,Chiles chipotles,0,272,8199.76,Almacen,FALSE
-78937,123683717686,Chiles habaneros,0,297,2868.41,Bebidas sin alcohol,FALSE
-70634,405384178570,Chiles poblanos,0,295,2964.22,Bebidas sin alcohol,FALSE
-45979,435512683571,Chiles serranos,0,31,13678.7,Golosinas y chocolates,TRUE
-12251,896717026965,Chips de tortilla,0,200,7303.91,Pastas frescas y tapas,FALSE
-71851,804598591333,Chocolate en polvo,0,24,8662.04,Pastas frescas y tapas,FALSE
-13885,829694087237,Chocolate para derretir,0,289,13733.7,Mascotas,FALSE
-77202,563223352379,Chocolates,0,278,13260.3,Productos Lácteos,FALSE
-23588,435284971575,Cilantro,0,73,5872.28,Higiene y cuidado,TRUE
-37058,653377878769,Ciruelas,0,92,4146.69,Mascotas,FALSE
-20415,351256649698,Clericot,0,243,308.2,Golosinas y chocolates,FALSE
-54797,610787082696,Coca-Cola,0,127,7550.8,Productos Lácteos,TRUE
-43257,639292737099,Coca-Cola Caffeine Free,0,208,3532.11,Higiene y cuidado,TRUE
-88577,724407554842,Coca-Cola Cero Azúcar,0,23,4854.73,Embutidos,TRUE
-20997,787897497310,Coca-Cola Cherry,0,19,14102.1,Congelados,TRUE
-69912,664233931170,Coca-Cola Light,0,116,4958.28,Bebidas sin alcohol,TRUE
-61018,621862418957,Coca-Cola Vanilla,0,246,3584.15,Frutos secos,TRUE
-76077,692835385772,Coca-Cola Zero,0,61,630.98,Frutas y verduras,FALSE
-11387,456066581352,Coco rallado,0,108,9248.2,Bebidas con alcohol,FALSE
-85917,232134229836,Cognac,0,18,3487.81,Higiene y cuidado,FALSE
-90797,359081730330,Col rizada (kale),0,26,14353.9,Bebidas sin alcohol,TRUE
-66602,157895482275,Coliflor,0,6,8998.68,Mascotas,TRUE
-83970,965679570870,Cosmopolitan,0,38,452.84,Embutidos,TRUE
-15083,934807861464,Crema de almendra,0,40,11188.1,Almacen,TRUE
-70958,801662963570,Crema de cacahuate,0,63,12225,Limpieza,TRUE
-40701,761601965162,Croissants,0,206,14672.9,Pastas frescas y tapas,FALSE
-52281,645411850733,Crush Fresa,0,175,14131,Carnes y pescados,TRUE
-88269,913276419120,Crush Naranja,0,6,1240.89,Bebés,TRUE
-52455,831752235942,Crush Piña,0,144,6690.18,Galletitas y panadería,TRUE
-62274,536191791357,Crush Uva,0,115,10460.2,Mascotas,TRUE
-40765,852226328604,Curaçao,0,99,531.29,Frutas y verduras,TRUE
-30208,765513063358,Cúrcuma,0,180,5472.58,Bebidas con alcohol,FALSE
-48279,364657083710,Cuscús,0,146,12286.9,Limpieza,FALSE
-41875,297429633917,Daiquiri,0,167,2899.06,Frutos secos,FALSE
-58692,926189587616,Descalcificador,0,260,12004.8,Higiene y cuidado,FALSE
-37569,538543112917,Desinfectante en spray,0,287,4447.16,Galletitas y panadería,TRUE
-99092,447008991258,Desinfectante para manos,0,192,1094.12,Bebés,FALSE
-59123,649993268146,Desodorante de tela,0,221,3598.6,Limpieza,TRUE
-81181,266697291812,Detergente en polvo para ropa,0,179,1091.54,Frutas y verduras,TRUE
-11016,479656060788,Detergente líquido para ropa,0,92,1205.56,Galletitas y panadería,FALSE
-22831,964623407693,Detergente para lavavajillas,0,252,11505.9,Mascotas,FALSE
-21532,837698536604,Detergente para limpieza en seco,0,127,7688.17,Congelados,FALSE
-79958,359453155582,Disolvente,0,162,4471.28,Golosinas y chocolates,TRUE
-44354,974350343503,Dr. Pepper,0,3,5604.56,Limpieza,FALSE
-41743,603094340733,Dr. Pepper Cero Azúcar,0,134,6446.73,Bebidas sin alcohol,FALSE
-48417,139355049358,Dulces,0,297,1066.7,Frutas y verduras,TRUE
-69340,281041595127,Duraznos,0,90,11652,Golosinas y chocolates,FALSE
-20391,541376301800,Empanadas,0,142,11560.2,Galletitas y panadería,FALSE
-83936,996285652244,Endibias,0,199,10555.5,Embutidos,FALSE
-99657,978954017814,Ensalada de atún,0,87,7574.58,Higiene y cuidado,TRUE
-45769,575831796334,Ensalada de pollo,0,66,6779.05,Limpieza,FALSE
-47312,785516238252,Escarola,0,267,3182.97,Golosinas y chocolates,FALSE
-42114,922013256107,Espaguetis,0,155,9667.46,Limpieza,FALSE
-56820,364820966789,Especias (ajo en polvo),0,73,8467.06,Embutidos,TRUE
-95184,878649188523,Especias (canela),0,246,12134.8,Golosinas y chocolates,FALSE
-96596,657122362346,Especias (cebolla en polvo),0,124,9776.92,Mascotas,FALSE
-45336,462068276570,Especias (comino),0,73,5890.94,Bebidas sin alcohol,FALSE
-37361,292941617416,Especias (cúrcuma),0,274,7261.93,Frutas y verduras,FALSE
-23136,531084323212,Especias (orégano),0,7,12707.1,Frutas y verduras,FALSE
-49261,381401259366,Especias (paprika),0,292,2363.07,Frutas y verduras,FALSE
-33671,336105050460,Especias (pimienta),0,270,797.54,Limpieza,FALSE
-46344,721597430417,Especias (romero),0,6,11122.9,Bebidas con alcohol,FALSE
-43548,407903909130,Especias (tomillo),0,279,4812.27,Bebidas con alcohol,TRUE
-48912,978087503297,Espinacas,0,74,2653.82,Almacen,TRUE
-27741,139455622357,Esponjas,0,260,170.22,Frutos secos,FALSE
-86014,584746961526,Espresso martini,0,120,10885.7,Bebés,FALSE
-65406,794050252126,Estragón,0,288,14536.3,Snacks,TRUE
-12288,283051878560,Estropajos,0,19,3848.18,Bebidas sin alcohol,TRUE
-52888,638628447706,Fanta Cero Azúcar,0,201,8912.61,Frutas y verduras,FALSE
-54162,299872290822,Fanta Fresa,0,239,3328.83,Frutos secos,FALSE
-15384,175286459339,Fanta Guaraná,0,171,11615.1,Snacks,TRUE
-46638,708670811283,Fanta Limón,0,246,10429.8,Limpieza,FALSE
-39208,120002678710,Fanta Mango,0,16,395.69,Almacen,FALSE
-98308,465554170946,Fanta Naranja,0,104,4438.09,Embutidos,TRUE
-18096,251936723489,Fanta Piña,0,101,8522.43,Snacks,TRUE
-10786,284350784589,Fanta Uva,0,101,13134,Frutas y verduras,TRUE
-24617,752032514870,French 75,0,217,7144.95,Mascotas,FALSE
-24274,921772279314,Fresas,0,296,664.3,Pastas frescas y tapas,FALSE
-41924,858796254234,Frescolita,0,71,11954.3,Higiene y cuidado,TRUE
-43277,922769595789,Frescolita Cero Azúcar,0,47,14031.5,Snacks,FALSE
-37307,945029384588,Frijoles,0,181,8671.83,Bebidas con alcohol,TRUE
-61557,905577105031,Frijoles negros,0,215,12957.5,Higiene y cuidado,TRUE
-74655,228096260826,Frijoles pintos,0,95,861.52,Carnes y pescados,FALSE
-48161,623877426085,Frijoles verdes,0,297,14590.8,Bebidas sin alcohol,FALSE
-15740,768043278662,Fruta de la pasión,0,237,6422.25,Limpieza,FALSE
-16793,898743139715,Fruta de la tierra,0,55,1896.56,Embutidos,TRUE
-33878,974070630687,Fruta deshidratada,0,244,8360.73,Higiene y cuidado,TRUE
-42073,299168126947,Fruta estrella,0,230,12929.3,Frutos secos,FALSE
-55883,515816549425,Frutas enlatadas,0,142,13306.7,Galletitas y panadería,FALSE
-52555,582942407814,Frutas enlatadas,0,250,13276.2,Frutos secos,FALSE
-45763,151857981168,Frutas frescas,0,265,13472.8,Higiene y cuidado,FALSE
-56474,699982510863,Frutas secas,0,192,1174.62,Frutas y verduras,FALSE
-46601,491929775632,Frutas secas (ciruelas pasas),0,211,4983.63,Bebidas con alcohol,TRUE
-81268,761195338754,Frutos secos,0,117,14116.3,Bebidas sin alcohol,TRUE
-68043,772605848182,Frutos secos (almendras),0,44,13730.2,Galletitas y panadería,FALSE
-72893,881128456087,Frutos secos (almendras),0,45,3277.46,Almacen,FALSE
-38258,473329588303,Frutos secos (anacardos),0,293,3456.84,Bebés,TRUE
-57185,198572679867,Frutos secos (nueces),0,103,14584.7,Mascotas,FALSE
-75782,722238249213,Frutos secos (nueces),0,193,8442.04,Golosinas y chocolates,FALSE
-27271,929331501254,Frutos secos (pecanas),0,19,7810.25,Bebidas sin alcohol,TRUE
-38692,720426061860,Frutos secos (pistachos),0,71,12931.1,Frutas y verduras,TRUE
-26891,188060464728,Fusilli,0,267,5920.07,Frutas y verduras,FALSE
-93269,334873767652,Fuzzy navel,0,146,12926.7,Snacks,TRUE
-52178,805505887530,Galletas,0,282,14552.2,Galletitas y panadería,TRUE
-21939,488667653399,Galletas de almendra,0,212,6040.59,Bebés,TRUE
-12830,458696884786,Galletas de arroz,0,45,3077.21,Limpieza,FALSE
-93938,165571087173,Galletas de avena,0,74,2034.38,Frutas y verduras,TRUE
-10799,459647878092,Galletas de cacahuete,0,86,12277.4,Almacen,FALSE
-35593,446117259699,Galletas de cacao,0,211,6048.59,Snacks,FALSE
-89656,973408830265,Galletas de caramelo,0,237,864.54,Snacks,TRUE
-82889,295530389312,Galletas de cereza,0,154,5615.62,Bebidas sin alcohol,FALSE
-34291,896768069576,Galletas de chocolate,0,271,7660.9,Embutidos,FALSE
-24135,856155723069,Galletas de chocolate blanco,0,252,2822.67,Bebidas sin alcohol,FALSE
-95932,511401514850,Galletas de chocolate blanco y frambuesa,0,166,7033.08,Bebidas con alcohol,FALSE
-25924,460039998296,Galletas de chocolate con leche,0,241,11134.6,Productos Lácteos,FALSE
-57073,266631324071,Galletas de chocolate con menta,0,140,913.32,Snacks,FALSE
-39018,983178294490,Galletas de chocolate con nueces,0,2,6238.29,Carnes y pescados,FALSE
-99579,294506827350,Galletas de chocolate negro,0,298,5689,Frutas y verduras,TRUE
-77730,762548506903,Galletas de chocolate y almendra,0,236,13298.2,Bebés,TRUE
-38211,728655692144,Galletas de chocolate y avellana,0,201,4709.44,Mascotas,FALSE
-19977,347621727031,Galletas de chocolate y avena,0,42,14547.2,Pastas frescas y tapas,FALSE
-81220,771674317425,Galletas de chocolate y cacahuete,0,195,8860.12,Mascotas,FALSE
-44138,939453409999,Galletas de chocolate y café,0,176,12726,Bebés,TRUE
-59896,416201251586,Galletas de chocolate y canela,0,132,9053.66,Almacen,FALSE
-86825,657684985461,Galletas de chocolate y caramelo,0,158,10656.5,Higiene y cuidado,TRUE
-78505,522966236246,Galletas de chocolate y cereza,0,8,10653.5,Higiene y cuidado,TRUE
-16339,617092033094,Galletas de chocolate y ciruela,0,182,268.17,Almacen,FALSE
-13421,354310098713,Galletas de chocolate y coco,0,207,13949.3,Embutidos,TRUE
-14732,658386220754,Galletas de chocolate y fresa,0,214,1677.31,Limpieza,TRUE
-29216,360483279026,Galletas de chocolate y frutas,0,163,9110.97,Frutos secos,TRUE
-99379,964834323971,Galletas de chocolate y frutos secos,0,299,3443.1,Higiene y cuidado,TRUE
-23739,156325439327,Galletas de chocolate y galleta,0,39,9853.01,Frutos secos,FALSE
-13210,977260513096,Galletas de chocolate y jengibre,0,26,2429.16,Bebidas sin alcohol,FALSE
-60669,513836629155,Galletas de chocolate y leche,0,113,12795.7,Higiene y cuidado,TRUE
-72015,581239963652,Galletas de chocolate y menta,0,135,8200.1,Pastas frescas y tapas,TRUE
-70947,235438105476,Galletas de chocolate y miel,0,30,462.73,Congelados,FALSE
-89482,505919438977,Galletas de chocolate y naranja,0,187,12124.4,Almacen,TRUE
-83851,248801273092,Galletas de chocolate y nueces,0,149,166.63,Bebidas con alcohol,FALSE
-14941,696248313647,Galletas de chocolate y vainilla,0,11,3495.09,Carnes y pescados,FALSE
-35341,362356603184,Galletas de chocolate y yogur,0,128,10845.2,Productos Lácteos,FALSE
-17258,432390449308,Galletas de coco,0,63,8441.6,Congelados,TRUE
-66891,340738945219,Galletas de crema,0,256,14531.7,Frutas y verduras,TRUE
-43470,533947243468,Galletas de especias,0,34,10380.9,Bebés,FALSE
-47355,611912059699,Galletas de frutas,0,242,1361.26,Snacks,TRUE
-42939,717643590447,Galletas de frutas secas,0,279,621.26,Pastas frescas y tapas,FALSE
-33969,845669308026,Galletas de jengibre,0,126,10099.2,Mascotas,TRUE
-56264,275424979907,Galletas de jengibre molido,0,153,11741.7,Higiene y cuidado,FALSE
-73376,545659137229,Galletas de jengibre y especias,0,7,1230.22,Galletitas y panadería,FALSE
-45438,698258940485,Galletas de limón,0,232,2358.84,Frutas y verduras,FALSE
-80340,717979978497,Galletas de maíz,0,206,9191.83,Mascotas,TRUE
-82562,658912871902,Galletas de mantequilla,0,293,7939.32,Bebés,TRUE
-74143,501644229742,Galletas de miel,0,53,8973.07,Galletitas y panadería,TRUE
-24879,779827994724,Galletas de té,0,97,2455.44,Embutidos,FALSE
-64363,752194000876,Galletas de vainilla,0,110,5972.17,Embutidos,FALSE
-42561,553439842231,Galletas de yogur,0,296,5922.84,Snacks,FALSE
-67208,896104742550,Galletas rellenas,0,75,9018.09,Almacen,TRUE
-60873,874940660862,Galletas saladas,0,219,14637.1,Snacks,FALSE
-32798,342354426962,Garbanzos,0,13,14802.6,Galletitas y panadería,TRUE
-43285,859460047067,Gelatina,0,212,5089.65,Frutas y verduras,FALSE
-12231,816475793331,Ginebra,0,201,10729.5,Higiene y cuidado,TRUE
-99716,957300463899,Ginger Ale,0,120,13073.2,Embutidos,FALSE
-33741,397455414468,Granola,0,222,9496.66,Galletitas y panadería,FALSE
-96324,603655412500,Grappa,0,115,2141.55,Higiene y cuidado,FALSE
-67019,780195914948,Grasshopper,0,19,14646.1,Limpieza,FALSE
-82961,916148683874,Grosellas,0,92,12396.7,Galletitas y panadería,TRUE
-27791,829315057717,Grosellas negras,0,240,13641.7,Limpieza,TRUE
-98349,620991714585,Guantes de limpieza,0,183,2768.87,Bebidas con alcohol,TRUE
-10670,712190063896,Guayaba,0,143,800.36,Snacks,FALSE
-55839,757899658782,Guisantes,0,121,12145.5,Frutas y verduras,FALSE
-82651,194776998725,Guiso de carne,0,192,919.46,Frutas y verduras,TRUE
-57160,694999759271,Guiso de pollo,0,239,350.7,Embutidos,FALSE
-77508,359126373197,Hamburguesas,0,273,9836.87,Bebidas con alcohol,FALSE
-96413,820093526890,Harina,0,6,1086.39,Bebidas con alcohol,FALSE
-97585,591228793987,Harina de almendra,0,294,12824.8,Galletitas y panadería,TRUE
-24132,729413474501,Harina de arroz,0,114,14966.6,Snacks,FALSE
-32093,973489294375,Harina de avena,0,12,4546.92,Carnes y pescados,FALSE
-99895,586533484559,Harina de maíz,0,291,7886.84,Galletitas y panadería,TRUE
-47467,702260940619,Harina de trigo,0,83,864.77,Golosinas y chocolates,FALSE
-59678,314142335145,Harina integral,0,172,5147.77,Pastas frescas y tapas,TRUE
-41174,129448290791,Helados,0,176,4450.28,Frutos secos,TRUE
-12161,275078180768,Higo,0,82,1419.71,Galletitas y panadería,FALSE
-43187,111304963956,Hinojo,0,202,7411.8,Bebidas sin alcohol,TRUE
-72290,289259274986,Huevos,0,183,9251.04,Pastas frescas y tapas,FALSE
-96879,197570204602,Inca Kola,0,17,4824.58,Almacen,TRUE
-15174,698797801304,Irish coffee,0,188,7198.11,Pastas frescas y tapas,FALSE
-78062,786279589603,Irish whiskey,0,224,6402.96,Pastas frescas y tapas,TRUE
-35518,560541690261,Jabón de manos líquido,0,182,4574.8,Frutos secos,FALSE
-87898,998673286609,Jabón en barra,0,73,6879.02,Bebidas con alcohol,FALSE
-38886,426134553095,Jabón para platos,0,194,6300.67,Pastas frescas y tapas,TRUE
-19469,903562223601,Jamón,0,209,3594.58,Bebidas con alcohol,TRUE
-13061,119755743465,Jarabe de arce,0,130,9447.82,Carnes y pescados,TRUE
-93952,407197898746,Jarritos (Frambuesa),0,178,1226.03,Snacks,FALSE
-88679,626213146627,Jarritos (Fresa),0,155,2585.37,Pastas frescas y tapas,TRUE
-57426,663749341677,Jarritos (Lima),0,168,7504.66,Pastas frescas y tapas,FALSE
-32636,587408536131,Jarritos (Limón),0,119,848.82,Higiene y cuidado,TRUE
-55633,851573056188,Jarritos (Mandarina),0,77,13571.9,Golosinas y chocolates,FALSE
-76422,542127344031,Jarritos (Manzana),0,142,11157.9,Higiene y cuidado,TRUE
-39195,896837285559,Jarritos (Piña),0,276,182.01,Higiene y cuidado,FALSE
-18721,618376034609,Jarritos (Sandía),0,200,11412.3,Frutas y verduras,FALSE
-20031,753853137753,Jarritos (Tamarindo),0,10,7873.51,Embutidos,TRUE
-47484,325595250280,Jarritos (Toronja),0,228,6067.44,Golosinas y chocolates,FALSE
-25224,753263408081,Jengibre,0,139,14513.8,Embutidos,TRUE
-63848,270657408227,Jengibre fresco,0,229,13023.7,Galletitas y panadería,FALSE
-61017,648669237288,Jerez,0,279,4991.76,Congelados,FALSE
-20023,203188567538,Jugo concentrado,0,156,7294.38,Productos Lácteos,TRUE
-84836,379501972432,Jugos,0,228,11847.7,Golosinas y chocolates,TRUE
-57683,888305499246,Ketchup,0,35,4356.31,Bebés,TRUE
-95486,953558501675,Kickstart (Cítricos),0,176,14778.2,Galletitas y panadería,FALSE
-10628,332912391510,Kickstart (Frutas),0,222,10852.7,Bebidas sin alcohol,TRUE
-57287,661921176438,Kir Royale,0,9,10561.7,Carnes y pescados,FALSE
-48120,784519805659,Kiwano (fruta del dragón),0,171,12300,Golosinas y chocolates,TRUE
-15543,331728923630,Kiwis,0,197,5712.48,Golosinas y chocolates,TRUE
-28027,862652652964,La Croix (Cítricos),0,27,5542.33,Galletitas y panadería,TRUE
-57234,808870883426,La Croix (Durazno),0,231,1186.96,Galletitas y panadería,FALSE
-60967,482959458422,La Croix (Frambuesa),0,150,9493.36,Frutas y verduras,TRUE
-11780,188618458832,La Croix (Limón),0,122,8055.15,Congelados,FALSE
-37416,834242129638,Lasaña,0,206,444,Golosinas y chocolates,FALSE
-30700,285493970315,Leche,0,190,14304.2,Carnes y pescados,FALSE
-82433,130546988744,Leche condensada,0,30,2654.12,Frutas y verduras,FALSE
-68623,829668688443,Leche de almendras,0,5,14846.8,Pastas frescas y tapas,FALSE
-20062,410062046293,Leche de coco,0,141,14663.8,Bebidas sin alcohol,FALSE
-22246,970738842285,Leche evaporada,0,208,4389.04,Limpieza,FALSE
-65908,418551396565,Lechuga,0,219,1313.14,Bebidas sin alcohol,TRUE
-25041,753752796958,Lentejas,0,183,170.39,Almacen,FALSE
-97762,854513385140,Levadura,0,203,11259.4,Frutas y verduras,FALSE
-92715,875782391029,Lichi,0,292,13663.4,Limpieza,FALSE
-34939,242433184426,Licor de café,0,12,13015.2,Carnes y pescados,TRUE
-44104,754638571894,Licor de frutas,0,190,12812.1,Bebidas con alcohol,TRUE
-53078,879314262470,Licor de menta,0,114,2610.79,Pastas frescas y tapas,TRUE
-22990,398237760615,Limones,0,61,8471.44,Limpieza,FALSE
-17904,649416715441,Limpiador de acero inoxidable,0,176,315.25,Golosinas y chocolates,TRUE
-22988,113170527522,Limpiador de alfombras,0,113,7782.62,Snacks,FALSE
-95795,180337483877,Limpiador de baño,0,218,941.02,Galletitas y panadería,FALSE
-68080,736147612497,Limpiador de cocina,0,110,4040.79,Golosinas y chocolates,FALSE
-86815,404603669516,Limpiador de electrodomésticos,0,257,2382.43,Embutidos,TRUE
-99884,425145743408,Limpiador de filtros de campana,0,221,10632.3,Golosinas y chocolates,TRUE
-44650,257655684364,Limpiador de horno,0,122,6799.21,Galletitas y panadería,FALSE
-81922,870021228571,Limpiador de inodoros,0,33,10693.9,Snacks,FALSE
-34794,670999020686,Limpiador de manchas de aceite,0,36,2615.45,Congelados,TRUE
-59598,611331580561,Limpiador de manchas de aceite de cocina,0,108,13652.2,Golosinas y chocolates,TRUE
-22973,487443413654,Limpiador de manchas de aceite de oliva,0,101,752.9,Embutidos,FALSE
-70931,942889622329,Limpiador de manchas de aceites esenciales,0,185,10720.5,Galletitas y panadería,TRUE
-29047,128364694748,Limpiador de manchas de adhesivos,0,0,3279.04,Carnes y pescados,FALSE
-85586,340158725272,Limpiador de manchas de alimentos,0,27,3340.15,Bebidas sin alcohol,FALSE
-37300,319045533096,Limpiador de manchas de arroz,0,120,3036.71,Snacks,FALSE
-99543,412211361083,Limpiador de manchas de barro,0,66,10964.8,Limpieza,TRUE
-98608,987387483812,Limpiador de manchas de batidos,0,258,14033.7,Bebés,FALSE
-99321,434033567010,Limpiador de manchas de batidos de frutas,0,60,2964.98,Embutidos,FALSE
-79000,704553796256,Limpiador de manchas de café,0,224,5840.81,Bebidas con alcohol,TRUE
-46465,333725908877,Limpiador de manchas de café con leche,0,87,13414.7,Frutos secos,FALSE
-46098,597788955712,Limpiador de manchas de cera,0,6,5558.82,Galletitas y panadería,TRUE
-38235,499813454604,Limpiador de manchas de ceras,0,260,14908.9,Higiene y cuidado,FALSE
-60175,968253521416,Limpiador de manchas de chicle,0,12,11146.9,Galletitas y panadería,TRUE
-46816,127828799554,Limpiador de manchas de chocolate,0,203,3860.8,Congelados,FALSE
-83036,217747675266,Limpiador de manchas de chocolate caliente,0,113,6336.06,Carnes y pescados,TRUE
-24250,929750800775,Limpiador de manchas de cosméticos,0,132,7537.32,Productos Lácteos,FALSE
-73933,642733939884,Limpiador de manchas de crema,0,1,4655.95,Bebidas con alcohol,FALSE
-35234,316861481297,Limpiador de manchas de esmalte,0,162,6623.74,Bebidas sin alcohol,FALSE
-43767,361107806884,Limpiador de manchas de esmalte de uñas,0,17,4952.2,Almacen,FALSE
-50788,526908356167,Limpiador de manchas de fruta,0,67,13890.6,Bebidas con alcohol,FALSE
-60278,369118365363,Limpiador de manchas de frutas cítricas,0,234,7821.16,Higiene y cuidado,FALSE
-46397,612266688669,Limpiador de manchas de gelatina,0,278,9634.38,Almacen,FALSE
-31892,387980587904,Limpiador de manchas de gelatinas de colores,0,61,4618.2,Bebés,TRUE
-61072,106822753405,Limpiador de manchas de grasa,0,184,8566.33,Almacen,TRUE
-57695,743039642758,Limpiador de manchas de grasa en la ropa,0,8,8151.55,Golosinas y chocolates,TRUE
-38399,589052046836,Limpiador de manchas de helados,0,129,2535.97,Galletitas y panadería,FALSE
-30471,457727338814,Limpiador de manchas de hierba,0,197,11376.5,Golosinas y chocolates,TRUE
-74431,264105739987,Limpiador de manchas de jugos,0,243,10486.5,Frutas y verduras,FALSE
-56958,345062575985,Limpiador de manchas de ketchup,0,48,1702.33,Frutas y verduras,TRUE
-33365,718538808253,Limpiador de manchas de leche,0,154,4307.61,Embutidos,FALSE
-71331,339439033128,Limpiador de manchas de líquidos para escribir,0,186,7391.56,Congelados,FALSE
-30209,408870029892,Limpiador de manchas de maquillaje,0,1,10352.5,Snacks,FALSE
-71505,136043472265,Limpiador de manchas de mayonesa,0,275,9951.22,Golosinas y chocolates,FALSE
-30008,922853866772,Limpiador de manchas de miel,0,5,12495.1,Congelados,FALSE
-22062,278086195642,Limpiador de manchas de pasta,0,124,14826.2,Frutos secos,TRUE
-15290,734153206626,Limpiador de manchas de pegamento,0,83,5483.78,Frutos secos,TRUE
-41761,204901973050,Limpiador de manchas de pintura,0,164,7526.22,Frutas y verduras,TRUE
-41100,204177089215,Limpiador de manchas de pintura acrílica,0,81,9872.21,Higiene y cuidado,FALSE
-49843,965887634540,Limpiador de manchas de refrescos,0,44,1670.74,Frutos secos,TRUE
-85519,285936046088,Limpiador de manchas de rotulador,0,236,293.23,Golosinas y chocolates,FALSE
-54914,789876141552,Limpiador de manchas de rotuladores permanentes,0,65,10677,Bebidas con alcohol,TRUE
-62647,530413990282,Limpiador de manchas de salsa de soja,0,107,5692.99,Higiene y cuidado,TRUE
-44555,463975758415,Limpiador de manchas de salsa picante,0,49,13344.7,Carnes y pescados,FALSE
-98835,656997324632,Limpiador de manchas de salsas,0,248,12150.4,Mascotas,FALSE
-88752,775135394732,Limpiador de manchas de sangre,0,91,8739.52,Golosinas y chocolates,FALSE
-20033,546853819351,Limpiador de manchas de silicona,0,266,7512.85,Frutas y verduras,FALSE
-74652,657688396068,Limpiador de manchas de sirope,0,79,4785.56,Frutos secos,FALSE
-62111,849650240331,Limpiador de manchas de sorbete,0,44,5787.16,Bebidas sin alcohol,TRUE
-44641,836762803141,Limpiador de manchas de sudor,0,13,9019.02,Higiene y cuidado,FALSE
-95239,677737180349,Limpiador de manchas de tierra,0,228,14270.7,Congelados,TRUE
-75905,253713332651,Limpiador de manchas de tinta,0,148,7791.79,Golosinas y chocolates,TRUE
-48483,950094699756,Limpiador de manchas de tinta de bolígrafo,0,271,13634,Higiene y cuidado,FALSE
-80877,330502047168,Limpiador de manchas de tinta de marcadores,0,280,14677.1,Pastas frescas y tapas,TRUE
-77054,553555800252,Limpiador de manchas de vinagre,0,198,7025.47,Embutidos,FALSE
-50724,730572376999,Limpiador de manchas de vino,0,54,12086.1,Mascotas,FALSE
-79001,610294628406,Limpiador de manchas de yogur,0,292,9400.72,Frutas y verduras,FALSE
-92190,681773456809,Limpiador de parrillas,0,221,9655.62,Bebidas sin alcohol,TRUE
-57124,234590416142,Limpiador de pisos,0,63,4448.85,Carnes y pescados,FALSE
-65575,732477753987,Limpiador de superficies,0,12,2763.55,Higiene y cuidado,FALSE
-71261,261687171154,Limpiador de tapicería,0,166,6603.34,Bebidas con alcohol,TRUE
-90518,481459230805,Limpiador de vidrio,0,22,5578.54,Frutas y verduras,FALSE
-40842,514516491007,Limpiador multiusos,0,261,252.53,Mascotas,FALSE
-42001,465838392957,Long Island iced tea,0,233,3854.34,Snacks,TRUE
-97771,279435282703,Macarrones,0,257,14534.9,Snacks,TRUE
-66071,365738301367,Mai tai,0,116,10027.4,Embutidos,FALSE
 10388,498771529654,Maíz,0,245,415.23,Carnes y pescados,FALSE
-28334,226002041095,Mangos,0,178,10440.3,Almacen,FALSE
-40224,825995236979,Mantequilla,0,105,1044.35,Galletitas y panadería,TRUE
-44247,663836193108,Mantequilla de maní,0,221,11178.8,Snacks,TRUE
-98762,413887223450,Manzanas,0,46,6564.43,Mascotas,TRUE
-72512,103379521263,Manzanita Sol,0,288,3426.52,Frutos secos,TRUE
-98510,853129634888,Margarita,0,300,2439.67,Frutos secos,FALSE
-86637,367207173421,Mariscos,0,286,7402.65,Embutidos,TRUE
-51245,242927736452,Martini,0,46,14131.2,Galletitas y panadería,TRUE
-98196,702511596441,Mayonesa,0,161,14804.7,Higiene y cuidado,TRUE
-47079,911004334050,Mellow Yellow,0,12,10028.7,Productos Lácteos,FALSE
-32119,625917021151,Melón cantalupo,0,259,7805.58,Pastas frescas y tapas,TRUE
-77717,253176417541,Melón honeydew,0,231,11226.4,Golosinas y chocolates,FALSE
-17763,514863133775,Melones,0,275,8525.66,Embutidos,TRUE
-79455,820561390311,Menta,0,20,2584.22,Embutidos,TRUE
-80211,109253154709,Mermelada,0,276,6452.61,Mascotas,TRUE
-26509,452492784018,Mezcal,0,221,11362.2,Frutas y verduras,TRUE
-32341,934342276208,Miel,0,106,983.91,Almacen,FALSE
-39765,426708852367,Mint julep,0,67,3120.35,Bebidas con alcohol,FALSE
-70632,153929482640,Mojito,0,38,2383.74,Snacks,TRUE
-48352,485952528269,Moras,0,277,674.02,Pastas frescas y tapas,TRUE
-59240,924187931561,Mostaza,0,45,8292.73,Galletitas y panadería,FALSE
-25045,115979248298,Mountain Dew,0,69,7059.51,Bebidas sin alcohol,TRUE
-12777,800619295337,Mountain Dew Cero Azúcar,0,129,14293,Frutos secos,TRUE
-83179,378924813259,Moxie,0,196,11485.6,Mascotas,FALSE
-76969,250489586195,Mudslide,0,278,13771.3,Congelados,TRUE
-92906,536057761354,Nabos,0,295,293.7,Carnes y pescados,TRUE
-91230,995438830680,Naranjas,0,43,2158.17,Pastas frescas y tapas,TRUE
-46729,374972848867,Nectarina,0,120,10911.7,Pastas frescas y tapas,TRUE
-40301,988511171955,Negroni,0,116,8015.54,Bebés,TRUE
-10979,708079410691,Nueces,0,177,4973.86,Mascotas,FALSE
-11958,808297911993,Nueces (frescas),0,284,3578.34,Embutidos,TRUE
-93174,688138042882,Nuggets de pollo,0,3,6921.44,Snacks,TRUE
-90266,807780069055,Old fashioned,0,73,13625.7,Productos Lácteos,TRUE
-11360,386757301309,Oporto,0,245,10885.1,Pastas frescas y tapas,FALSE
-87794,399223624760,Paloma,0,262,1822.12,Golosinas y chocolates,FALSE
-11828,203438451101,Palomitas de maíz,0,236,10886.5,Limpieza,TRUE
-47235,254379901798,Pan,0,48,274.24,Limpieza,TRUE
-10440,516670072245,Pan de molde,0,287,8717.72,Limpieza,FALSE
-30977,777061962730,Paños de microfibra,0,69,9517.88,Snacks,TRUE
-73914,953172039179,Papas,0,212,455.82,Galletitas y panadería,TRUE
-75828,749984158663,Papaya,0,76,14501.6,Golosinas y chocolates,FALSE
-58550,336129245014,Papaya verde,0,116,8732.34,Productos Lácteos,TRUE
-92485,354820320368,Papel toalla,0,18,7402.43,Limpieza,FALSE
-59328,201797246042,Pasta,0,78,862.19,Congelados,FALSE
-28194,558143484147,Pasta de aceituna,0,88,14659.9,Higiene y cuidado,TRUE
-98528,844041905443,Pasta de ajo,0,157,5692.43,Higiene y cuidado,TRUE
-23346,837297166269,Pasta de almendra,0,33,8899.59,Golosinas y chocolates,TRUE
-82224,692750651576,Pasta de curry,0,172,5349.1,Bebidas sin alcohol,TRUE
-37828,720476849523,Pasta de maní,0,192,13287.6,Bebidas con alcohol,TRUE
-97921,183658968181,Pasta de tomate,0,92,1778.44,Bebés,TRUE
-66966,175568089212,Pasta de trigo,0,11,11345.6,Bebidas con alcohol,TRUE
-29499,327874097508,Pasta integral,0,133,9076.14,Galletitas y panadería,FALSE
-14937,628734445610,Pasteles,0,266,14011.7,Almacen,FALSE
-46229,417455175381,Patatas fritas,0,25,8897.04,Snacks,FALSE
-95563,460140832606,Pepinos,0,125,11284,Congelados,TRUE
-37581,277459212172,Pepsi,0,155,10657.2,Galletitas y panadería,FALSE
-45010,182027806221,Pepsi Cero Azúcar,0,231,13547.6,Carnes y pescados,FALSE
-89616,972519721689,Pepsi Max,0,203,11456.1,Carnes y pescados,TRUE
-79672,754659903705,Pepsi Wild Cherry,0,113,8788.68,Carnes y pescados,FALSE
-78250,499949759091,Peras,0,70,6097.11,Frutas y verduras,FALSE
-32980,690486162265,Perejil,0,207,13546.7,Congelados,FALSE
-73131,937365226821,Perrier,0,9,2224.59,Snacks,FALSE
-99824,130395194975,Pescado,0,7,1150.8,Almacen,TRUE
-69560,937279555860,Pescado enlatado,0,93,529.87,Productos Lácteos,FALSE
-68095,764086691900,Physalis,0,210,9920.89,Productos Lácteos,FALSE
-19602,868185760098,Pimienta,0,280,3282.06,Golosinas y chocolates,TRUE
-35581,120435171602,Pimiento jalapeño,0,126,1720.53,Bebidas sin alcohol,TRUE
-18061,489053459845,Pimientos,0,25,1943.75,Almacen,FALSE
-87855,863699486191,Pimientos (amarillos),0,224,1387.31,Golosinas y chocolates,FALSE
-22013,342210497720,Pimientos (rojos),0,28,6663.97,Pastas frescas y tapas,TRUE
-64830,247889277153,Pimientos (verdes),0,177,9852.01,Bebés,FALSE
-69422,334645838104,Pimm's Cup,0,219,12358.3,Congelados,FALSE
-46828,878203193153,Pina colada,0,251,14724.9,Frutos secos,TRUE
-32261,977785614358,Piña,0,109,13445.2,Bebés,TRUE
-14261,570719664994,Piña colada,0,120,13643.7,Golosinas y chocolates,FALSE
-14708,102914052817,Piña colada de fresa,0,247,8364.39,Bebidas con alcohol,TRUE
-15481,908761812698,Pisco,0,295,4284.64,Bebidas sin alcohol,FALSE
-69463,653578179106,Pistachos,0,163,7022.06,Almacen,TRUE
-14650,804945848316,Pizza congelada,0,122,10410.7,Bebidas con alcohol,FALSE
-71442,733055860782,Planter's punch,0,231,9242.85,Almacen,TRUE
-24094,699635694015,Plátanos,0,235,2487.29,Frutas y verduras,TRUE
-54239,856150297695,Polar Seltzer (Cítricos),0,63,1770.57,Bebidas sin alcohol,FALSE
-17237,148749924627,Polar Seltzer (Durazno),0,88,4526.57,Carnes y pescados,FALSE
-35866,560427634022,Polar Seltzer (Frambuesa),0,158,12552.2,Carnes y pescados,FALSE
-76059,473000322141,Polar Seltzer (Limón),0,107,4539.37,Bebidas sin alcohol,TRUE
-38768,982641699501,Pollo,0,249,9323.04,Galletitas y panadería,FALSE
-69941,698919329963,Polvo de proteína,0,295,10884.1,Golosinas y chocolates,FALSE
-82772,625661167150,Polvo para hornear,0,168,10930.2,Bebés,FALSE
-91698,127592355363,Prosecco,0,55,12123.2,Golosinas y chocolates,FALSE
-99102,178011475201,Pudin instantáneo,0,268,3699.98,Embutidos,TRUE
-42820,501352440642,Puerros,0,166,4128.53,Golosinas y chocolates,FALSE
-99336,710397398074,Queso,0,216,6084.43,Productos Lácteos,FALSE
-93241,992687897516,Quinoa,0,26,9681.53,Bebidas con alcohol,FALSE
-82547,238433851428,Quitagrasas,0,165,4605.5,Congelados,FALSE
-87739,117229412571,Quitamanchas,0,182,5239.84,Bebés,TRUE
-71076,364718223184,Rábano,0,218,10354.5,Higiene y cuidado,TRUE
-86666,545017032948,Rábano picante,0,275,1465.17,Almacen,FALSE
-70738,239443694098,Rambután,0,41,8261.33,Bebidas sin alcohol,TRUE
-68646,373471754204,Ramos gin fizz,0,254,9010.12,Productos Lácteos,FALSE
-40951,671999784793,Remolacha amarilla,0,79,10856.1,Snacks,TRUE
-99561,595428206489,Removedor de manchas,0,8,8298.8,Almacen,FALSE
-86733,663626030518,Repollo,0,209,13859,Golosinas y chocolates,TRUE
-42361,558201958095,Res,0,152,1319.89,Snacks,FALSE
-13189,641801032403,Rob Roy,0,241,1117.98,Frutos secos,FALSE
-94078,384116388377,Romero,0,71,8615.45,Frutas y verduras,FALSE
-95262,601742684419,Ron,0,102,10328.4,Limpieza,TRUE
-36844,574576834939,Rúcula,0,73,7200.48,Bebidas con alcohol,TRUE
-63689,835568362124,Sake,0,70,8524.5,Embutidos,TRUE
-64080,347436462548,Sal,0,48,5454.26,Pastas frescas y tapas,FALSE
-73113,941916897568,Sal kosher,0,234,7615.73,Almacen,TRUE
-58126,437332275587,Sal marina,0,33,6818.14,Golosinas y chocolates,TRUE
-68299,584340275256,Salchichas,0,60,7054.05,Limpieza,TRUE
-28372,738640989209,Salsa barbacoa,0,49,9423.42,Mascotas,TRUE
-85438,458981909636,Salsa barbecue,0,252,13599.4,Frutas y verduras,FALSE
-46728,860470503661,Salsa de aguacate,0,214,11502.8,Golosinas y chocolates,TRUE
-70578,777170721403,Salsa de cacahuate,0,220,974.6,Congelados,FALSE
-58749,505502850046,Salsa de chile,0,41,14177.2,Frutos secos,FALSE
-30305,657666861186,Salsa de chile dulce,0,156,5962.26,Embutidos,FALSE
-14069,385466384496,Salsa de ciruela,0,191,11610.4,Bebidas con alcohol,FALSE
-83461,203695627727,Salsa de curry,0,227,4474.65,Carnes y pescados,FALSE
-46464,777563487759,Salsa de guacamole,0,125,10344.8,Galletitas y panadería,FALSE
-25642,672424305570,Salsa de mango,0,143,11560.7,Pastas frescas y tapas,FALSE
-94564,233118222605,Salsa de maní,0,240,103.48,Congelados,FALSE
-56195,354218067687,Salsa de pescado,0,133,6407.5,Frutas y verduras,TRUE
-63200,284118182246,Salsa de soja,0,296,199.95,Higiene y cuidado,FALSE
-77530,358268550196,Salsa de soya,0,116,9998.88,Bebés,TRUE
-29343,866732885868,Salsa de tomate,0,294,12691.5,Pastas frescas y tapas,FALSE
-74633,507514279588,Salsa de tomate picante,0,120,10811.9,Carnes y pescados,TRUE
-36417,977170055272,Salsa pesto,0,20,894.49,Congelados,TRUE
-68353,485235823343,Salsa picante,0,157,2508.31,Frutas y verduras,TRUE
-86933,125610377242,Salsa tzatziki,0,262,12385.9,Carnes y pescados,FALSE
-73320,851294688054,Salsa Worcestershire,0,250,2565.58,Mascotas,FALSE
-61381,835279061435,Salsas para pasta,0,83,2809.66,Frutas y verduras,TRUE
-98918,358982422723,Salvia,0,133,11807.8,Bebidas sin alcohol,FALSE
-78035,301982539343,San Pellegrino,0,261,12539.3,Carnes y pescados,TRUE
-59540,375951230676,Sandías,0,32,3597.27,Frutas y verduras,TRUE
-80254,456501078743,Sangría,0,255,3127.43,Pastas frescas y tapas,FALSE
-99406,907719183629,Sardinas enlatadas,0,32,5080,Almacen,FALSE
-99811,686335258656,Scotch,0,81,985.96,Limpieza,FALSE
-84997,204382780958,Screwdriver,0,125,10928.6,Frutas y verduras,FALSE
-43501,534510105394,Sea breeze,0,27,793.78,Bebés,FALSE
-42454,564312720900,Seltzer Water (Con arándano),0,38,3802.5,Galletitas y panadería,FALSE
-49297,563032596619,Seltzer Water (Con durazno),0,188,2714.78,Carnes y pescados,FALSE
-66835,712211234201,Seltzer Water (Con fresa),0,21,12075.3,Snacks,TRUE
-49457,977105459103,Seltzer Water (Con jengibre),0,157,13072.6,Bebidas con alcohol,TRUE
-45220,553098280102,Seltzer Water (Con limón),0,299,11532.4,Golosinas y chocolates,FALSE
-57699,874541961781,Seltzer Water (Con melón),0,242,1113.66,Mascotas,FALSE
-13800,270577444397,Seltzer Water (Con pomelo),0,219,7942.46,Higiene y cuidado,TRUE
-94192,449834129125,Seltzer Water (Natural),0,101,1161.41,Snacks,FALSE
-71917,607109123933,Semillas de calabaza,0,223,10727,Mascotas,FALSE
-61490,692041614486,Semillas de calabaza,0,228,13027.6,Bebidas con alcohol,TRUE
-68997,254838722574,Semillas de chía,0,143,2286.63,Embutidos,TRUE
-91479,875430884372,Semillas de girasol,0,114,11437.2,Almacen,TRUE
-97811,945960749510,Semillas de linaza,0,96,105.36,Productos Lácteos,FALSE
-88910,204035497499,Semillas de sésamo,0,190,3074.8,Bebés,TRUE
 10422,326065796367,Sémola,0,97,14542.4,Bebés,FALSE
-31596,564679718222,Sémola de trigo,0,15,10291.1,Golosinas y chocolates,TRUE
-49196,160965991282,Setas,0,245,7835.26,Golosinas y chocolates,FALSE
-81216,985700413528,Sex on the beach,0,147,7193.23,Carnes y pescados,TRUE
-77540,299922873463,Sidecar,0,60,823.35,Productos Lácteos,TRUE
-30026,266265419877,Sidra,0,0,139.62,Snacks,TRUE
-18698,142272738679,Sierra Mist,0,112,6525.08,Frutas y verduras,TRUE
-47074,805065318503,Singapore sling,0,73,11073.8,Productos Lácteos,TRUE
-62847,175288483081,Sirope,0,114,5685.83,Higiene y cuidado,TRUE
+10440,516670072245,Pan de molde,0,287,8717.72,Limpieza,FALSE
+10628,332912391510,Kickstart (Frutas),0,222,10852.7,Bebidas sin alcohol,TRUE
+10670,712190063896,Guayaba,0,143,800.36,Snacks,FALSE
+10786,284350784589,Fanta Uva,0,101,13134,Frutas y verduras,TRUE
+10799,459647878092,Galletas de cacahuete,0,86,12277.4,Almacen,FALSE
+10979,708079410691,Nueces,0,177,4973.86,Mascotas,FALSE
+11016,479656060788,Detergente líquido para ropa,0,92,1205.56,Galletitas y panadería,FALSE
 11342,305558741831,Sirope de agave,0,96,5687.59,Almacen,FALSE
-27575,400019746796,Sirope de arce,0,177,3621.77,Bebés,FALSE
-14227,369285387380,Slice,0,252,3820.34,Bebidas sin alcohol,TRUE
-97845,248292747272,Snack de maíz,0,156,13791.6,Snacks,TRUE
-96983,768783551488,Snacks de arroz,0,298,11978.2,Bebidas con alcohol,TRUE
-42420,858399020334,Snacks de maíz,0,85,11793.3,Galletitas y panadería,FALSE
-74348,800473433689,Snacks de queso,0,248,12463.9,Galletitas y panadería,FALSE
-85919,399651556015,Soju,0,293,10447,Embutidos,FALSE
-92402,756925404881,Sopa de miso,0,283,10725.4,Almacen,TRUE
-85999,574041450673,Sopa de pollo,0,67,13969.4,Higiene y cuidado,FALSE
-66235,500070255319,Sopa de verduras,0,263,9203.44,Snacks,FALSE
-77476,530230407103,Sopa enlatada,0,246,2735.82,Snacks,FALSE
-94480,204879796740,Sopa instantánea,0,298,12468.8,Pastas frescas y tapas,TRUE
-63174,540565943155,Spray desodorante para ambiente,0,261,2981.89,Carnes y pescados,FALSE
-42559,394528921528,Sprite,0,58,435.2,Limpieza,FALSE
-39360,964754466528,Sprite Cherry,0,161,10696,Frutos secos,FALSE
-81902,453729507366,Sprite Lemonade,0,238,4465.09,Bebidas con alcohol,FALSE
-57120,802328487333,Sprite Remix,0,51,10172.6,Productos Lácteos,TRUE
-30101,962650009085,Sprite Tropical,0,127,8036.48,Congelados,TRUE
-34768,597929601337,Sprite Zero,0,188,1922.86,Carnes y pescados,FALSE
-58970,573039403428,Squirt,0,104,14183.4,Carnes y pescados,FALSE
+11360,386757301309,Oporto,0,245,10885.1,Pastas frescas y tapas,FALSE
+11387,456066581352,Coco rallado,0,108,9248.2,Bebidas con alcohol,FALSE
+11485,684408055463,Calabazas,0,194,5269.57,Frutas y verduras,TRUE
+11780,188618458832,La Croix (Limón),0,122,8055.15,Congelados,FALSE
+11828,203438451101,Palomitas de maíz,0,236,10886.5,Limpieza,TRUE
 11875,900380043206,Suavizante para ropa,0,218,2130.86,Snacks,TRUE
-59438,581303164741,Sun Drop,0,120,14745.2,Embutidos,FALSE
-53824,535737440861,Sunkist Limón,0,242,4007.42,Almacen,FALSE
-29764,369708905873,Sunkist Naranja,0,80,5703.02,Productos Lácteos,FALSE
-26704,183478772616,Tahini,0,19,11540.3,Higiene y cuidado,FALSE
-34680,612549554707,Tamarindo,0,175,1162.29,Productos Lácteos,TRUE
-74127,225578723520,Tarta de frutas,0,50,7577.83,Mascotas,FALSE
-71260,997386016510,Té,0,122,2133.51,Mascotas,TRUE
-21152,148461284520,Té a granel,0,93,2105.78,Snacks,FALSE
-50277,710879446275,Té en bolsas,0,8,2106.88,Golosinas y chocolates,FALSE
-57716,884680801191,Tequila,0,50,5873.8,Embutidos,TRUE
-23288,691030512933,Tequila sunrise,0,119,191.54,Bebidas con alcohol,TRUE
-66084,961674215945,Toallitas desinfectantes,0,227,10789.4,Frutos secos,TRUE
-95379,129046353693,Tocino,0,232,9936.32,Bebés,FALSE
-37922,409451864839,Tofu,0,51,9364.36,Congelados,FALSE
-36712,951706188012,Tom Collins,0,119,8779.93,Frutos secos,FALSE
-29360,173436553284,Tomate triturado,0,50,8216.69,Frutos secos,FALSE
-79949,416296129337,Tomates,0,158,3739.01,Carnes y pescados,TRUE
-41326,698335483790,Tomatillos,0,17,6711.36,Productos Lácteos,FALSE
-85276,903841561572,Tomillo,0,82,9475.46,Bebés,FALSE
-95247,115232827257,Tonic Water,0,77,13333,Almacen,TRUE
-38755,482382019636,Topo Chico,0,27,6763.02,Bebidas sin alcohol,TRUE
-50662,415035443178,Tortillas,0,234,4305.87,Higiene y cuidado,FALSE
-19878,435740200271,Tortillas de harina,0,70,5140.18,Almacen,FALSE
-93693,479645347852,Tortillas de maíz,0,205,11485.4,Bebidas sin alcohol,FALSE
-46027,651343552953,Triple sec,0,298,13638.2,Mascotas,TRUE
-23006,629160930619,Trufas,0,246,8956.53,Congelados,FALSE
-80973,889254693699,Uvas,0,53,10962.9,Frutos secos,FALSE
-86762,750423005925,Verduras congeladas,0,114,11956.7,Mascotas,FALSE
+11958,808297911993,Nueces (frescas),0,284,3578.34,Embutidos,TRUE
+12005,774243436811,Aceite de sésamo,0,142,13711.5,Limpieza,TRUE
+12161,275078180768,Higo,0,82,1419.71,Galletitas y panadería,FALSE
+12231,816475793331,Ginebra,0,201,10729.5,Higiene y cuidado,TRUE
+12251,896717026965,Chips de tortilla,0,200,7303.91,Pastas frescas y tapas,FALSE
+12288,283051878560,Estropajos,0,19,3848.18,Bebidas sin alcohol,TRUE
+12491,970166847604,Cerveza sin alcohol,0,10,14976.3,Almacen,TRUE
+12685,589321213311,Cerveza escocesa,0,240,4310.96,Bebidas sin alcohol,FALSE
+12777,800619295337,Mountain Dew Cero Azúcar,0,129,14293,Frutos secos,TRUE
+12830,458696884786,Galletas de arroz,0,45,3077.21,Limpieza,FALSE
+13061,119755743465,Jarabe de arce,0,130,9447.82,Carnes y pescados,TRUE
+13189,641801032403,Rob Roy,0,241,1117.98,Frutos secos,FALSE
+13210,977260513096,Galletas de chocolate y jengibre,0,26,2429.16,Bebidas sin alcohol,FALSE
+13421,354310098713,Galletas de chocolate y coco,0,207,13949.3,Embutidos,TRUE
+13773,735279128535,Berenjenas,0,176,8750.36,Limpieza,FALSE
+13800,270577444397,Seltzer Water (Con pomelo),0,219,7942.46,Higiene y cuidado,TRUE
+13885,829694087237,Chocolate para derretir,0,289,13733.7,Mascotas,FALSE
+14069,385466384496,Salsa de ciruela,0,191,11610.4,Bebidas con alcohol,FALSE
+14227,369285387380,Slice,0,252,3820.34,Bebidas sin alcohol,TRUE
+14261,570719664994,Piña colada,0,120,13643.7,Golosinas y chocolates,FALSE
+14650,804945848316,Pizza congelada,0,122,10410.7,Bebidas con alcohol,FALSE
+14708,102914052817,Piña colada de fresa,0,247,8364.39,Bebidas con alcohol,TRUE
 14710,237499815593,Verduras enlatadas,0,31,5729.59,Snacks,FALSE
-67429,525985225325,Vermut,0,174,10861,Golosinas y chocolates,FALSE
-30016,700660066396,Vinagre,0,167,9110.89,Golosinas y chocolates,FALSE
-53328,596843323888,Vinagre balsámico,0,166,9822.23,Bebés,FALSE
-64847,414043484670,Vinagre de manzana,0,162,152.78,Frutas y verduras,FALSE
-73367,152710434128,Vinagre de sidra,0,281,2381.21,Limpieza,FALSE
-91795,171412410672,Vino blanco,0,184,14043.6,Productos Lácteos,FALSE
-95686,669364343176,Vino de postre,0,255,14124.6,Golosinas y chocolates,TRUE
-79820,347407684772,Vino dulce,0,104,489.8,Frutas y verduras,FALSE
-48527,763301893083,Vino espumoso,0,251,4893.48,Bebidas sin alcohol,TRUE
+14732,658386220754,Galletas de chocolate y fresa,0,214,1677.31,Limpieza,TRUE
+14937,628734445610,Pasteles,0,266,14011.7,Almacen,FALSE
+14941,696248313647,Galletas de chocolate y vainilla,0,11,3495.09,Carnes y pescados,FALSE
+15083,934807861464,Crema de almendra,0,40,11188.1,Almacen,TRUE
+15174,698797801304,Irish coffee,0,188,7198.11,Pastas frescas y tapas,FALSE
+15290,734153206626,Limpiador de manchas de pegamento,0,83,5483.78,Frutos secos,TRUE
+15384,175286459339,Fanta Guaraná,0,171,11615.1,Snacks,TRUE
+15481,908761812698,Pisco,0,295,4284.64,Bebidas sin alcohol,FALSE
+15543,331728923630,Kiwis,0,197,5712.48,Golosinas y chocolates,TRUE
+15740,768043278662,Fruta de la pasión,0,237,6422.25,Limpieza,FALSE
+16339,617092033094,Galletas de chocolate y ciruela,0,182,268.17,Almacen,FALSE
+16476,208569423748,Cerveza artesanal,0,253,3614.74,Bebés,FALSE
+16487,262556369568,Bai Bubbles (Cítricos),0,297,9240.74,Productos Lácteos,TRUE
+16793,898743139715,Fruta de la tierra,0,55,1896.56,Embutidos,TRUE
+17237,148749924627,Polar Seltzer (Durazno),0,88,4526.57,Carnes y pescados,FALSE
+17258,432390449308,Galletas de coco,0,63,8441.6,Congelados,TRUE
+17763,514863133775,Melones,0,275,8525.66,Embutidos,TRUE
+17904,649416715441,Limpiador de acero inoxidable,0,176,315.25,Golosinas y chocolates,TRUE
+18061,489053459845,Pimientos,0,25,1943.75,Almacen,FALSE
+18096,251936723489,Fanta Piña,0,101,8522.43,Snacks,TRUE
+18698,142272738679,Sierra Mist,0,112,6525.08,Frutas y verduras,TRUE
+18721,618376034609,Jarritos (Sandía),0,200,11412.3,Frutas y verduras,FALSE
+19349,388210717535,Cheerwine Cero Azúcar,0,154,11480.8,Frutos secos,FALSE
+19469,903562223601,Jamón,0,209,3594.58,Bebidas con alcohol,TRUE
+19602,868185760098,Pimienta,0,280,3282.06,Golosinas y chocolates,TRUE
+19878,435740200271,Tortillas de harina,0,70,5140.18,Almacen,FALSE
+19937,738483546482,Caldo de pollo,0,136,1351.23,Embutidos,FALSE
+19977,347621727031,Galletas de chocolate y avena,0,42,14547.2,Pastas frescas y tapas,FALSE
+20023,203188567538,Jugo concentrado,0,156,7294.38,Productos Lácteos,TRUE
+20031,753853137753,Jarritos (Tamarindo),0,10,7873.51,Embutidos,TRUE
+20033,546853819351,Limpiador de manchas de silicona,0,266,7512.85,Frutas y verduras,FALSE
+20062,410062046293,Leche de coco,0,141,14663.8,Bebidas sin alcohol,FALSE
+20391,541376301800,Empanadas,0,142,11560.2,Galletitas y panadería,FALSE
+20415,351256649698,Clericot,0,243,308.2,Golosinas y chocolates,FALSE
+20997,787897497310,Coca-Cola Cherry,0,19,14102.1,Congelados,TRUE
+21152,148461284520,Té a granel,0,93,2105.78,Snacks,FALSE
+21247,507044458303,Apio,0,138,12071.1,Congelados,FALSE
+21532,837698536604,Detergente para limpieza en seco,0,127,7688.17,Congelados,FALSE
+21782,909223454464,Aperol Spritz,0,55,10980.1,Golosinas y chocolates,FALSE
+21842,431025144539,Cerveza alemana,0,30,6649.93,Frutas y verduras,FALSE
+21939,488667653399,Galletas de almendra,0,212,6040.59,Bebés,TRUE
+22013,342210497720,Pimientos (rojos),0,28,6663.97,Pastas frescas y tapas,TRUE
+22062,278086195642,Limpiador de manchas de pasta,0,124,14826.2,Frutos secos,TRUE
+22246,970738842285,Leche evaporada,0,208,4389.04,Limpieza,FALSE
+22513,490847335406,Cerveza de frutas,0,28,6774.91,Bebés,TRUE
 22567,998494259679,Vino fortificado,0,164,8514.78,Snacks,FALSE
-67859,403599763648,Vino rosado,0,44,6999.39,Congelados,TRUE
-57266,974853210256,Vino tinto,0,136,5576.73,Congelados,TRUE
-63703,953732643311,Vodka,0,214,8406.33,Golosinas y chocolates,TRUE
-61409,164773668915,Whisky,0,43,1884.2,Almacen,FALSE
-96102,876327083871,White Russian,0,77,4893.18,Snacks,FALSE
-89221,848480366182,Yogur,0,125,14467.2,Carnes y pescados,FALSE
+22697,885392255770,Champiñones,0,278,2986.6,Bebidas sin alcohol,TRUE
+22807,565291760384,Caipirinha,0,193,6371.47,Golosinas y chocolates,FALSE
+22831,964623407693,Detergente para lavavajillas,0,252,11505.9,Mascotas,FALSE
+22973,487443413654,Limpiador de manchas de aceite de oliva,0,101,752.9,Embutidos,FALSE
+22988,113170527522,Limpiador de alfombras,0,113,7782.62,Snacks,FALSE
+22990,398237760615,Limones,0,61,8471.44,Limpieza,FALSE
+23006,414435163714,Black Russian,0,165,775.56,Embutidos,FALSE
+23006,629160930619,Trufas,0,246,8956.53,Congelados,FALSE
 23041,185789002766,Yogur griego,0,264,5742.92,Pastas frescas y tapas,TRUE
-49587,463439414645,Zanahorias,0,116,3119.05,Carnes y pescados,TRUE
-71566,270356869616,Zevia (Cítricos),0,31,12318.7,Bebidas sin alcohol,TRUE
-88398,864706668376,Zevia (Frambuesa),0,206,3089.37,Productos Lácteos,FALSE
+23136,531084323212,Especias (orégano),0,7,12707.1,Frutas y verduras,FALSE
+23288,691030512933,Tequila sunrise,0,119,191.54,Bebidas con alcohol,TRUE
+23346,837297166269,Pasta de almendra,0,33,8899.59,Golosinas y chocolates,TRUE
+23588,435284971575,Cilantro,0,73,5872.28,Higiene y cuidado,TRUE
+23739,156325439327,Galletas de chocolate y galleta,0,39,9853.01,Frutos secos,FALSE
+23742,472603644331,Cerdo,0,214,10095.5,Bebidas sin alcohol,TRUE
+23996,897108411802,Bebidas energéticas,0,289,4711.84,Mascotas,TRUE
+24094,699635694015,Plátanos,0,235,2487.29,Frutas y verduras,TRUE
+24132,729413474501,Harina de arroz,0,114,14966.6,Snacks,FALSE
+24135,856155723069,Galletas de chocolate blanco,0,252,2822.67,Bebidas sin alcohol,FALSE
+24250,929750800775,Limpiador de manchas de cosméticos,0,132,7537.32,Productos Lácteos,FALSE
+24274,921772279314,Fresas,0,296,664.3,Pastas frescas y tapas,FALSE
+24617,752032514870,French 75,0,217,7144.95,Mascotas,FALSE
+24684,413041369572,Bourbon,0,63,10722.7,Higiene y cuidado,FALSE
+24879,779827994724,Galletas de té,0,97,2455.44,Embutidos,FALSE
+25041,753752796958,Lentejas,0,183,170.39,Almacen,FALSE
+25045,115979248298,Mountain Dew,0,69,7059.51,Bebidas sin alcohol,TRUE
+25115,704811740266,Arroz jazmín,0,27,13724.9,Limpieza,TRUE
+25224,753263408081,Jengibre,0,139,14513.8,Embutidos,TRUE
+25642,672424305570,Salsa de mango,0,143,11560.7,Pastas frescas y tapas,FALSE
+25897,556413092763,Cerveza de trigo,0,228,11848.4,Bebidas sin alcohol,TRUE
+25924,460039998296,Galletas de chocolate con leche,0,241,11134.6,Productos Lácteos,FALSE
+26509,452492784018,Mezcal,0,221,11362.2,Frutas y verduras,TRUE
+26704,183478772616,Tahini,0,19,11540.3,Higiene y cuidado,FALSE
+26891,188060464728,Fusilli,0,267,5920.07,Frutas y verduras,FALSE
+26954,591305849774,Aceitunas,0,39,233.61,Snacks,TRUE
+27271,929331501254,Frutos secos (pecanas),0,19,7810.25,Bebidas sin alcohol,TRUE
+27386,651941364233,Cerveza mexicana,0,176,11436.1,Galletitas y panadería,TRUE
+27575,400019746796,Sirope de arce,0,177,3621.77,Bebés,FALSE
+27741,139455622357,Esponjas,0,260,170.22,Frutos secos,FALSE
+27791,829315057717,Grosellas negras,0,240,13641.7,Limpieza,TRUE
+27842,238868891569,A&W Root Beer,0,32,9784.57,Frutos secos,FALSE
+27970,357562661321,Aceite de trufa,0,249,11077.7,Golosinas y chocolates,TRUE
+28027,862652652964,La Croix (Cítricos),0,27,5542.33,Galletitas y panadería,TRUE
+28194,558143484147,Pasta de aceituna,0,88,14659.9,Higiene y cuidado,TRUE
+28334,226002041095,Mangos,0,178,10440.3,Almacen,FALSE
+28372,738640989209,Salsa barbacoa,0,49,9423.42,Mascotas,TRUE
+29047,128364694748,Limpiador de manchas de adhesivos,0,0,3279.04,Carnes y pescados,FALSE
+29216,360483279026,Galletas de chocolate y frutas,0,163,9110.97,Frutos secos,TRUE
+29343,866732885868,Salsa de tomate,0,294,12691.5,Pastas frescas y tapas,FALSE
+29360,173436553284,Tomate triturado,0,50,8216.69,Frutos secos,FALSE
+29421,334090745851,Brotes de bambú,0,1,9038.26,Pastas frescas y tapas,FALSE
+29499,327874097508,Pasta integral,0,133,9076.14,Galletitas y panadería,FALSE
+29698,752170150668,Cerveza india,0,115,13705.6,Galletitas y panadería,FALSE
+29764,369708905873,Sunkist Naranja,0,80,5703.02,Productos Lácteos,FALSE
+29787,854887370159,Cacao en polvo,0,297,14930,Galletitas y panadería,TRUE
+30008,922853866772,Limpiador de manchas de miel,0,5,12495.1,Congelados,FALSE
+30016,700660066396,Vinagre,0,167,9110.89,Golosinas y chocolates,FALSE
+30026,266265419877,Sidra,0,0,139.62,Snacks,TRUE
+30101,962650009085,Sprite Tropical,0,127,8036.48,Congelados,TRUE
+30208,765513063358,Cúrcuma,0,180,5472.58,Bebidas con alcohol,FALSE
+30209,408870029892,Limpiador de manchas de maquillaje,0,1,10352.5,Snacks,FALSE
+30305,657666861186,Salsa de chile dulce,0,156,5962.26,Embutidos,FALSE
+30471,457727338814,Limpiador de manchas de hierba,0,197,11376.5,Golosinas y chocolates,TRUE
+30700,285493970315,Leche,0,190,14304.2,Carnes y pescados,FALSE
+30977,777061962730,Paños de microfibra,0,69,9517.88,Snacks,TRUE
+31508,844307200776,Bebidas deportivas,0,270,3979.07,Golosinas y chocolates,TRUE
+31542,322026147690,Cerveza de jengibre,0,287,4951.7,Bebidas sin alcohol,FALSE
+31596,564679718222,Sémola de trigo,0,15,10291.1,Golosinas y chocolates,TRUE
+31892,387980587904,Limpiador de manchas de gelatinas de colores,0,61,4618.2,Bebés,TRUE
+32093,973489294375,Harina de avena,0,12,4546.92,Carnes y pescados,FALSE
+32119,625917021151,Melón cantalupo,0,259,7805.58,Pastas frescas y tapas,TRUE
+32174,913563250402,Cereales para desayuno,0,8,10069.4,Bebidas sin alcohol,FALSE
+32261,977785614358,Piña,0,109,13445.2,Bebés,TRUE
+32341,934342276208,Miel,0,106,983.91,Almacen,FALSE
+32636,587408536131,Jarritos (Limón),0,119,848.82,Higiene y cuidado,TRUE
+32798,342354426962,Garbanzos,0,13,14802.6,Galletitas y panadería,TRUE
+32849,533415787373,Aceite de oliva,0,106,3857.76,Frutas y verduras,TRUE
+32980,690486162265,Perejil,0,207,13546.7,Congelados,FALSE
+33365,718538808253,Limpiador de manchas de leche,0,154,4307.61,Embutidos,FALSE
+33671,336105050460,Especias (pimienta),0,270,797.54,Limpieza,FALSE
+33741,397455414468,Granola,0,222,9496.66,Galletitas y panadería,FALSE
+33773,220175959064,Apio nabo,0,3,10194.3,Snacks,FALSE
+33878,974070630687,Fruta deshidratada,0,244,8360.73,Higiene y cuidado,TRUE
+33969,845669308026,Galletas de jengibre,0,126,10099.2,Mascotas,TRUE
+34063,357165208853,Cebollitas de verdeo,0,233,454.16,Carnes y pescados,FALSE
+34291,896768069576,Galletas de chocolate,0,271,7660.9,Embutidos,FALSE
+34680,612549554707,Tamarindo,0,175,1162.29,Productos Lácteos,TRUE
+34768,597929601337,Sprite Zero,0,188,1922.86,Carnes y pescados,FALSE
+34794,670999020686,Limpiador de manchas de aceite,0,36,2615.45,Congelados,TRUE
+34939,242433184426,Licor de café,0,12,13015.2,Carnes y pescados,TRUE
+35066,506661514195,Cerveza ale,0,191,7404.58,Mascotas,TRUE
+35207,944443581084,Betabel (remolacha),0,183,1782.11,Productos Lácteos,FALSE
+35234,316861481297,Limpiador de manchas de esmalte,0,162,6623.74,Bebidas sin alcohol,FALSE
+35308,782477297483,Algodón de azúcar,0,208,8305.23,Snacks,TRUE
+35341,362356603184,Galletas de chocolate y yogur,0,128,10845.2,Productos Lácteos,FALSE
+35518,560541690261,Jabón de manos líquido,0,182,4574.8,Frutos secos,FALSE
+35581,120435171602,Pimiento jalapeño,0,126,1720.53,Bebidas sin alcohol,TRUE
+35593,446117259699,Galletas de cacao,0,211,6048.59,Snacks,FALSE
+35866,560427634022,Polar Seltzer (Frambuesa),0,158,12552.2,Carnes y pescados,FALSE
+36316,260686733803,Ambientador,0,286,4192.33,Bebés,TRUE
+36417,977170055272,Salsa pesto,0,20,894.49,Congelados,TRUE
+36712,951706188012,Tom Collins,0,119,8779.93,Frutos secos,FALSE
+36844,574576834939,Rúcula,0,73,7200.48,Bebidas con alcohol,TRUE
+37042,157068858951,Berros,0,53,2577.74,Almacen,TRUE
+37058,653377878769,Ciruelas,0,92,4146.69,Mascotas,FALSE
+37300,319045533096,Limpiador de manchas de arroz,0,120,3036.71,Snacks,FALSE
+37307,945029384588,Frijoles,0,181,8671.83,Bebidas con alcohol,TRUE
+37361,292941617416,Especias (cúrcuma),0,274,7261.93,Frutas y verduras,FALSE
+37416,834242129638,Lasaña,0,206,444,Golosinas y chocolates,FALSE
+37569,538543112917,Desinfectante en spray,0,287,4447.16,Galletitas y panadería,TRUE
+37581,277459212172,Pepsi,0,155,10657.2,Galletitas y panadería,FALSE
+37828,720476849523,Pasta de maní,0,192,13287.6,Bebidas con alcohol,TRUE
+37922,409451864839,Tofu,0,51,9364.36,Congelados,FALSE
+38211,728655692144,Galletas de chocolate y avellana,0,201,4709.44,Mascotas,FALSE
+38235,499813454604,Limpiador de manchas de ceras,0,260,14908.9,Higiene y cuidado,FALSE
+38258,473329588303,Frutos secos (anacardos),0,293,3456.84,Bebés,TRUE
+38399,589052046836,Limpiador de manchas de helados,0,129,2535.97,Galletitas y panadería,FALSE
+38692,720426061860,Frutos secos (pistachos),0,71,12931.1,Frutas y verduras,TRUE
+38755,482382019636,Topo Chico,0,27,6763.02,Bebidas sin alcohol,TRUE
+38768,982641699501,Pollo,0,249,9323.04,Galletitas y panadería,FALSE
+38886,426134553095,Jabón para platos,0,194,6300.67,Pastas frescas y tapas,TRUE
+39018,983178294490,Galletas de chocolate con nueces,0,2,6238.29,Carnes y pescados,FALSE
+39195,896837285559,Jarritos (Piña),0,276,182.01,Higiene y cuidado,FALSE
+39208,120002678710,Fanta Mango,0,16,395.69,Almacen,FALSE
+39360,964754466528,Sprite Cherry,0,161,10696,Frutos secos,FALSE
+39765,426708852367,Mint julep,0,67,3120.35,Bebidas con alcohol,FALSE
+39781,308563379932,Azúcar,0,212,4961.23,Bebés,FALSE
+39879,645898833158,Brandy,0,108,4913.74,Almacen,TRUE
+40172,396979727030,Avena,0,80,2478.23,Productos Lácteos,FALSE
+40224,825995236979,Mantequilla,0,105,1044.35,Galletitas y panadería,TRUE
+40301,988511171955,Negroni,0,116,8015.54,Bebés,TRUE
+40701,761601965162,Croissants,0,206,14672.9,Pastas frescas y tapas,FALSE
+40765,852226328604,Curaçao,0,99,531.29,Frutas y verduras,TRUE
+40842,514516491007,Limpiador multiusos,0,261,252.53,Mascotas,FALSE
+40951,671999784793,Remolacha amarilla,0,79,10856.1,Snacks,TRUE
+41100,204177089215,Limpiador de manchas de pintura acrílica,0,81,9872.21,Higiene y cuidado,FALSE
+41174,129448290791,Helados,0,176,4450.28,Frutos secos,TRUE
+41252,180319060970,Canada Dry Tonic Water,0,212,2592.5,Snacks,TRUE
+41326,698335483790,Tomatillos,0,17,6711.36,Productos Lácteos,FALSE
+41743,603094340733,Dr. Pepper Cero Azúcar,0,134,6446.73,Bebidas sin alcohol,FALSE
+41761,204901973050,Limpiador de manchas de pintura,0,164,7526.22,Frutas y verduras,TRUE
+41875,297429633917,Daiquiri,0,167,2899.06,Frutos secos,FALSE
+41924,858796254234,Frescolita,0,71,11954.3,Higiene y cuidado,TRUE
+42001,465838392957,Long Island iced tea,0,233,3854.34,Snacks,TRUE
+42073,299168126947,Fruta estrella,0,230,12929.3,Frutos secos,FALSE
+42114,922013256107,Espaguetis,0,155,9667.46,Limpieza,FALSE
+42361,558201958095,Res,0,152,1319.89,Snacks,FALSE
+42420,858399020334,Snacks de maíz,0,85,11793.3,Galletitas y panadería,FALSE
+42454,564312720900,Seltzer Water (Con arándano),0,38,3802.5,Galletitas y panadería,FALSE
+42559,394528921528,Sprite,0,58,435.2,Limpieza,FALSE
+42561,553439842231,Galletas de yogur,0,296,5922.84,Snacks,FALSE
+42657,790964826975,Zombie,0,79,5830.78,Higiene y cuidado,FALSE
+42820,501352440642,Puerros,0,166,4128.53,Golosinas y chocolates,FALSE
+42939,717643590447,Galletas de frutas secas,0,279,621.26,Pastas frescas y tapas,FALSE
+43187,111304963956,Hinojo,0,202,7411.8,Bebidas sin alcohol,TRUE
+43257,639292737099,Coca-Cola Caffeine Free,0,208,3532.11,Higiene y cuidado,TRUE
+43277,922769595789,Frescolita Cero Azúcar,0,47,14031.5,Snacks,FALSE
+43285,859460047067,Gelatina,0,212,5089.65,Frutas y verduras,FALSE
+43470,533947243468,Galletas de especias,0,34,10380.9,Bebés,FALSE
+43501,534510105394,Sea breeze,0,27,793.78,Bebés,FALSE
+43548,407903909130,Especias (tomillo),0,279,4812.27,Bebidas con alcohol,TRUE
+43767,361107806884,Limpiador de manchas de esmalte de uñas,0,17,4952.2,Almacen,FALSE
+44104,754638571894,Licor de frutas,0,190,12812.1,Bebidas con alcohol,TRUE
+44138,939453409999,Galletas de chocolate y café,0,176,12726,Bebés,TRUE
+44147,251098148869,Aceite de oliva virgen extra,0,280,10102.9,Pastas frescas y tapas,FALSE
+44247,663836193108,Mantequilla de maní,0,221,11178.8,Snacks,TRUE
 44306,272670428667,Zevia (Jengibre),0,248,8191.7,Bebidas con alcohol,FALSE
-42657,790964826975,Zombie,0,82,5830.78,Higiene y cuidado,TRUE
+44354,974350343503,Dr. Pepper,0,3,5604.56,Limpieza,FALSE
+44555,463975758415,Limpiador de manchas de salsa picante,0,49,13344.7,Carnes y pescados,FALSE
+44641,836762803141,Limpiador de manchas de sudor,0,13,9019.02,Higiene y cuidado,FALSE
+44650,257655684364,Limpiador de horno,0,122,6799.21,Galletitas y panadería,FALSE
+45010,182027806221,Pepsi Cero Azúcar,0,231,13547.6,Carnes y pescados,FALSE
+45220,553098280102,Seltzer Water (Con limón),0,299,11532.4,Golosinas y chocolates,FALSE
+45336,462068276570,Especias (comino),0,73,5890.94,Bebidas sin alcohol,FALSE
+45438,698258940485,Galletas de limón,0,232,2358.84,Frutas y verduras,FALSE
+45509,675987738319,Castañas de agua,0,94,11619.4,Galletitas y panadería,TRUE
+45763,151857981168,Frutas frescas,0,265,13472.8,Higiene y cuidado,FALSE
+45769,575831796334,Ensalada de pollo,0,66,6779.05,Limpieza,FALSE
+45979,435512683571,Chiles serranos,0,31,13678.7,Golosinas y chocolates,TRUE
+46027,651343552953,Triple sec,0,298,13638.2,Mascotas,TRUE
+46054,317040563016,Bebidas en polvo,0,144,1666.8,Higiene y cuidado,TRUE
+46098,597788955712,Limpiador de manchas de cera,0,6,5558.82,Galletitas y panadería,TRUE
+46229,417455175381,Patatas fritas,0,25,8897.04,Snacks,FALSE
+46325,631086046898,AHA Sparkling Water (Fresa),0,101,1072.65,Embutidos,FALSE
+46344,721597430417,Especias (romero),0,6,11122.9,Bebidas con alcohol,FALSE
+46397,612266688669,Limpiador de manchas de gelatina,0,278,9634.38,Almacen,FALSE
+46464,777563487759,Salsa de guacamole,0,125,10344.8,Galletitas y panadería,FALSE
+46465,333725908877,Limpiador de manchas de café con leche,0,87,13414.7,Frutos secos,FALSE
+46601,491929775632,Frutas secas (ciruelas pasas),0,211,4983.63,Bebidas con alcohol,TRUE
+46638,708670811283,Fanta Limón,0,246,10429.8,Limpieza,FALSE
+46728,860470503661,Salsa de aguacate,0,214,11502.8,Golosinas y chocolates,TRUE
+46729,374972848867,Nectarina,0,120,10911.7,Pastas frescas y tapas,TRUE
+46732,565505428634,Champán,0,75,124.71,Snacks,TRUE
+46816,127828799554,Limpiador de manchas de chocolate,0,203,3860.8,Congelados,FALSE
+46828,878203193153,Pina colada,0,251,14724.9,Frutos secos,TRUE
+46878,430256985886,Bai Bubbles (Moras),0,293,10550.3,Galletitas y panadería,TRUE
+46929,447715498024,Castañas,0,204,3271.13,Almacen,TRUE
+47074,805065318503,Singapore sling,0,73,11073.8,Productos Lácteos,TRUE
+47079,911004334050,Mellow Yellow,0,12,10028.7,Productos Lácteos,FALSE
+47235,254379901798,Pan,0,48,274.24,Limpieza,TRUE
+47312,294343301843,Bebidas gaseosas,0,64,12394.3,Frutos secos,TRUE
+47312,785516238252,Escarola,0,267,3182.97,Golosinas y chocolates,FALSE
+47355,611912059699,Galletas de frutas,0,242,1361.26,Snacks,TRUE
+47467,702260940619,Harina de trigo,0,83,864.77,Golosinas y chocolates,FALSE
+47484,325595250280,Jarritos (Toronja),0,228,6067.44,Golosinas y chocolates,FALSE
+48120,784519805659,Kiwano (fruta del dragón),0,171,12300,Golosinas y chocolates,TRUE
+48161,623877426085,Frijoles verdes,0,297,14590.8,Bebidas sin alcohol,FALSE
+48279,364657083710,Cuscús,0,146,12286.9,Limpieza,FALSE
+48352,485952528269,Moras,0,277,674.02,Pastas frescas y tapas,TRUE
+48417,139355049358,Dulces,0,297,1066.7,Frutas y verduras,TRUE
+48425,601818902701,Albahaca,0,3,14249.9,Pastas frescas y tapas,FALSE
+48483,950094699756,Limpiador de manchas de tinta de bolígrafo,0,271,13634,Higiene y cuidado,FALSE
+48527,763301893083,Vino espumoso,0,251,4893.48,Bebidas sin alcohol,TRUE
+48912,978087503297,Espinacas,0,74,2653.82,Almacen,TRUE
+49196,529237189977,AHA Sparkling Water (Jengibre),0,244,3867.37,Galletitas y panadería,FALSE
+49196,160965991282,Setas,0,245,7835.26,Golosinas y chocolates,FALSE
+49261,381401259366,Especias (paprika),0,292,2363.07,Frutas y verduras,FALSE
+49297,563032596619,Seltzer Water (Con durazno),0,188,2714.78,Carnes y pescados,FALSE
+49457,977105459103,Seltzer Water (Con jengibre),0,157,13072.6,Bebidas con alcohol,TRUE
+49587,463439414645,Zanahorias,0,104,3119.05,Carnes y pescados,FALSE
+49843,965887634540,Limpiador de manchas de refrescos,0,44,1670.74,Frutos secos,TRUE
+50046,592922122374,Canada Dry Cero Azúcar,0,247,1975.4,Snacks,FALSE
+50132,446179944504,Cepillo para fregar,0,269,281.65,Embutidos,FALSE
+50277,710879446275,Té en bolsas,0,8,2106.88,Golosinas y chocolates,FALSE
+50662,415035443178,Tortillas,0,234,4305.87,Higiene y cuidado,FALSE
+50724,730572376999,Limpiador de manchas de vino,0,54,12086.1,Mascotas,FALSE
+50788,526908356167,Limpiador de manchas de fruta,0,67,13890.6,Bebidas con alcohol,FALSE
+51036,826572356925,Canónigos,0,212,3741.93,Frutos secos,TRUE
+51245,242927736452,Martini,0,46,14131.2,Galletitas y panadería,TRUE
+51742,361159863067,Alcachofas,0,173,13671.6,Bebés,FALSE
+52178,805505887530,Galletas,0,282,14552.2,Galletitas y panadería,TRUE
+52281,645411850733,Crush Fresa,0,175,14131,Carnes y pescados,TRUE
+52455,831752235942,Crush Piña,0,144,6690.18,Galletitas y panadería,TRUE
+52459,393382563306,Arroz para risotto,0,291,13755.1,Congelados,TRUE
+52555,582942407814,Frutas enlatadas,0,250,13276.2,Frutos secos,FALSE
+52860,962344945236,Arándanos,0,13,9421.74,Productos Lácteos,TRUE
+52888,638628447706,Fanta Cero Azúcar,0,201,8912.61,Frutas y verduras,FALSE
+52930,871053806574,Cheerwine,0,45,13645.7,Embutidos,FALSE
+53078,879314262470,Licor de menta,0,114,2610.79,Pastas frescas y tapas,TRUE
+53328,596843323888,Vinagre balsámico,0,166,9822.23,Bebés,FALSE
+53384,948017122255,Brócoli,0,271,8804.3,Frutos secos,TRUE
+53824,535737440861,Sunkist Limón,0,242,4007.42,Almacen,FALSE
+54162,299872290822,Fanta Fresa,0,239,3328.83,Frutos secos,FALSE
+54239,856150297695,Polar Seltzer (Cítricos),0,63,1770.57,Bebidas sin alcohol,FALSE
+54431,102310542623,Aceite vegetal,0,62,7292.6,Frutos secos,FALSE
+54673,320358195992,Cacahuetes,0,296,2086.55,Galletitas y panadería,TRUE
+54797,610787082696,Coca-Cola,0,127,7550.8,Productos Lácteos,TRUE
+54828,126555550590,Café molido,0,71,3424.95,Galletitas y panadería,FALSE
+54914,789876141552,Limpiador de manchas de rotuladores permanentes,0,65,10677,Bebidas con alcohol,TRUE
+55031,755074924273,Bellini,0,208,8235.26,Congelados,FALSE
+55633,851573056188,Jarritos (Mandarina),0,77,13571.9,Golosinas y chocolates,FALSE
+55703,443027389306,Arroz,0,148,8570.25,Bebés,FALSE
+55839,757899658782,Guisantes,0,121,12145.5,Frutas y verduras,FALSE
+55883,515816549425,Frutas enlatadas,0,142,13306.7,Galletitas y panadería,FALSE
+56195,354218067687,Salsa de pescado,0,133,6407.5,Frutas y verduras,TRUE
+56264,275424979907,Galletas de jengibre molido,0,149,11741.7,Higiene y cuidado,FALSE
+56474,699982510863,Frutas secas,0,192,1174.62,Frutas y verduras,FALSE
+56820,364820966789,Especias (ajo en polvo),0,73,8467.06,Embutidos,TRUE
+56958,345062575985,Limpiador de manchas de ketchup,0,48,1702.33,Frutas y verduras,TRUE
+57073,266631324071,Galletas de chocolate con menta,0,140,913.32,Snacks,FALSE
+57120,802328487333,Sprite Remix,0,51,10172.6,Productos Lácteos,TRUE
+57124,234590416142,Limpiador de pisos,0,63,4448.85,Carnes y pescados,FALSE
+57160,694999759271,Guiso de pollo,0,239,350.7,Embutidos,FALSE
+57185,198572679867,Frutos secos (nueces),0,103,14584.7,Mascotas,FALSE
+57234,808870883426,La Croix (Durazno),0,231,1186.96,Galletitas y panadería,FALSE
+57266,974853210256,Vino tinto,0,136,5576.73,Congelados,TRUE
+57287,661921176438,Kir Royale,0,9,10561.7,Carnes y pescados,FALSE
+57368,743619034272,Caldo en cubos,0,205,8366.27,Carnes y pescados,FALSE
+57426,663749341677,Jarritos (Lima),0,168,7504.66,Pastas frescas y tapas,FALSE
+57683,888305499246,Ketchup,0,35,4356.31,Bebés,TRUE
+57695,743039642758,Limpiador de manchas de grasa en la ropa,0,8,8151.55,Golosinas y chocolates,TRUE
+57699,874541961781,Seltzer Water (Con melón),0,242,1113.66,Mascotas,FALSE
+57716,884680801191,Tequila,0,50,5873.8,Embutidos,TRUE
+58126,437332275587,Sal marina,0,33,6818.14,Golosinas y chocolates,TRUE
+58550,336129245014,Papaya verde,0,116,8732.34,Productos Lácteos,TRUE
+58692,926189587616,Descalcificador,0,260,12004.8,Higiene y cuidado,FALSE
+58749,505502850046,Salsa de chile,0,41,14177.2,Frutos secos,FALSE
+58970,573039403428,Squirt,0,104,14183.4,Carnes y pescados,FALSE
+59123,649993268146,Desodorante de tela,0,221,3598.6,Limpieza,TRUE
+59240,924187931561,Mostaza,0,45,8292.73,Galletitas y panadería,FALSE
+59328,201797246042,Pasta,0,78,862.19,Congelados,FALSE
+59403,395711888813,Cereales,0,98,4047.87,Golosinas y chocolates,FALSE
+59438,581303164741,Sun Drop,0,120,14745.2,Embutidos,FALSE
+59540,375951230676,Sandías,0,32,3597.27,Frutas y verduras,TRUE
+59598,611331580561,Limpiador de manchas de aceite de cocina,0,108,13652.2,Golosinas y chocolates,TRUE
+59678,314142335145,Harina integral,0,172,5147.77,Pastas frescas y tapas,TRUE
+59896,416201251586,Galletas de chocolate y canela,0,132,9053.66,Almacen,FALSE
+60175,968253521416,Limpiador de manchas de chicle,0,12,11146.9,Galletitas y panadería,TRUE
+60278,369118365363,Limpiador de manchas de frutas cítricas,0,234,7821.16,Higiene y cuidado,FALSE
+60305,917089325987,Arroz integral,0,230,8936.26,Productos Lácteos,FALSE
+60572,721849602037,Ajo,0,163,8168.62,Bebidas con alcohol,TRUE
+60669,513836629155,Galletas de chocolate y leche,0,113,12795.7,Higiene y cuidado,TRUE
+60873,874940660862,Galletas saladas,0,219,14637.1,Snacks,FALSE
+60967,482959458422,La Croix (Frambuesa),0,150,9493.36,Frutas y verduras,TRUE
+61017,648669237288,Jerez,0,279,4991.76,Congelados,FALSE
+61018,621862418957,Coca-Cola Vanilla,0,246,3584.15,Frutos secos,TRUE
+61072,106822753405,Limpiador de manchas de grasa,0,184,8566.33,Almacen,TRUE
+61381,835279061435,Salsas para pasta,0,83,2809.66,Frutas y verduras,TRUE
+61409,164773668915,Whisky,0,43,1884.2,Almacen,FALSE
+61490,692041614486,Semillas de calabaza,0,228,13027.6,Bebidas con alcohol,TRUE
+61557,905577105031,Frijoles negros,0,215,12957.5,Higiene y cuidado,TRUE
+62111,849650240331,Limpiador de manchas de sorbete,0,44,5787.16,Bebidas sin alcohol,TRUE
+62274,536191791357,Crush Uva,0,115,10460.2,Mascotas,TRUE
+62647,530413990282,Limpiador de manchas de salsa de soja,0,107,5692.99,Higiene y cuidado,TRUE
+62847,175288483081,Sirope,0,114,5685.83,Higiene y cuidado,TRUE
+63032,516238634872,Arroz basmati,0,282,11836.1,Congelados,TRUE
+63035,432549583415,Arroz para sushi,0,173,10304,Higiene y cuidado,TRUE
+63174,540565943155,Spray desodorante para ambiente,0,261,2981.89,Carnes y pescados,FALSE
+63200,284118182246,Salsa de soja,0,296,199.95,Higiene y cuidado,FALSE
+63279,587277151581,Cerveza negra,0,71,12223.8,Golosinas y chocolates,FALSE
+63689,835568362124,Sake,0,70,8524.5,Embutidos,TRUE
+63703,953732643311,Vodka,0,214,8406.33,Golosinas y chocolates,TRUE
+63848,270657408227,Jengibre fresco,0,229,13023.7,Galletitas y panadería,FALSE
+64019,892340030014,Azúcar blanco,0,188,6769.81,Galletitas y panadería,FALSE
+64080,347436462548,Sal,0,48,5454.26,Pastas frescas y tapas,FALSE
+64363,752194000876,Galletas de vainilla,0,110,5972.17,Embutidos,FALSE
+64403,677312202316,Amaretto,0,138,13740.9,Pastas frescas y tapas,TRUE
+64830,247889277153,Pimientos (verdes),0,177,9852.01,Bebés,FALSE
+64847,414043484670,Vinagre de manzana,0,147,152.78,Frutas y verduras,FALSE
+65351,435467898378,Albahaca tailandesa,0,300,7730.97,Frutas y verduras,TRUE
+65406,794050252126,Estragón,0,288,14536.3,Snacks,TRUE
+65575,732477753987,Limpiador de superficies,0,12,2763.55,Higiene y cuidado,FALSE
+65908,418551396565,Lechuga,0,219,1313.14,Bebidas sin alcohol,TRUE
+66071,365738301367,Mai tai,0,116,10027.4,Embutidos,FALSE
+66084,961674215945,Toallitas desinfectantes,0,227,10789.4,Frutos secos,TRUE
+66235,500070255319,Sopa de verduras,0,263,9203.44,Snacks,FALSE
+66602,157895482275,Coliflor,0,6,8998.68,Mascotas,TRUE
+66835,712211234201,Seltzer Water (Con fresa),0,21,12075.3,Snacks,TRUE
+66891,340738945219,Galletas de crema,0,256,14531.7,Frutas y verduras,TRUE
+66966,175568089212,Pasta de trigo,0,11,11345.6,Bebidas con alcohol,TRUE
+67019,780195914948,Grasshopper,0,19,14646.1,Limpieza,FALSE
+67208,896104742550,Galletas rellenas,0,75,9018.09,Almacen,TRUE
+67378,107168903444,Bebidas carbonatadas,0,204,2120.02,Frutas y verduras,TRUE
+67429,525985225325,Vermut,0,174,10861,Golosinas y chocolates,FALSE
+67608,660656959764,Amaretto sour,0,62,12603.3,Mascotas,FALSE
+67859,403599763648,Vino rosado,0,44,6999.39,Congelados,TRUE
+68043,772605848182,Frutos secos (almendras),0,44,13730.2,Galletitas y panadería,FALSE
+68080,736147612497,Limpiador de cocina,0,110,4040.79,Golosinas y chocolates,FALSE
+68095,764086691900,Physalis,0,210,9920.89,Productos Lácteos,FALSE
+68299,584340275256,Salchichas,0,60,7054.05,Limpieza,TRUE
+68353,485235823343,Salsa picante,0,157,2508.31,Frutas y verduras,TRUE
+68591,849913089317,AHA Sparkling Water (Cítricos),0,208,8908.57,Pastas frescas y tapas,FALSE
+68623,829668688443,Leche de almendras,0,5,14846.8,Pastas frescas y tapas,FALSE
+68646,373471754204,Ramos gin fizz,0,254,9010.12,Productos Lácteos,FALSE
+68983,415086646031,Canada Dry,0,50,998.93,Golosinas y chocolates,TRUE
+68997,254838722574,Semillas de chía,0,143,2286.63,Embutidos,TRUE
+69340,281041595127,Duraznos,0,90,11652,Golosinas y chocolates,FALSE
+69422,334645838104,Pimm's Cup,0,219,12358.3,Congelados,FALSE
+69463,653578179106,Pistachos,0,163,7022.06,Almacen,TRUE
+69560,937279555860,Pescado enlatado,0,93,529.87,Productos Lácteos,FALSE
+69643,298574001132,Aceite de cacahuete,0,95,523.93,Carnes y pescados,TRUE
+69912,664233931170,Coca-Cola Light,0,116,4958.28,Bebidas sin alcohol,TRUE
+69941,698919329963,Polvo de proteína,0,295,10884.1,Golosinas y chocolates,FALSE
+70480,621359994664,Barritas de granola,0,131,13660.7,Productos Lácteos,TRUE
+70578,777170721403,Salsa de cacahuate,0,220,974.6,Congelados,FALSE
+70632,153929482640,Mojito,0,38,2383.74,Snacks,TRUE
+70634,405384178570,Chiles poblanos,0,295,2964.22,Bebidas sin alcohol,FALSE
+70738,239443694098,Rambután,0,41,8261.33,Bebidas sin alcohol,TRUE
+70931,942889622329,Limpiador de manchas de aceites esenciales,0,185,10720.5,Galletitas y panadería,TRUE
+70943,383316017722,Agua mineral,0,208,13866.4,Bebés,FALSE
+70947,235438105476,Galletas de chocolate y miel,0,30,462.73,Congelados,FALSE
+70958,801662963570,Crema de cacahuate,0,63,12225,Limpieza,TRUE
+71076,364718223184,Rábano,0,218,10354.5,Higiene y cuidado,TRUE
+71260,997386016510,Té,0,122,2133.51,Mascotas,TRUE
+71261,261687171154,Limpiador de tapicería,0,166,6603.34,Bebidas con alcohol,TRUE
+71331,339439033128,Limpiador de manchas de líquidos para escribir,0,186,7391.56,Congelados,FALSE
+71442,733055860782,Planter's punch,0,231,9242.85,Almacen,TRUE
+71464,872447752529,Blue Hawaii,0,269,14214.3,Snacks,TRUE
+71505,136043472265,Limpiador de manchas de mayonesa,0,275,9951.22,Golosinas y chocolates,FALSE
+71566,270356869616,Zevia (Cítricos),0,31,12318.7,Bebidas sin alcohol,TRUE
+71851,804598591333,Chocolate en polvo,0,24,8662.04,Pastas frescas y tapas,FALSE
+71917,607109123933,Semillas de calabaza,0,223,10727,Mascotas,FALSE
+72015,581239963652,Galletas de chocolate y menta,0,135,8200.1,Pastas frescas y tapas,TRUE
+72290,289259274986,Huevos,0,183,9251.04,Pastas frescas y tapas,FALSE
+72512,103379521263,Manzanita Sol,0,288,3426.52,Frutos secos,TRUE
+72893,881128456087,Frutos secos (almendras),0,45,3277.46,Almacen,FALSE
+72989,487507456161,Café,0,214,6235.72,Pastas frescas y tapas,FALSE
+73113,941916897568,Sal kosher,0,234,7615.73,Almacen,TRUE
+73131,937365226821,Perrier,0,9,2224.59,Snacks,FALSE
+73320,851294688054,Salsa Worcestershire,0,250,2565.58,Mascotas,FALSE
+73367,152710434128,Vinagre de sidra,0,281,2381.21,Limpieza,FALSE
+73376,545659137229,Galletas de jengibre y especias,0,7,1230.22,Galletitas y panadería,FALSE
+73678,706841415535,Caldo en polvo,0,294,6577.38,Productos Lácteos,TRUE
+73703,959525102341,Caldo de res,0,12,7205.95,Galletitas y panadería,TRUE
+73914,953172039179,Papas,0,212,455.82,Galletitas y panadería,TRUE
+73933,642733939884,Limpiador de manchas de crema,0,1,4655.95,Bebidas con alcohol,FALSE
+74127,225578723520,Tarta de frutas,0,50,7577.83,Mascotas,FALSE
+74143,501644229742,Galletas de miel,0,53,8973.07,Galletitas y panadería,TRUE
+74344,571480732931,Almendras (frescas),0,291,14663.4,Almacen,TRUE
+74348,800473433689,Snacks de queso,0,248,12463.9,Galletitas y panadería,FALSE
+74431,264105739987,Limpiador de manchas de jugos,0,237,10486.5,Frutas y verduras,FALSE
+74633,507514279588,Salsa de tomate picante,0,120,10811.9,Carnes y pescados,TRUE
+74652,657688396068,Limpiador de manchas de sirope,0,79,4785.56,Frutos secos,FALSE
+74655,228096260826,Frijoles pintos,0,95,861.52,Carnes y pescados,FALSE
+74756,642418940734,Bramble,0,198,14264.3,Bebés,FALSE
+75154,253611364272,Cebollas,0,98,11117.2,Pastas frescas y tapas,TRUE
+75549,630748726041,A&W Cero Azúcar,0,276,9362.75,Frutas y verduras,FALSE
+75782,722238249213,Frutos secos (nueces),0,193,8442.04,Golosinas y chocolates,FALSE
+75828,749984158663,Papaya,0,75,14501.6,Golosinas y chocolates,FALSE
+75905,253713332651,Limpiador de manchas de tinta,0,148,7791.79,Golosinas y chocolates,TRUE
+76059,473000322141,Polar Seltzer (Limón),0,107,4539.37,Bebidas sin alcohol,TRUE
+76077,692835385772,Coca-Cola Zero,0,61,630.98,Frutas y verduras,FALSE
+76165,517782362903,Chiles chipotles,0,272,8199.76,Almacen,FALSE
+76422,542127344031,Jarritos (Manzana),0,142,11157.9,Higiene y cuidado,TRUE
+76437,175968072050,Agua embotellada,0,197,3667.91,Snacks,FALSE
+76579,109626194076,Barritas energéticas,0,276,139.25,Higiene y cuidado,TRUE
+76653,310639500909,Alcaparras,0,246,2973.43,Mascotas,FALSE
+76752,830924958540,Canada Dry Ginger Ale,0,73,14422.4,Galletitas y panadería,TRUE
+76867,853856239968,7UP,0,61,7899.16,Embutidos,FALSE
+76969,250489586195,Mudslide,0,278,13771.3,Congelados,TRUE
+77054,553555800252,Limpiador de manchas de vinagre,0,198,7025.47,Embutidos,FALSE
+77202,563223352379,Chocolates,0,278,13260.3,Productos Lácteos,FALSE
+77476,530230407103,Sopa enlatada,0,246,2735.82,Snacks,FALSE
+77508,359126373197,Hamburguesas,0,273,9836.87,Bebidas con alcohol,FALSE
+77530,358268550196,Salsa de soya,0,116,9998.88,Bebés,TRUE
+77540,299922873463,Sidecar,0,60,823.35,Productos Lácteos,TRUE
+77717,253176417541,Melón honeydew,0,231,11226.4,Golosinas y chocolates,FALSE
+77730,762548506903,Galletas de chocolate y almendra,0,236,13298.2,Bebés,TRUE
+78035,301982539343,San Pellegrino,0,261,12539.3,Carnes y pescados,TRUE
+78062,786279589603,Irish whiskey,0,224,6402.96,Pastas frescas y tapas,TRUE
+78167,969446142026,Absenta,0,174,11176.9,Galletitas y panadería,TRUE
+78250,499949759091,Peras,0,70,6097.11,Frutas y verduras,FALSE
+78505,522966236246,Galletas de chocolate y cereza,0,8,10653.5,Higiene y cuidado,TRUE
+78683,487518474447,Berenjena japonesa,0,139,6735.1,Embutidos,FALSE
+78937,123683717686,Chiles habaneros,0,297,2868.41,Bebidas sin alcohol,FALSE
+79000,704553796256,Limpiador de manchas de café,0,224,5840.81,Bebidas con alcohol,TRUE
+79001,610294628406,Limpiador de manchas de yogur,0,292,9400.72,Frutas y verduras,FALSE
+79103,960018040230,Caldo de verduras,0,290,4125.89,Golosinas y chocolates,FALSE
+79286,373140487599,Barq's Root Beer,0,200,5750.66,Mascotas,FALSE
+79455,820561390311,Menta,0,20,2584.22,Embutidos,TRUE
+79471,484173375277,Cerveza belga,0,270,10049,Limpieza,TRUE
+79545,279828473749,Cerveza lager,0,255,11841.3,Frutos secos,FALSE
+79672,754659903705,Pepsi Wild Cherry,0,113,8788.68,Carnes y pescados,FALSE
+79747,433044087458,Aceite de coco,0,237,8509.3,Bebidas sin alcohol,FALSE
+79820,347407684772,Vino dulce,0,104,489.8,Frutas y verduras,FALSE
+79949,416296129337,Tomates,0,158,3739.01,Carnes y pescados,TRUE
+79958,359453155582,Disolvente,0,162,4471.28,Golosinas y chocolates,TRUE
+80015,437873936707,Aguacate,0,127,6782.51,Congelados,FALSE
+80211,109253154709,Mermelada,0,276,6452.61,Mascotas,TRUE
+80254,456501078743,Sangría,0,255,3127.43,Pastas frescas y tapas,FALSE
+80340,717979978497,Galletas de maíz,0,206,9191.83,Mascotas,TRUE
+80877,330502047168,Limpiador de manchas de tinta de marcadores,0,280,14677.1,Pastas frescas y tapas,TRUE
+80973,889254693699,Uvas,0,53,10962.9,Frutos secos,FALSE
+81181,266697291812,Detergente en polvo para ropa,0,179,1091.54,Frutas y verduras,TRUE
+81216,985700413528,Sex on the beach,0,147,7193.23,Carnes y pescados,TRUE
+81220,771674317425,Galletas de chocolate y cacahuete,0,195,8860.12,Mascotas,FALSE
+81268,761195338754,Frutos secos,0,117,14116.3,Bebidas sin alcohol,TRUE
+81902,453729507366,Sprite Lemonade,0,238,4465.09,Bebidas con alcohol,FALSE
+81922,870021228571,Limpiador de inodoros,0,33,10693.9,Snacks,FALSE
+82224,692750651576,Pasta de curry,0,172,5349.1,Bebidas sin alcohol,TRUE
+82267,328813558627,Bolsas de basura,0,12,9192.85,Limpieza,FALSE
+82433,130546988744,Leche condensada,0,30,2654.12,Frutas y verduras,FALSE
+82547,238433851428,Quitagrasas,0,165,4605.5,Congelados,FALSE
+82562,658912871902,Galletas de mantequilla,0,293,7939.32,Bebés,TRUE
+82651,194776998725,Guiso de carne,0,192,919.46,Frutas y verduras,TRUE
+82772,625661167150,Polvo para hornear,0,168,10930.2,Bebés,FALSE
+82889,295530389312,Galletas de cereza,0,154,5615.62,Bebidas sin alcohol,FALSE
+82961,916148683874,Grosellas,0,92,12396.7,Galletitas y panadería,TRUE
+83036,217747675266,Limpiador de manchas de chocolate caliente,0,113,6336.06,Carnes y pescados,TRUE
+83046,170261739795,Blue Lagoon,0,34,9478.72,Productos Lácteos,TRUE
+83179,378924813259,Moxie,0,196,11485.6,Mascotas,FALSE
+83461,203695627727,Salsa de curry,0,227,4474.65,Carnes y pescados,FALSE
+83851,248801273092,Galletas de chocolate y nueces,0,149,166.63,Bebidas con alcohol,FALSE
+83936,996285652244,Endibias,0,199,10555.5,Embutidos,FALSE
+83970,965679570870,Cosmopolitan,0,38,452.84,Embutidos,TRUE
+84836,379501972432,Jugos,0,228,11847.7,Golosinas y chocolates,TRUE
+84997,204382780958,Screwdriver,0,125,10928.6,Frutas y verduras,FALSE
+85276,903841561572,Tomillo,0,82,9475.46,Bebés,FALSE
+85438,458981909636,Salsa barbecue,0,252,13599.4,Frutas y verduras,FALSE
+85519,285936046088,Limpiador de manchas de rotulador,0,234,293.23,Golosinas y chocolates,FALSE
+85586,340158725272,Limpiador de manchas de alimentos,0,15,3340.15,Bebidas sin alcohol,FALSE
+85917,232134229836,Cognac,0,18,3487.81,Higiene y cuidado,FALSE
+85919,399651556015,Soju,0,293,10447,Embutidos,FALSE
+85999,574041450673,Sopa de pollo,0,67,13969.4,Higiene y cuidado,FALSE
+86014,584746961526,Espresso martini,0,120,10885.7,Bebés,FALSE
+86637,367207173421,Mariscos,0,286,7402.65,Embutidos,TRUE
+86666,545017032948,Rábano picante,0,275,1465.17,Almacen,FALSE
+86733,663626030518,Repollo,0,209,13859,Golosinas y chocolates,TRUE
+86762,750423005925,Verduras congeladas,0,114,11956.7,Mascotas,FALSE
+86815,404603669516,Limpiador de electrodomésticos,0,257,2382.43,Embutidos,TRUE
+86825,657684985461,Galletas de chocolate y caramelo,0,158,10656.5,Higiene y cuidado,TRUE
+86933,125610377242,Salsa tzatziki,0,262,12385.9,Carnes y pescados,FALSE
+87063,418240085698,Azúcar moreno,0,200,14588.4,Bebés,FALSE
+87238,106711429948,Cerveza,0,13,6073.1,Higiene y cuidado,TRUE
+87591,892409340120,Alubias blancas,0,27,891.35,Embutidos,TRUE
+87715,269395922299,Almendras,0,135,3165.34,Bebés,FALSE
+87739,117229412571,Quitamanchas,0,182,5239.84,Bebés,TRUE
+87794,399223624760,Paloma,0,262,1822.12,Golosinas y chocolates,FALSE
+87855,863699486191,Pimientos (amarillos),0,224,1387.31,Golosinas y chocolates,FALSE
+87898,998673286609,Jabón en barra,0,73,6879.02,Bebidas con alcohol,FALSE
+88269,913276419120,Crush Naranja,0,6,1240.89,Bebés,TRUE
+88398,864706668376,Zevia (Frambuesa),0,206,3089.37,Productos Lácteos,FALSE
+88577,724407554842,Coca-Cola Cero Azúcar,0,23,4854.73,Embutidos,TRUE
+88627,898402473814,Calabacín,0,299,9529.22,Bebidas con alcohol,FALSE
+88679,626213146627,Jarritos (Fresa),0,155,2585.37,Pastas frescas y tapas,TRUE
+88752,775135394732,Limpiador de manchas de sangre,0,91,8739.52,Golosinas y chocolates,FALSE
+88910,204035497499,Semillas de sésamo,0,190,3074.8,Bebés,TRUE
+89221,848480366182,Yogur,0,125,14467.2,Carnes y pescados,FALSE
+89482,505919438977,Galletas de chocolate y naranja,0,187,12124.4,Almacen,TRUE
+89616,972519721689,Pepsi Max,0,203,11456.1,Carnes y pescados,TRUE
+89656,973408830265,Galletas de caramelo,0,237,864.54,Snacks,TRUE
+89693,140808061074,Atún enlatado,0,185,2648.74,Pastas frescas y tapas,FALSE
+90054,255446596325,Cerveza IPA (India Pale Ale),0,294,12229.5,Limpieza,FALSE
+90115,958848980707,Berenjena blanca,0,166,6020.95,Bebés,TRUE
+90266,807780069055,Old fashioned,0,73,13625.7,Productos Lácteos,TRUE
+90518,481459230805,Limpiador de vidrio,0,22,5578.54,Frutas y verduras,FALSE
+90797,359081730330,Col rizada (kale),0,26,14353.9,Bebidas sin alcohol,TRUE
+90851,580110070834,Baijiu,0,22,12939.6,Bebidas con alcohol,TRUE
+91230,995438830680,Naranjas,0,43,2158.17,Pastas frescas y tapas,TRUE
+91479,875430884372,Semillas de girasol,0,114,11437.2,Almacen,TRUE
+91481,424848627513,AHA Sparkling Water (Durazno),0,164,2381.88,Frutas y verduras,TRUE
+91685,476988337871,Cape Codder,0,158,9267.71,Bebidas sin alcohol,TRUE
+91698,127592355363,Prosecco,0,55,12123.2,Golosinas y chocolates,FALSE
+91795,171412410672,Vino blanco,0,184,14043.6,Productos Lácteos,FALSE
+92190,681773456809,Limpiador de parrillas,0,221,9655.62,Bebidas sin alcohol,TRUE
+92402,756925404881,Sopa de miso,0,283,10725.4,Almacen,TRUE
+92485,354820320368,Papel toalla,0,18,7402.43,Limpieza,FALSE
+92715,875782391029,Lichi,0,292,13663.4,Limpieza,FALSE
+92906,536057761354,Nabos,0,295,293.7,Carnes y pescados,TRUE
+93174,688138042882,Nuggets de pollo,0,3,6921.44,Snacks,TRUE
+93241,992687897516,Quinoa,0,26,9681.53,Bebidas con alcohol,FALSE
+93269,334873767652,Fuzzy navel,0,146,12926.7,Snacks,TRUE
+93693,479645347852,Tortillas de maíz,0,205,11485.4,Bebidas sin alcohol,FALSE
+93938,165571087173,Galletas de avena,0,74,2034.38,Frutas y verduras,TRUE
+93945,643801658239,Agua con gas,0,142,10154.4,Embutidos,FALSE
+93952,407197898746,Jarritos (Frambuesa),0,178,1226.03,Snacks,FALSE
+93954,834643468451,7UP Cero Azúcar,0,210,10511.6,Higiene y cuidado,FALSE
+94078,384116388377,Romero,0,71,8615.45,Frutas y verduras,FALSE
+94192,449834129125,Seltzer Water (Natural),0,101,1161.41,Snacks,FALSE
+94405,950653409856,Cerveza porter,0,272,3660.88,Almacen,TRUE
+94480,204879796740,Sopa instantánea,0,298,12468.8,Pastas frescas y tapas,TRUE
+94564,233118222605,Salsa de maní,0,240,103.48,Congelados,FALSE
+95184,878649188523,Especias (canela),0,246,12134.8,Golosinas y chocolates,FALSE
+95239,677737180349,Limpiador de manchas de tierra,0,228,14270.7,Congelados,TRUE
+95247,115232827257,Tonic Water,0,77,13333,Almacen,TRUE
+95262,601742684419,Ron,0,102,10328.4,Limpieza,TRUE
+95379,129046353693,Tocino,0,232,9936.32,Bebés,FALSE
+95486,953558501675,Kickstart (Cítricos),0,176,14778.2,Galletitas y panadería,FALSE
+95563,460140832606,Pepinos,0,125,11284,Congelados,TRUE
+95653,963779557816,Cereza,0,171,7725.23,Pastas frescas y tapas,FALSE
+95686,669364343176,Vino de postre,0,255,14124.6,Golosinas y chocolates,TRUE
+95795,180337483877,Limpiador de baño,0,218,941.02,Galletitas y panadería,FALSE
+95932,511401514850,Galletas de chocolate blanco y frambuesa,0,166,7033.08,Bebidas con alcohol,FALSE
+96102,876327083871,White Russian,0,77,4893.18,Snacks,FALSE
+96196,927497019144,Azúcar glas,0,96,10841.5,Congelados,FALSE
+96324,603655412500,Grappa,0,115,2141.55,Higiene y cuidado,FALSE
+96413,820093526890,Harina,0,6,1086.39,Bebidas con alcohol,FALSE
+96596,657122362346,Especias (cebolla en polvo),0,124,9776.92,Mascotas,FALSE
+96771,606910677210,Aceite de canola,0,114,12778.7,Galletitas y panadería,FALSE
+96879,197570204602,Inca Kola,0,17,4824.58,Almacen,TRUE
+96983,768783551488,Snacks de arroz,0,298,11978.2,Bebidas con alcohol,TRUE
+97585,591228793987,Harina de almendra,0,294,12824.8,Galletitas y panadería,TRUE
+97617,883238185882,Cerveza stout,0,153,11264.8,Bebés,FALSE
+97762,854513385140,Levadura,0,203,11259.4,Frutas y verduras,FALSE
+97771,279435282703,Macarrones,0,257,14534.9,Snacks,TRUE
+97811,945960749510,Semillas de linaza,0,96,105.36,Productos Lácteos,FALSE
+97845,248292747272,Snack de maíz,0,156,13791.6,Snacks,TRUE
+97921,183658968181,Pasta de tomate,0,92,1778.44,Bebés,TRUE
+98196,702511596441,Mayonesa,0,161,14804.7,Higiene y cuidado,TRUE
+98308,465554170946,Fanta Naranja,0,104,4438.09,Embutidos,TRUE
+98349,620991714585,Guantes de limpieza,0,183,2768.87,Bebidas con alcohol,TRUE
+98469,324245897203,Abrillantador de muebles,0,92,3396.38,Mascotas,FALSE
+98510,853129634888,Margarita,0,300,2439.67,Frutos secos,FALSE
+98528,844041905443,Pasta de ajo,0,157,5692.43,Higiene y cuidado,TRUE
+98608,987387483812,Limpiador de manchas de batidos,0,258,14033.7,Bebés,FALSE
+98762,413887223450,Manzanas,0,36,6564.43,Mascotas,FALSE
+98835,656997324632,Limpiador de manchas de salsas,0,248,12150.4,Mascotas,FALSE
+98918,358982422723,Salvia,0,133,11807.8,Bebidas sin alcohol,FALSE
+99092,447008991258,Desinfectante para manos,0,192,1094.12,Bebés,FALSE
+99102,178011475201,Pudin instantáneo,0,268,3699.98,Embutidos,TRUE
+99321,434033567010,Limpiador de manchas de batidos de frutas,0,60,2964.98,Embutidos,FALSE
+99336,710397398074,Queso,0,216,6084.43,Productos Lácteos,FALSE
+99379,964834323971,Galletas de chocolate y frutos secos,0,299,3443.1,Higiene y cuidado,TRUE
+99406,907719183629,Sardinas enlatadas,0,32,5080,Almacen,FALSE
+99543,412211361083,Limpiador de manchas de barro,0,66,10964.8,Limpieza,TRUE
+99561,595428206489,Removedor de manchas,0,4,8298.8,Almacen,FALSE
+99579,294506827350,Galletas de chocolate negro,0,298,5689,Frutas y verduras,TRUE
+99657,978954017814,Ensalada de atún,0,87,7574.58,Higiene y cuidado,TRUE
+99716,957300463899,Ginger Ale,0,116,13073.2,Embutidos,FALSE
+99811,686335258656,Scotch,0,81,985.96,Limpieza,FALSE
+99824,130395194975,Pescado,0,7,1150.8,Almacen,TRUE
+99884,425145743408,Limpiador de filtros de campana,0,221,10632.3,Golosinas y chocolates,TRUE
+99895,586533484559,Harina de maíz,0,291,7886.84,Galletitas y panadería,TRUE
+99950,518846613156,Aceite de girasol,0,112,6171.03,Almacen,FALSE
+99951,689546985549,Caramelos de menta,0,182,958.6,Snacks,FALSE

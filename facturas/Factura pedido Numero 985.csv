@@ -1,0 +1,4 @@
+IdVenta, IdCliente, IdProducto, nombreProducto, cantidadSolicitada, precioUnitario, anio, mes, dia, direccionDeEntrega 
+985,1003,64847,Vinagre de manzana,5,152.78,2024,11,6,Martin Rodriguez 2320
+985,1003,99561,Removedor de manchas,4,8298.8,2024,11,6,Martin Rodriguez 2320
+985,1003,85519,Limpiador de manchas de rotulador,2,293.23,2024,11,6,Martin Rodriguez 2320

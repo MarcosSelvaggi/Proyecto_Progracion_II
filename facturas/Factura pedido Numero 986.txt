@@ -1,0 +1,12 @@
+IdVenta, IdCliente, IdProducto, nombreProducto, cantidadSolicitada, precioUnitario, anio, mes, dia, direccionDeEntrega 
+Pedido Nø986 	 Fecha 6|11|2024
+Cliente: Daniel
+Direcci¢n: direccion 123
+
+
+
+
+Abajo se detalla la informaci¢n del pedido 
+Vinagre de manzana                                |2|152.78|
+Zombie                                            |3|5830.78|
+El total es 	 	 	 17797.9

@@ -1,5 +1,7 @@
 #include "PedidosArchivo.h"
 #include "Productos.h"
+#include "Clientes.h"
+#include "ClientesArchivo.h"
 #include <fstream>
 #include <sstream>
 
@@ -245,36 +247,54 @@ int PedidosArchivo::cantidadDeVentasGuardadas()
 
 void PedidosArchivo::generarFactura(Pedidos &pedido)
 {
-    string nombreArchivo;
     PedidosArchivo PArchivo;
-    nombreArchivo = "facturas\\Factura pedido Numero " + to_string(PArchivo.obtenerCantidadDePedidosRealizados() + 1) + ".csv";
-    if (PArchivo.obtenerCantidadDeProductosEnCarrito() == 0) return;
-    Pedidos *listaProductos;
-    listaProductos = new Pedidos[PArchivo.obtenerCantidadDeProductosEnCarrito()];
-    PArchivo.leerPedidoEnArchivoTemporal(listaProductos);
+    if (PArchivo.obtenerCantidadDeProductosEnCarrito() == 0) return; //Si no hay productos en el carrito, simplemente vuelve
 
+    //Declara el string para despu‚s asignarle el nombre del pedido, as¡ la factura se guarda en la carpetas factura con el n£mero de pedido
+    string nombreArchivo;
+    nombreArchivo = "facturas\\Factura pedido Numero " + to_string(PArchivo.obtenerCantidadDePedidosRealizados() + 1) + ".txt";
     ofstream ArchivoVentas(nombreArchivo, ios::app);
     if (!ArchivoVentas.is_open())
     {
         return;
     }
-    ArchivoVentas << "IdVenta, IdCliente, IdProducto, nombreProducto, cantidadSolicitada, precioUnitario, anio, mes, dia, direccionDeEntrega \n";
+
+    //Carga de los productos desde el archivo temporal
+    Pedidos *listaProductos = new Pedidos[PArchivo.obtenerCantidadDeProductosEnCarrito()];
+    PArchivo.leerPedidoEnArchivoTemporal(listaProductos);
+
+    //Carga una lista de clientes para poder leer el nombre del cliente que realiz¢ el pedido
+    ClientesArchivo ClArchivo;
+    Clientes *listaClientes = new Clientes[ClArchivo.obtenerCantidadDeClientes()];
+    ClArchivo.leerCliente(listaClientes);
+
+    ArchivoVentas << "Pedido Numero " << pedido.getNumPedido() << " \t Fecha " << pedido.getDia() << "|" << pedido.getMes() << "|" << pedido.getAnio() <<"\n";
+    ArchivoVentas << "Cliente: " << listaClientes[stoi(pedido.getNumCliente().c_str())].getNombre() << " ";
+    ArchivoVentas << listaClientes[stoi(pedido.getNumCliente().c_str())].getApellido() << "\n";
+    ArchivoVentas << "Direccion: " << pedido.getDireccionDeEntrega() << "\n";
+    ArchivoVentas << "\n" ; //Esto para dejar un poco de espacio libre
+    ArchivoVentas << "Abajo se detalla la informacion del pedido \n";
+    ArchivoVentas << "Producto \t \t \t \t| unidades | precio unitario \n";
+
+    float total;
     Productos producto;
     for (int i = 0; i < PArchivo.obtenerCantidadDeProductosEnCarrito(); i++)
     {
-        ArchivoVentas << pedido.getNumPedido() << ","
-                      << pedido.getNumCliente() << ","
-                      << listaProductos[i].getIdDelProducto() << ","
-                      << listaProductos[i].getNombreDelProducto() << ","
-                      << listaProductos[i].getCantidadSolicitada() << ","
-                      << listaProductos[i].getPrecioUnitario() << ","
-                      << pedido.getAnio() << ","
-                      << pedido.getMes() << ","
-                      << pedido.getDia() << ","
-                      << pedido.getDireccionDeEntrega() << "\n";
+        string nombreProducto = listaProductos[i].getNombreDelProducto();
+        for (int i = nombreProducto.length(); i < 40 ; i++)
+        {
+            nombreProducto += " ";
+        }
+        ArchivoVentas << nombreProducto << "|    "
+                      << listaProductos[i].getCantidadSolicitada() << "    |  "
+                      << listaProductos[i].getPrecioUnitario() << "\n";
+        total += listaProductos[i].getPrecioUnitario() * stof(listaProductos[i].getCantidadSolicitada().c_str());
 
     }
+    ArchivoVentas << "El total es \t \t \t \t \t \t" << total << "\n";
+
     ArchivoVentas.close();
+    delete[] listaClientes;
     delete[] listaProductos;
 }
 

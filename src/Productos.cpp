@@ -1,7 +1,6 @@
 #include "Productos.h"
 #include "ProductosArchivo.h"
 #include <iostream>
-#include <time.h>
 
 using namespace std;
 
@@ -151,7 +150,6 @@ void Productos::menuProductos()
             cout << "Cantidad de inactivos: " << cantidad << endl;
             break;
         }
-
         case 0:
             cout << "Saliendo..." << endl;
             break;
@@ -167,13 +165,14 @@ void Productos::menuProductos()
 bool Productos::agregarProducto()
 {
     ProductosArchivo PtoArchivo;
+    Productos *listaProductos = new Productos[PtoArchivo.obtenerCantidadDeProductos()];
 
     string SKU,codigoDeBarras, nombreProducto,stockMinimo,stockActual, categoriaProducto;
     float precioProducto;
 
-    srand(time(NULL));
-    int numeroParaSKU = rand() % 10000000; ///Asigna de forma al azar el SKU
-
+    ///Asigna de forma al azar el SKU
+    PtoArchivo.leerProductos(listaProductos, PtoArchivo.obtenerCantidadDeProductos());
+    int numeroParaSKU = atoi(listaProductos[PtoArchivo.obtenerCantidadDeProductos() - 1].getSku().c_str()) + 1;
     SKU = to_string(numeroParaSKU); ///Lo pasa a string para poder guardarlo
 
     cout << "Ingrese el c¢digo de barras: ";
@@ -317,9 +316,9 @@ void Productos::buscarUnProductoConStock(Productos *listaCompras, string busqued
             x = tolower(x);
         }
         ///Este if se encarga de lo siguiente
-            ///Compara que la busqueda que le pasamos este dentro de los nombres de los productos en la lista
-            ///Que el stock actual sea mayor al stock minimo
-            ///Que el producto no est‚ eliminado
+        ///Compara que la busqueda que le pasamos este dentro de los nombres de los productos en la lista
+        ///Que el stock actual sea mayor al stock minimo
+        ///Que el producto no est‚ eliminado
         ///Si se cumplen esas 3 cosas, el producto es copiado de un array al otro
         if (nombreProducto.find(busqueda) != string::npos && stockActual > stockMinimo && (!listaProductos[i].getProductoEliminado()))
         {
@@ -374,7 +373,7 @@ void Productos::modificarProducto()
         cout << "---------------------------" << endl;
         cout << "   Busqueda del producto   " << endl;
         cin >> busqueda;
-        buscarUnProducto(busqueda, 1);
+        buscarUnProducto(busqueda, 0);
     }
     ///Una vez tenemos la informaci¢n del producto, podemos escribir el SKU a buscar
     cout << endl << "Introduzca el SKU" << endl;
@@ -495,13 +494,31 @@ void Productos::mostrarProductos(bool estaActivo, int &cantidad)
     listaProductos = new Productos[totalProductos];
     ProArchivo.leerProductos(listaProductos, totalProductos);
 
+    int opcion, contador = 0;
     for (int i = 0; i < totalProductos; i++)
     {
         if (listaProductos[i].getProductoEliminado() == estaActivo)
         {
             cout << "-----------------------" << endl;
+            if (contador == 10)
+            {
+                cout << "¨Mostrar m s productos?" << endl;
+                cout << "1 - No, 0 S¡" << endl;
+                cin >> opcion;
+                if (opcion)
+                {
+                    break;
+                }
+                else
+                {
+                    contador = 0;
+                    cout << "-----------------------" << endl;
+                }
+            }
+
             imprimirElProducto(listaProductos[i], 0);
             cantidad++;
+            contador++;
         }
     }
 }
@@ -529,3 +546,4 @@ void Productos::modificarStockActual(string numProducto, int cantidadDeProductos
 
     delete[] listaProductos;
 }
+

@@ -1,0 +1,8 @@
+Pedido Numero 988 	 Fecha 6|11|2024
+Cliente: Bron Deares
+Direccion: 9862 Hauk Street
+
+Abajo se detalla la informacion del pedido 
+Producto 	 	 	 	| cantidad | precio unitario 
+Limpiador de manchas de jugos           |4  |  10486.5  |
+El total es 	 	 	 	 	41946

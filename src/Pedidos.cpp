@@ -126,7 +126,7 @@ void Pedidos::setAnio(string anio)
 {
     _anio = anio;
 }
-#include <iomanip>
+
 ///Metodos
 void Pedidos::realizarPedido()
 {
@@ -168,6 +168,7 @@ void Pedidos::realizarPedido()
             {
                 cout << "Se ha realizado el pago de forma exitosa" << endl;
                 PedidoArchivo.limpiarArchivoTemporal();
+                opcion = 0;
             }
             else if (pedidoRealizado == 0)
             {
@@ -181,6 +182,8 @@ void Pedidos::realizarPedido()
             {
                 cout << "No hay ning£n usuario registrado con ese mail" << endl;
             }
+            cout << endl;
+            system("pause");
             break;
         }
         case 0:
@@ -206,7 +209,8 @@ void Pedidos::agregarProductosAlPedido(Pedidos pedido)
     bool productosNoEncontrados = true, variableProvisoria;///Variable con nombre provisorio para el while mientras busca el producto
 
     cout << "Indique el nombre del producto a buscar" << endl;
-    cin >> busqueda;
+    cin.ignore();
+    getline(cin, busqueda);
 
     producto.buscarUnProductoConStock(listaDeProductos, busqueda, cantidadDeProductosEncontrados);
     for (int i = 0; i < cantidadDeProductosEncontrados; i++)
@@ -259,6 +263,7 @@ void Pedidos::agregarProductosAlPedido(Pedidos pedido)
                     }
                 }
                 while (cantidadDeUnidades > stockMinimo);
+                if (cantidadDeUnidades == 0) break;
                 ///Agregando la lista de productos al archivo temporal
                 pedido.setIdDelProducto(listaDeProductos[productoSolicitado - 1].getSku());
                 pedido.setNombreDelProducto(listaDeProductos[productoSolicitado - 1].getNombreProducto());
@@ -291,8 +296,8 @@ void Pedidos::mostrarCarritoDeCompras()
 
     float totalCarrito = 0.f, cantidadDeProductos = 0.f;
     ///Esto se ve feo, ver si se puede cambiar para que se vea mejor
-    cout << " ---------------------------------------------------------------------------------------" << endl;
-    cout << "|Productos \t \t \t \t \t   | Unidades " << setw(5) <<"  |  Precio Unitario \t" <<  "|" << endl;
+    cout << " ----------------------------------------------------------------------------------------" << endl;
+    cout << "|Productos \t \t \t \t \t   | Unidades\t|      Precio Unitario \t" <<  " |" << endl;
 
     for (int i = 0; i < pedidoArchivo.obtenerCantidadDeProductosEnCarrito(); i++)
     {
@@ -303,7 +308,9 @@ void Pedidos::mostrarCarritoDeCompras()
         {
             nombreProducto = nombreProducto + " ";
         }
-        cout <<"|"<< nombreProducto <<"|\t" << pedidoArray[i].getCantidadSolicitada() <<"\t|\t $" << pedidoArray[i].getPrecioUnitario() <<"\t"<< "|" << endl;
+        //Misma l¡nea, s¢lo que separada para poder leerla mejor
+        cout <<"|"<< nombreProducto <<"|\t" << pedidoArray[i].getCantidadSolicitada() <<"\t|\t $ ";
+        cout << pedidoArray[i].getPrecioUnitario() <<"\t"<< " |" << endl;
         cantidadDeProductos = stof(pedidoArray[i].getCantidadSolicitada());
         totalCarrito += (pedidoArray[i].getPrecioUnitario() * cantidadDeProductos);
         carritoVacio = false;
@@ -311,14 +318,14 @@ void Pedidos::mostrarCarritoDeCompras()
 
     if (carritoVacio)
     {
-        cout << "|El carrito est  vac¡o, intenta agregando m s productos :) \t|" << endl;
+        cout << "|El carrito est  vac¡o, intenta agregando m s productos :) \t \t \t \t |" << endl;
     }
     else
     {
-        cout << "|Total" << "\t\t\t\t\t\t\t\t\t" << " $"<<  totalCarrito << "\t|" << endl;
+        cout << "|Total" << "\t\t\t\t\t\t\t\t\t" << " $ "<<  totalCarrito << "\t |" << endl;
     }
 
-    cout << " ---------------------------------------------------------------------------------------" << endl;
+    cout << " ----------------------------------------------------------------------------------------" << endl;
 
     delete[] pedidoArray;
 }

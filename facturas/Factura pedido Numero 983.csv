@@ -1,0 +1,5 @@
+IdVenta, IdCliente, IdProducto, nombreProducto, cantidadSolicitada, precioUnitario, anio, mes, dia, direccionDeEntrega 
+983,1001,99951,Caramelos de menta,8,958.6,2024,11,4,direccion 123
+983,1001,99716,Ginger Ale,4,13073.2,2024,11,4,direccion 123
+983,1001,64847,Vinagre de manzana,8,152.78,2024,11,4,direccion 123
+983,1001,85586,Limpiador de manchas de alimentos,8,3340.15,2024,11,4,direccion 123
